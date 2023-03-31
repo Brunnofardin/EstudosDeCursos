@@ -1,0 +1,29 @@
+
+------------------------------------------ DICAS PAYTHON C --------------------------------------------------------------------------------------------------------------------------------
+PARA COMENTAR ALGO USAMOS:
+
+/* TEXTO QUE VOCÊ QUER QUE APAREÇA */ -   SERVE PARA COMENTAR ALGO
+
+
+-------------------------------------------
+SERVE PARA INICIAR UM PROGRAMA EM PAYTHON C
+-------------------------------------------
+INT MAIN ()
+{
+
+
+}
+RETURN 0;
+---------------------------------------------
+
+PRINTF('O QUE DESEJA MOSTRAR NA TELA '); - SERVE PARA MOSTRAR ALGO NA TELA
+
+
+OBS : SEMPE QUE FINALIZAR UM COMANDO VOCÊ DEVE COLOCAR PONTO E VIRGULA ( ; )
+
+
+
+
+------------------------------------------------------------- BLIBIOTECAS -----------------------------------------------------------------------------------------------------------------------------
+
+# INCLUDE <STDIO.H> - COMANDOS BÁSICO PARA O PAYTHON C
