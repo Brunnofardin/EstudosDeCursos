@@ -1,6 +1,14 @@
-var div = document.getElementById('div')
+var div = document.getElementsByTagName('div')[0]
+var p = [...document.getElementsByTagName('p')]
 
-div.addEventListener('click',()=>{
-    console.log('CLicou!')
+p.map((el)=>{
+    el.addEventListener('click',(evt)=>{
+        evt.stopPropagation()
+        
+    })
+})
+
+div.addEventListener('click',(evt)=>{
+    console.log(evt.target)
 
 })

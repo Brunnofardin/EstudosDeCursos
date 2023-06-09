@@ -522,9 +522,16 @@ FILTRA ELEMENTOS
 NOMEDAVARIAVEL.FILTER(VALOR,INDICE,ARRAY)
 
 
- PARANDO PROPRAGAÇÃO DE EVENTOS
-----------------------------------
 
+valor indIce e array
+
+
+idades = [3,2,3,4,6]
+idades.filter(V,I,A)=>{
+
+
+
+}
 
 
 
@@ -532,13 +539,7 @@ NOMEDAVARIAVEL.FILTER(VALOR,INDICE,ARRAY)
 
 
   STOP PROPAGATION
-------------------------------------
-
-
-
-
-
-
+----------------------------------
 
 
 
@@ -551,6 +552,15 @@ OS ELEMNTOS QUE ESTIVEREM DENTRO DESTA DIV RECEBERAM O EVENTAO TABEM
 
 
 PARA ISSO EXISTE O stopPropagation
+
+
+
+
+f.addenventlistener('click',(evento)=>{
+      evento.stopPropragation
+
+
+})
 
 
 
