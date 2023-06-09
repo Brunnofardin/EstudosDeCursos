@@ -20,7 +20,7 @@ node main.js - executa pasta main.js
 
 
 
-      strict - Modo restrito
+     STRICT - Modo restrito
 ------------------------------
 
 "use strict" 
@@ -263,6 +263,8 @@ ALUNO('Brunno',100)
 
 
 
+
+
        FUNÇÕES PARAMETRIZADAS
 -----------------------------------
 
@@ -453,12 +455,12 @@ PARAMETRO
 
 
 
-  CREATE ATRIBUTE
+  CREATE ELEMENT
 ----------------------
 
-  CREATEATRIBUTE(NOMEDOQUEQUERCRIAR)
+  CREATEELEMENT(NOMEDOQUEQUERCRIAR)
 
- CRIA UM ELEMNTO HTML NA MEMÓRRIA DO
+ CRIA UM ELEMNTO HTML NA MEMÓRIA DO
 
  COMPUTADOR
 
@@ -522,6 +524,21 @@ NOMEDAVARIAVEL.FILTER(VALOR,INDICE,ARRAY)
 
  PARANDO PROPRAGAÇÃO DE EVENTOS
 ----------------------------------
+
+
+
+
+
+
+
+  STOP PROPAGATION
+------------------------------------
+
+
+
+
+
+
 
 
 
