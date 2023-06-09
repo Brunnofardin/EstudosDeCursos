@@ -11,8 +11,8 @@ cls - limpa chat
 node main.js - executa pasta main.js
 
 
-                                                                                       JAVA-SCRIPT
--------------------------------------------------------------------------------------------------------------------------------------------------------
+                 JAVA-SCRIPT
+------------------------------------------------------------
 
 
 
@@ -20,8 +20,8 @@ node main.js - executa pasta main.js
 
 
 
-                         strict - Modo restrito
--------------------------------------------------------------------------
+      strict - Modo restrito
+------------------------------
 
 "use strict" 
 
@@ -32,8 +32,8 @@ QUE VOCÊ NÃO ERRE DIGITAÇÕES ETC...
 
 
 
-                ENCREMENTO pre incremento e pos incremento
-------------------------------------------------------------------
+  ENCREMENTO pre incremento e pos incremento
+---------------------------------------------
 
 ++C - ANTES DE EXECUTAR C ELE INCREMENTA 1
 
@@ -41,28 +41,32 @@ C++ - DEPOIS DE USAR C ELE INCREMENTA 1
 
 
                      VARIAVEIS
--------------------------------------------------------------------
+----------------------------------------------
 
 
 
-VAR - PODE MODIFICADA DE QUALQUER ESCOPO ACIMA  E APRESENTADA DE QUALQUER ESCOPO ACIMA OU ABAIXO E MODIFICADA
+VAR -  PODE MODIFICADA DE QUALQUER ESCOPO ACIMA  E
+      APRESENTADA DE QUALQUER ESCOPO ACIMA OU ABAIXO 
+      E MODIFICADA.
 
-LET - PODE SER APRESENTADA SOMENTE DE ESCOPO ACIMA E  PODE SER MODIFICADA
+LET -    PODE SER APRESENTADA SOMENTE DE ESCOPO ACIMA E
+        PODE SER MODIFICADA
 
-CONST -  PODE SER ACESSADA SOMENTE DE ESCOPO ACIMA E NÃO PODE SER MODIFICADA
+CONST -   PODE SER ACESSADA SOMENTE DE ESCOPO ACIMA E NÃO 
+         PODE SER MODIFICADA
 
 
 
               
-                                                                    OPERADORES
------------------------------------------------------------------------------------------------------------------------------------------
+            OPERADORES
+---------------------------------------
 
 
 
 
 
-                 OPERADORES MATEMÁTICOS
-----------------------------------------------------------------
+       OPERADORES MATEMÁTICOS
+----------------------------------------
 
 
 * -  MULTIPLICAÇÃO
@@ -93,8 +97,8 @@ ORDEM DE PRECENDÊNCIA
 
 
 
-                 OPERADORES RELACIONAIS
--------------------------------------------------------------------
+     OPERADORES RELACIONAIS
+-----------------------------------------
 
 
 && - E
@@ -124,9 +128,8 @@ ORDEM DE PRECENDENCIA
 2° TODOS OS OUTROS DA ESQUERDA PARA DIREITA
 
 
-                            OPERADOR TERNÁRIO
-----------------------------------------------------------------------   
-
+       OPERADOR TERNÁRIO
+---------------------------
 
 ? - É VERDADE ? SIM OU NÃO
 
@@ -151,9 +154,8 @@ DEVEMOS NOS PERGUNTAR. É VERDADE?
 
 
 
-                                 TYPEOF()
--------------------------------------------------------------------
-
+        TYPEOF()
+----------------------------
 
 TYPEOF(O QUE DESEJA SABER O TIPO ) - SREVE PARA SABER O TIPO DE ALGO 
 
@@ -178,7 +180,8 @@ LOGICO - VERDADEIRO OU FALSO
 STRING - CARACTERE OU LETRA '7',@@34
 
 
-lembrando que para o typeof int e bollean são considerados Number ( número) ou seja não são diversificados com seus identificadores)
+ lembrando que para o typeof int e bollean são considerados
+Number ( número) ou seja não são diversificados com seus identificadores)
 
 
 
@@ -196,10 +199,11 @@ lembrando que para o typeof int e bollean são considerados Number ( número) ou
 
 
             SPREED
----------------------------------------------------------------------------
+------------------------------
 
 
-SPREED - ESPALHAR e tranformar um html colection em uma array(conjunto de elementos)
+ SPREED - ESPALHAR e tranformar 
+um html colection em uma array(conjunto de elementos)
 
 
 
@@ -214,7 +218,8 @@ VAR N = [5,4,5,2,1]
 
 FUNTION(V1,V2){
         
-      RETURN V1+V2  - NOS ESPECIFICAMOS QUE TEREMOS SOMENTE DOIS VALORES OU SEJA
+      RETURN V1+V2  - NOS ESPECIFICAMOS QUE TEREMOS
+        SOMENTE DOIS VALORES OU SEJA
                      
 
 }
@@ -253,8 +258,8 @@ ALUNO('Brunno',100)
 
 
 
-                                FUNÇÕES
--------------------------------------------------------------------------------------------------------------
+        FUNÇÕES
+-------------------------
 
 
 
@@ -321,14 +326,16 @@ EX:
 
 FUNTION NOME(N1,N2){ 
   
-                       -  FUNÇÃO PARAMETRIZADA RECEBANDO 2 NOMES SEM NENHUMA FUNCIONALIDADE
+                       -  FUNÇÃO PARAMETRIZADA RECEBANDO 2 NOMES
+                             SEM NENHUMA FUNCIONALIDADE
 
 
 }
 
 FUNCTION NOME(N1,N2){
   
-  RETURN CONSOLE.LOG(N1,N2)    -  FUNÇÃO COM RETORNO OU SEJA QUANDO FRO CHAMADA SERÁ APRESENTADO NA TELA DOIS NOMES
+  RETURN CONSOLE.LOG(N1,N2)    -  FUNÇÃO COM RETORNO OU SEJA QUANDO
+                                   FOR CHAMADA SERÁ APRESENTADO NA TELA DOIS NOMES
 
 }
 
@@ -362,7 +369,8 @@ QUE VEM DENTRO DA FUNÇÃO EX:
 
 FUNCTION(N1,N2){
 
-               -  AQUI PASSAMOS 2 PARAMETROS OU SEJA SÓ PODERÁ SER MANUSEADO 2 VALORES
+               -  AQUI PASSAMOS 2 PARAMETROS OU SEJA SÓ
+                   PODERÁ SER MANUSEADO 2 VALORES
 
 }
 
@@ -374,8 +382,9 @@ FUNCTION(N1,N2){
 
 FUNCTION(...VALORES){
 
-                     -   NOS NÃO ESPECIFICAMOS QUANTOS VALORES IRÃO VIR PARA DENTRO DA VARIAVEL VALORES
-                      OU SEJA PODE SER 10,1000,UM QUARENTAMILVALORES
+                     -   NOS NÃO ESPECIFICAMOS QUANTOS VALORES IRÃO VIR PARA 
+                          DENTRO DA VARIAVEL VALORES
+                            OU SEJA PODE SER 10,1000,UM QUARENTAMILVALORES
 
 
 }
@@ -398,16 +407,17 @@ FUNCTION* CORES(){
 
 CONST VARIAVEL = CORES()
 
-CONSOE.LOG(VARIAVEL.NEXT().VALUE) ESCREVA NO CONSOLE O PROXIMO VALOR DA VARIAVEL
+CONSOE.LOG(VARIAVEL.NEXT().VALUE) ESCREVA 
+  NO CONSOLE O PROXIMO VALOR DA VARIAVEL
 
 
 
 
 
 
-                                  METODOS                   
---------------------------------------------------------------------------------------------------------------
 
+        METODOS                   
+-----------------------------------
 
 elemnto.target - recebe o caminho do elemento
 
@@ -436,7 +446,7 @@ PAR2 - INDICE
 ---------------------
 
 
-SERVE PARA CRIAR UM ATRAZO DE EXECUÇÃO
+ SERVE PARA CRIAR UM ATRAZO DE EXECUÇÃO
 COM DETERMINADO TEMPO PASSADO POR
 PARAMETRO
 
@@ -449,7 +459,8 @@ PARAMETRO
   CREATEATRIBUTE(NOMEDOQUEQUERCRIAR)
 
  CRIA UM ELEMNTO HTML NA MEMÓRRIA DO
-COMPUTADOR
+
+ COMPUTADOR
 
 
 
@@ -460,6 +471,7 @@ COMPUTADOR
 
 
  O ATRIBUTO SÃO OS ELEMNTOS DE
+
 MANIPULAÇÃO.
 
 
@@ -477,7 +489,9 @@ nomeDoPai.APPENDCHILD()
 
 
  PARA ADICONAR ALGO COMO FILHO 
+
 BASTA PASSAR O NOME DO ELEMENTO
+
 DENTO DO PARAMETRO
 
 ex:
@@ -505,12 +519,17 @@ FILTRA ELEMENTOS
 
 NOMEDAVARIAVEL.FILTER(VALOR,INDICE,ARRAY)
 
------------------------------------PARANDO PROPRAGAÇÃO DE EVENTOS---------------------------------------------------------------------------
+
+ PARANDO PROPRAGAÇÃO DE EVENTOS
+----------------------------------
 
 
 
 
-UMA DIV FUNCIONA COMO UMA BOLHA E QUANDO ADICIONAMOS UM EVENTO A ELA, QUERENDO OU NÃO
+ UMA DIV FUNCIONA COMO UMA BOLHA E QUANDO ADICIONAMOS 
+
+UM EVENTO A ELA, QUERENDO OU NÃO
+
 OS ELEMNTOS QUE ESTIVEREM DENTRO DESTA DIV RECEBERAM O EVENTAO TABEM
 
 
@@ -528,9 +547,11 @@ PARA ISSO EXISTE O stopPropagation
 
 
 
---------------------------------------------------------------------------------------------------------------------
+-----------------------------------------
 
-OFSETTOP - SERVE PARA PEGAR A ALTURA EM PIXELS ENTRE O ELEMENTO E O PAI
+ OFSETTOP - SERVE PARA PEGAR A ALTURA EM PIXELS ENTRE 
+
+O ELEMENTO E O PAI
 
 
 ONSCROLL - BARRA DE ROLAGEM LIGADA ou acionada

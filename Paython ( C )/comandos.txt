@@ -2,7 +2,7 @@
 -----------------------------------------         DICAS PAYTHON C -----------------------------------------
 PARA COMENTAR ALGO USAMOS:
 
-/* TEXTO QUE VOCÊ QUER QUE APAREÇA */ -   SERVE PARA COMENTAR ALGO
+/* TEXTO QUE VOCÊ QUER QUE NÃO APAREÇA */ -   SERVE PARA COMENTAR ALGO
 
 
 -------------------------------------------
