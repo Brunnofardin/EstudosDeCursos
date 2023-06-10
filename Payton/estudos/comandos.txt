@@ -1,7 +1,7 @@
 
 
-                                                                                                Linguagem programação payton 
-______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+                                                                                                             Linguagem programação payton
+______________________________________________
 
 print("") é usado para apresentar textos, batsa colocar o texto que você quer dentro do paranteses que ele irá apresentar para você.
 -----
@@ -98,7 +98,7 @@ BOLL   -  VALORES LOGICOS -  True (VERDADEIRO ) False (Falso)
 
 STR    -  PALAVRAS  - SEMPRE SE DEVE USAR ASPAS "OLA" "" "7.0" ESTANDO ENTRE ASPAS VAI SER APRESENTADO COMO LETRAS
 
--------------------------------------------------------------------------- OPERAÇÕES ARITMÉTICOS---------------------------------------------------------------------------------------------------------------------------------------------
+-------OPERADORES ARITMÉTICOS------------------
 
 + = ADIÇÃO
 
@@ -122,8 +122,7 @@ PARA VER SE ALGO É IGUAL A OUTRO USAMOS : =  DOIS SINAIS DE IGUAL POIS UM SÓ �
 
 
                                                                        QUEM VEM PRIMEIRO DESTES OPERADORES ?
-                                                                ----------------------------------------------------
-                 
+                                                                --------------------------------------
 
 1° O QUE ESTÁ ENTRE PARÊNTESES ( )
 2° POTENCIAS **
@@ -131,7 +130,7 @@ PARA VER SE ALGO É IGUAL A OUTRO USAMOS : =  DOIS SINAIS DE IGUAL POIS UM SÓ �
 4° ADIÇÃO+ E SUBTRAÇÃO -
 
                                                                                   DICAS
-                                                                      -------------------------------------
+                                                                      ------------------------------
 
 
 DICA: PARA SABER A PORCENTAGEM DE UM NÚMERO :
@@ -148,7 +147,7 @@ NOMEDAVARIAVEL**O TANTO DE VEZES QUE QUEIRA POTENCIAR
 
 EX: NOMEDAVARIAVEL ** 2
 
---------------------------------------------------------------------------------------DICAS-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------DICAS--------------------
 
 #  END='' - SERVE PARA DEIXAR A PINT QUE ESTÁ EM BAIXO DE OUTRA NA MESMA LINHA
 
@@ -159,7 +158,6 @@ EX DE COMO VAI FICAR : HELLO WORLD, OLÁ.
 
 
 #  \N - SERVE AO CONTRÁRIO DO END='' POIS O \N IRÁ JOGAR A LINHA DE CIMA PARA BAIXO.
-
 
          EX:HELLO \N WORLD, OLÁ.
 
@@ -195,7 +193,7 @@ EX DE COMO VAI FICAR : HELLO WORLD, OLÁ.
 # NOMEDAVARIAVELl.ISNUMERIC- serve para ver se é número.
 # NOMEDAVARIAVEL.ISAPLHA  - SERVE PARA VER SE ALFABÉTICO
 
----------------------------------------------------------------------------------------------BLIBIOTÉCAS--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------BLIBIOTÉCAS--------------
 
 BLIBIOTECAS
 ----------
@@ -225,7 +223,7 @@ MATH.SQRT (X) - TIRA RAIZ QUADRADA DE UM NÚMERO
 
 DATE.DATETIME.NOW().DAY,YEAR,HOUR,MINUTE ETC.. PARA HORA
 
---------------------------------------------------------------------------------------MODULOS-( INTALAÇÃO )-------------------------------------------------------------------------------------------------------------------------------------------
+---------MODULOS-( INTALAÇÃO )----------------
 
 
 IMPORT + NOME DA BLIBIOTECA - PARA IMPORTAR TODAS FUNCIONALIDADES DA BLIBIOTECA
@@ -233,7 +231,9 @@ IMPORT + NOME DA BLIBIOTECA - PARA IMPORTAR TODAS FUNCIONALIDADES DA BLIBIOTECA
 FROM + NOME DA BLIBIOTECA + IMPORT + NOME DE UM MODULO DA BLIBIOTECA - PARA IMPORTAR SOMENTE FUNCIONALIDADES DO MODÚLO
 
 
---------------------------------------------------------------------------------------FATIAMENTO DE STR ( PEGAR PEDAÇOES DELA )----------------------------------------------------------------------------------------------------------------------------------= 
+-----FATIAMENTO DE STR ( PEGAR PEDAÇOS DELA )-
+
+
 # FRASE[ :4 ] - AQUI EU ESTOU DIZENDO QUE QUERO VER A LETRA  DE NÚMERO 4 ( MOSTRAR LETRA ( N ) )
 
 # FRASE=BRUNNO
@@ -256,10 +256,11 @@ FROM + NOME DA BLIBIOTECA + IMPORT + NOME DE UM MODULO DA BLIBIOTECA - PARA IMPO
 # FARASE[2::1 ] - AQUI EU ESTOU DIZENDO QUE COMEÇA DO 2 E VAI ATÉ O FINAL  PULANDO 1 CASAS (MOSTRAR ( N,F,R,I,))
 
 # FRASE= BRUNNO FARDIN
-         012345 67891011 
+         012345 678910
+
+--------------ANALISAR UMA STR-------------
 
 
--------------------------------------------------------------------------------------------------ANALISAR UMA STR ----------------------------------------------------------------------------------------------------------------------------------------
 # LEN(NOMEDAVARIAVEL) - AQUI VAI DIZER O TAMANHO DA VARIAVEL CONTANDO DE 0 ATÉ O FINAL DELA 
 
 # NOMEDAVARIAVEL.COUNT('LETRA QUE QUER PROCURAR' ) VAI DIZER QUANTAS LETRAS TEM VENDO A LETRA QUE VOCE ESCOLHEU DENTRO DAS ASPAS
@@ -276,7 +277,7 @@ EX: BRUNNO FAR D    I N    D  E   S  ( MOSTRAR FARDIN )  DE ZERO ATÉ 12 FORAM E
 
 # 'NOME DO QUE VOCE QUER VER SE TEM' IN NOMEDAVARIAVEL - AQUI ELE DIZ  SE DENTRO DA VARIAVEL X TEM O VALOR Y
 
------------------------------------------------------------------------------------ TRANSFORMAÇÃO----------------------------------------------------------------------------------------------------------------------------------------
+---------- TRANSFORMAÇÃO-----------------
 
 # NOMEDAVARIAVE.COUNT( INSIRA AQUI A PALAVRA QUE DESEJA CONTAR OS ESPAÇOS QUE TEM NESTA PALAVRA) 
 
@@ -301,15 +302,16 @@ EX: BRUNNO FAR D    I N    D  E   S  ( MOSTRAR FARDIN )  DE ZERO ATÉ 12 FORAM E
 
 
 
--------------------------------------------------------------------------------------------------DIVISÃO DE INDICIS--------------------------------------------------------------------------------------------------------------------------------------------
+--------------DIVISÃO DE INDICES----------
 -
-# NOMEDAVARIAVEL.SPLIT ( ) - SERVE PARA CRIAR UMA DIVISAO DAS PALAVRAS DA VARIAVEL
+# NOMEDAVARIAVEL.SPLIT ( ) - SERVE PARA CRIAR UMA DIVISAO DAS PALAVRAS DAS VARIAVEIS
 
------------------------------------------------------------------------------------------------- JUNÇÃO DE INDICES -----------------------------------------------------------------------------------------------------------------------------------------------
 
-"/".JOIN(NOMEDAVARIAVEL) ELE VAI JUNTAR OS COMPONENTES DA VARIAVEL CRIIANDO ESPAÇOS USANDO O /
+------- JUNÇÃO DE INDICES ------------------
 
----------------------------------------------------------------------------------------------------CONDIÇÕES----------------------------------------------------------------------------------------------------------------------------------------------------
+
+"/".JOIN(NOMEDAVARIAVEL) ELE VAI JUNTAR OS COMPONENTES DA VARIAVEL CRIIANDO ESPAÇOS USANDO O -----------------CONDIÇÕES---------------------
+
 #SEQUENCIAL É QUANDO SÓ TEM UMA SEQUENCIA A SER SEGUIDA
 # NA PROGRAMAÇÃO AGENTE USA () SE OU SEJA , SE ACONTECER ALGOMA COISA ELE FAZ ISSO
 #
@@ -352,11 +354,20 @@ EX: BRUNNO FAR D    I N    D  E   S  ( MOSTRAR FARDIN )  DE ZERO ATÉ 12 FORAM E
 36  VERDE CLARO    46    
 37  CINZA          47
 
-------------------------------------------------------------------------------------------CONDIÇÕES ANINHADAS------------------------------------------------------------------------------------------------------------------------------------
+------------CONDIÇÕES ANINHADAS-------
+
+
 # elif -  SE NÃO SE
 
 
-------------------------------------------------------------------------------------------- ESTRUTURA DE REPETIÇÃO--------------------------------------------------------------------------------------------------------------------------
+
+
+----ESTRUTURA DE REPETIÇÃO------------------
+
+
+
+
+
 # FOR NOME IN RANGE(0,99999999): - PARA CADA NOME IN LAÇO 99999999 VEZES
 
 # FOR ELEMENTO IN NOMEDAVRIAVEL: - AQUI DIZ : PARA CADA ELEMENTO NA NOMEDAVRIAVEL:
@@ -367,7 +378,10 @@ EX: BRUNNO FAR D    I N    D  E   S  ( MOSTRAR FARDIN )  DE ZERO ATÉ 12 FORAM E
 # WHILE TRUE - ENQUANTO FOR VERDADE INFINITO
 
 
------------------------------------------------------------------------ VARIAVEIS COMPOSTAS / TUPLAS ------------------------------------------------------------------------------
+
+
+----- VARIAVEIS COMPOSTAS / TUPLAS -----------
+
 
 TUPLAS SERVEM PARA GUARDAR VÁRIOS ELEMENTOS DENTRO  DELA EX:
 
@@ -392,7 +406,7 @@ NOMEDAVRIAVEL.INDEX ('PALAVRA QUE QUER MOSTRAR A POSIÇÃO') - SERVE PARA  MOSTR
 
 ENUMERATE(NOMEDAVARIAVEL) - SERVE PARA VER A POSIÇÃO DOS ELEMENTOS DA TUPLA
 
--------------------------------------------------------------------- LISTAS ----------------------------------------------------------------------------------------
+----------------------------------------------- ----------------LISTAS------------------------- -----------------------------------------------
 
 USA-SE CONCHETE PARA DIZER QUE É UMA LISTA . E A DIFRENÇA DE LISTA PARA TUPLAS É QUE A LISTA VOCÊ PODE MODIFICA-LAS
 
@@ -426,7 +440,7 @@ NOMEDAVARIAVEL.SORT(REVERSE=True) - SREVE PARA MOSTRAR OS NÚMEROS EM ORDEM SÓ 
 
 
 
--------------------------------------------------  BANCO DE DADOS --------------------------------------------------------------------------------------
+------------------------------------------------------------ BANCO DE DADOS------------------ -----------------------------------------------
 
 
 BLIBIOTECA
