@@ -11,6 +11,7 @@ const caixa1 = [...document.getElementsByClassName('container')][0]
 var elementos2 = [...caixa1.children]
 
 var c1 = document.getElementById('ct-1')
+var h = document.getElementsByTagName('header')[0]
 var topo = c1.offsetTop
 
 window.onscroll = function(){
@@ -19,8 +20,9 @@ window.onscroll = function(){
 }
 function fixar(){
     if(window.scrollY >= topo){
-        var h = document.getElementsByTagName('header')[0]
          h.classList.add('fixar')
+    }else{
+        h.classList.remove('fixar')
     }
 }
 
