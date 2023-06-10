@@ -11,11 +11,6 @@ const obj2 = [...document.getElementsByTagName('div')]
 console.log(obj1)
 console.log(obj2)
 
-obj2.forEach(Element=>{
-    console.log(Element)
-    Element.innerHTML = 'olá'
-
-})
 
 
 

@@ -10,6 +10,18 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: #5d5dff;
         }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            font-size: 1.2em;
+            text-shadow: 1px 1px solid black;
+            color: white;
+            width: 100%;
+            height: 60px;
+            background-color: black;
+        }
         div#ct-1{
             padding-top: 40px;
             text-align: center;
@@ -26,7 +38,7 @@
         div#ct-2{
             margin-top: 60px;
             border: 8px solid black;
-            height: 600px;
+            height:auto;
             background-color: #ffffff;
 
         }
@@ -36,6 +48,7 @@
             text-align: center;
             margin-right: 10px;
             margin-left:10px ;
+            margin-bottom: 20px;
             border-radius: 10px;
             max-width: 300px;
             background-color: #faf5f5;
@@ -47,6 +60,19 @@
             max-width: 400px;
             margin: 60px auto;
         }
+        footer{
+            font-size: 1.3em;
+            color: white;
+            height: 60px;
+            background-color: black;
+        }
+        footer p{
+            text-shadow: 2px 2px 3px black;
+        }
+        .fixar{
+            position: fixed;
+            top :0;
+        }
         @media screen and (min-width:378px){
             div.container > div{
                 margin: 14px auto;
@@ -56,28 +82,29 @@
     </style>
 </head>
 <body>
-    <div class="container" id="ct-1">
+    <header><h1>&copy;BrunnoFardin</h1></header>
+    <main>
+        <div class="container" id="ct-1">
         
-        <form action="">
-            <label for="Curso">Nome do Curso</label> <br>
-            <input type="text" name="" id="Curso">
-        </form>
-        <div>Adicionar</div>
-        <div>Remover Selecionado</div>
-        <div>Curso Selecionado</div>
-
-    </div>
-    <div class="container" id="ct-2">
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>Java-script</div>
-        <div>PHP</div>
-        <div>React</div>
-        <div>MySQL</div>
-        <div>ReactNative</div>
-
-    </div>
-
+            <form action="">
+                <label for="Curso">Nome do Curso</label> <br>
+                <input type="text" name="" id="Curso">
+            </form>
+            <div id="adicionar">Adicionar</div>
+            <div id="remover">Remover Selecionado</div>
+            <div id="cursoS">Curso Selecionado</div>
+        </div>
+        <div class="container" id="ct-2">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Java-script</div>
+            <div>PHP</div>
+            <div>React</div>
+            <div>MySQL</div>
+            <div>ReactNative</div>
+        </div>
+    </main>
+    <footer><p>Já sabe neh?</p></footer>
     <script src="./main.js"></script>
 </body>
 </html>
