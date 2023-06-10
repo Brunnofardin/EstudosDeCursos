@@ -2,7 +2,7 @@
 
 
  PROMPT COMANDO DICAS
-------------------------------------------------
+-----------------------------------------------
 
 code . - abe pasta selecionada
 
@@ -12,7 +12,7 @@ node main.js - executa pasta main.js
 
 
                  JAVA-SCRIPT
-------------------------------------------------------------
+-----------------------------------------------
 
 
 
@@ -33,7 +33,7 @@ QUE VOCÊ NÃO ERRE DIGITAÇÕES ETC...
 
 
   ENCREMENTO pre incremento e pos incremento
----------------------------------------------
+----------------------------------------------
 
 ++C - ANTES DE EXECUTAR C ELE INCREMENTA 1
 
@@ -59,14 +59,14 @@ CONST -   PODE SER ACESSADA SOMENTE DE ESCOPO ACIMA E NÃO
 
               
             OPERADORES
----------------------------------------
+-----------------------------------------------
 
 
 
 
 
-       OPERADORES MATEMÁTICOS
-----------------------------------------
+    OPERADORES MATEMÁTICOS
+------------------------------
 
 
 * -  MULTIPLICAÇÃO
@@ -97,8 +97,8 @@ ORDEM DE PRECENDÊNCIA
 
 
 
-     OPERADORES RELACIONAIS
------------------------------------------
+  OPERADORES RELACIONAIS
+--------------------------
 
 
 && - E
@@ -128,8 +128,8 @@ ORDEM DE PRECENDENCIA
 2° TODOS OS OUTROS DA ESQUERDA PARA DIREITA
 
 
-       OPERADOR TERNÁRIO
----------------------------
+     OPERADOR TERNÁRIO
+----------------------------
 
 ? - É VERDADE ? SIM OU NÃO
 
@@ -182,17 +182,6 @@ STRING - CARACTERE OU LETRA '7',@@34
 
  lembrando que para o typeof int e bollean são considerados
 Number ( número) ou seja não são diversificados com seus identificadores)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -257,16 +246,16 @@ ALUNO('Brunno',100)
 
 
 
-
-        FUNÇÕES
--------------------------
-
-
+   
+                 FUNÇÕES
+---------------------------------------------
 
 
 
-       FUNÇÕES PARAMETRIZADAS
------------------------------------
+
+
+    FUNÇÕES PARAMETRIZADAS
+--------------------------------
 
 
 
@@ -318,7 +307,7 @@ VAR NOME = FUCNTION(){
 
 
     FUNÇÕE COM RETORNO
-------------------------------------------
+---------------------------
 
 SÃO FUNÇÕES QUE TEM UM RETORNO A SER CUMPRIDO 
 
@@ -357,7 +346,7 @@ Brunno, Maria
 
 
              REST
---------------------------------------------------
+--------------------------------------------
 
 
 
