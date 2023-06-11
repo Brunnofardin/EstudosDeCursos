@@ -11,7 +11,15 @@ const caixa2 = [...document.getElementsByClassName('container')][1];
 
 var elementos2 = [...caixa2.children];
 
+/// cor
 
+var cor = [...document.getElementsByClassName('atividade')]
+
+cor.map((el)=>{
+    el.style.background='#5d5dff'
+    el.style.color='white'
+
+})
 
 
 
@@ -65,11 +73,8 @@ elementos1[3].addEventListener('click',()=>{
 
     ipn.filter((e,i,a)=>{ // pegando elemento da input class(inputs)
 
-        if(e.checked){ // se estiver checao faça algo:
-
-             // se estiver checado pegue o pai do elemento (e) 
-
-            console.log(e.parentElement.childNodes[0]) // mostre no console a variavel ( ar )
+        if(e.checked){ 
+            console.log(e.parentElement.firstChild) // mostre no console a variavel ( ar )
             
 
         }
