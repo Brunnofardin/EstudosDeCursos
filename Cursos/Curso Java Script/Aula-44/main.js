@@ -34,12 +34,6 @@ var topo = container1.offsetTop;
 
 var header = document.getElementsByTagName('header')[0];
 
-window.onscroll = function(){
-
-    fixar()
-
-}
-
 function fixar(){
 
     if(window.scrollY >= topo){
@@ -52,8 +46,12 @@ function fixar(){
 
     }
 }
+window.onscroll = function(){
 
-// LIDANDO COM BOTOES
+    fixar()
+
+}
+// Criando inputs
 
 elementos2.map((e,i,arry)=>{ // mapeando os (elemnetos2) do inicio ao fim
 
@@ -66,74 +64,89 @@ elementos2.map((e,i,arry)=>{ // mapeando os (elemnetos2) do inicio ao fim
     e.appendChild(input) // adicionamos a input como filha de elementos2
 })
 
+// funções
 
-elementos1[3].addEventListener('click',()=>{
+function adicionar(){
 
-    var ipn = [...document.getElementsByClassName('inputs')] // chamando input
+    elementos1[3].addEventListener('click',()=>{
 
-    ipn.filter((e,i,a)=>{ // pegando elemento da input class(inputs)
+        var ipn = [...document.getElementsByClassName('inputs')] // chamando input
 
-        if(e.checked){ 
-            console.log(e.parentElement.firstChild) // mostre no console a variavel ( ar )
-            
+        ipn.filter((e,i,a)=>{ // pegando elemento da input class(inputs)
 
-        }
+            if(e.checked){ 
+                console.log(e.parentElement.firstChild) // mostre no console a variavel ( ar )
+                
 
-
-
-    })
-    
-    
-
-})
-elementos1[2].addEventListener('click',()=>{ // adiconando click em elemento1 pos 2
-
-    var ipn = [...document.getElementsByClassName('inputs')] // chamando inputs
-
-    ipn.filter((e,i,a)=>{ // se estiver checado...
-
-        if(e.checked){
-
-            e.parentElement.remove(Element) // pegue o pai do elemento (e) e remova
-
-        }
+            }
 
 
 
-    })
-
-})
-elementos1[1].addEventListener('click',()=>{
-
-    var input = document.createElement('input')
-
-    input.setAttribute('type','radio')
-
-    input.setAttribute('class','inputs')
-
-    var nomeCurso = document.getElementById('Curso')
-
-    var div = document.createElement('div')
-
-    div.style.marginBottom='20px'
-
-    if(nomeCurso.value.length == 0){
-
-        alert('O curso não será adiconado por estar vazio')
+        })
         
-    }else{
+        
 
-        div.innerText=`${nomeCurso.value}`
+    })
+}
+function remover(){
 
-        div.appendChild(input)
+    elementos1[2].addEventListener('click',()=>{ // adiconando click em elemento1 pos 2
 
-        caixa2.appendChild(div)
+        var ipn = [...document.getElementsByClassName('inputs')] // chamando inputs
 
-    }
+        ipn.filter((e,i,a)=>{ // se estiver checado...
+
+            if(e.checked){
+
+                e.parentElement.remove(Element) // pegue o pai do elemento (e) e remova
+
+            }
 
 
-})
 
+        })
+
+    })
+
+}
+function Cursos(){
+
+    elementos1[1].addEventListener('click',()=>{
+
+        var input = document.createElement('input')
+
+        input.setAttribute('type','radio')
+
+        input.setAttribute('class','inputs')
+
+        var nomeCurso = document.getElementById('Curso')
+
+        var div = document.createElement('div')
+
+        div.style.marginBottom='20px'
+
+        if(nomeCurso.value.length == 0){
+
+            alert('O curso não será adiconado por estar vazio')
+            
+        }else{
+
+            div.innerText=`${nomeCurso.value}`
+
+            div.appendChild(input)
+
+            caixa2.appendChild(div)
+
+        }
+
+
+    })
+
+
+}
+adicionar()
+remover()
+Cursos()
 
 console.log('Bem-Vindo')
 console.log('Tudo ok até agora')
