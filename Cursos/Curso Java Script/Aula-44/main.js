@@ -53,31 +53,33 @@ window.onscroll = function(){
 }
 // Criando inputs
 
-elementos2.map((e,i,arry)=>{ // mapeando os (elemnetos2) do inicio ao fim
+elementos2.map((e,i,arry)=>{ 
 
-    var input = document.createElement('input') // criando elemento input
+    var input = document.createElement('input') 
 
-    input.setAttribute('type','radio') // setando atributo tipo:radio
+    input.setAttribute('type','radio') 
 
-    input.setAttribute('class','inputs') // setando class (inputs)
+    input.setAttribute('class','inputs') 
 
-    e.appendChild(input) // adicionamos a input como filha de elementos2
+    e.appendChild(input) 
 })
 
-// funções
+// FUNÇÕES
 
 function adicionar(){
 
     elementos1[3].addEventListener('click',()=>{
 
-        var ipn = [...document.getElementsByClassName('inputs')] // chamando input
+        var ipn = [...document.getElementsByClassName('inputs')] 
 
-        ipn.filter((e,i,a)=>{ // pegando elemento da input class(inputs)
+        ipn.filter((e,i,a)=>{ 
 
             if(e.checked){ 
-                console.log(e.parentElement.firstChild) // mostre no console a variavel ( ar )
+                alert(e.parentElement.firstChild.textContent)
                 
 
+            }else{
+                console.log('Erro escolha um curso')
             }
 
 
@@ -90,18 +92,16 @@ function adicionar(){
 }
 function remover(){
 
-    elementos1[2].addEventListener('click',()=>{ // adiconando click em elemento1 pos 2
+    elementos1[2].addEventListener('click',()=>{ 
+        var ipn = [...document.getElementsByClassName('inputs')]
 
-        var ipn = [...document.getElementsByClassName('inputs')] // chamando inputs
-
-        ipn.filter((e,i,a)=>{ // se estiver checado...
+        ipn.filter((e,i,a)=>{ 
 
             if(e.checked){
 
-                e.parentElement.remove(Element) // pegue o pai do elemento (e) e remova
+                e.parentElement.remove(Element) 
 
             }
-
 
 
         })
@@ -136,6 +136,8 @@ function Cursos(){
             div.appendChild(input)
 
             caixa2.appendChild(div)
+
+            nomeCurso.value=''
 
         }
 
