@@ -1,7 +1,7 @@
 
 
 
- PROMPT COMANDO DICAS
+        PROMPT COMANDO DICAS
 ------------------------------------------
 
 code . - abe pasta selecionada
@@ -20,7 +20,7 @@ node main.js - executa pasta main.js
 
 
 
-     STRICT - Modo restrito
+  STRICT - Modo restrito
 ------------------------------
 
 "use strict" 
@@ -33,15 +33,15 @@ QUE VOCÊ NÃO ERRE DIGITAÇÕES ETC...
 
 
   ENCREMENTO pre incremento e pos incremento
-----------------------------------------------
+---------------------------------------------
 
 ++C - ANTES DE EXECUTAR C ELE INCREMENTA 1
 
 C++ - DEPOIS DE USAR C ELE INCREMENTA 1
 
 
-                     VARIAVEIS
-----------------------------------------------
+           VARIAVEIS
+------------------------------------------
 
 
 
@@ -59,7 +59,7 @@ CONST -   PODE SER ACESSADA SOMENTE DE ESCOPO ACIMA E NÃO
 
               
             OPERADORES
------------------------------------------------
+----------------------------------------
 
 
 
@@ -83,8 +83,8 @@ CONST -   PODE SER ACESSADA SOMENTE DE ESCOPO ACIMA E NÃO
 
 
 
-ORDEM DE PRECENDÊNCIA
-=====================
+   ORDEM DE PRECENDÊNCIA
+==============================
 
 1° () - QUEM ESTÁ ENTRE PARÊNTESES
 
@@ -121,7 +121,7 @@ ORDEM DE PRECENDÊNCIA
 
 
 ORDEM DE PRECENDENCIA
-======================
+=============================
 
 1° ! || && NOT E OU 
 
