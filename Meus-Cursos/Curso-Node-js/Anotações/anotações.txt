@@ -1,0 +1,57 @@
+
+
+----------------------------------------- -BANCO DE DADOS node.js----------------------------------------------------------------------
+
+
+DATABASE - BANCO DE DADOS
+
+USE - USE
+
+UPDATE - ALTULIZAR
+
+CREATE - CRIAR
+
+SHOW - VER
+
+TABLE - TABELA
+
+SELECT - SELECIONE
+
+FROM -  DE
+
+WHERE - ONDE/CONDIÇÃO
+
+INSERT - INSIRA
+
+INTO - EM
+
+VALUES - VALORES
+
+DELETE - DELETE
+
+DESCRIBE - DESCREVA
+
+
+UPDATE NOMEDATABELA SET CAMPODESEJADO PARA MUDAR 'O QUE VAI COLOCAR' WHERE NOME = 'NOME-EX'
+
+
+-------------------------------------------------------MODULOS---------------------------------------------------------------------------------------
+
+
+node_modules - contem todos os modulos de terceiro
+
+package.js - lista todos modulos instalados pelo npm
+
+local - tal local determinado
+
+globalmente - todos
+
+PARA INTALAR MODULOS TERCEIRIZADOS USAMOS : npm init - Cria c]o package.jason (pasta que tem todos modulos instalados)
+
+                                            npm install nomedomodulo - instala localmente
+           
+                                            npm -g install nomeModulo - instala globalmente
+
+                                            
+
+                  
