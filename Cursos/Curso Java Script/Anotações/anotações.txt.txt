@@ -627,4 +627,10 @@ ULTIMA FILHA - LAST CHILD
 ----------------------
 
 
+REMOVE()
 
+
+
+
+  ADICIONANDO ELEMNTOS ANTES E DEPOIS DE ALGO
+--------------------------------
