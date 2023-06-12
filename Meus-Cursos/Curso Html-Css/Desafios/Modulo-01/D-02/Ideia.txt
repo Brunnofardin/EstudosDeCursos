@@ -1,0 +1,12 @@
+Fazer um desafio com duas imagens
+
+
+Ultilizar imagens  do Git-Hub
+
+e favicon do Gustavo Guanabara ( ícone de favorito )
+
+
+Texto:
+
+ 	<h1> Desafios das imagens </h1>
+        <p> Inserir imagens em HTML é muito simples, tanto no conteúdo quanto lá em cima. Como o íncone de favoritos! </p>

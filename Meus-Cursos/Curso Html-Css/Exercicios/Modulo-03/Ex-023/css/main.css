@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+caption{
+    padding-bottom: 10px;
+    font-weight:bolder;
+}
+table{
+    border-collapse: collapse;
+}
+thead,tfoot{
+    background-color:rgba(0, 0, 0, 0.726);
+    color:white;
+    font-weight: bolder;
+}
+thead{
+    text-align: center;
+}
+tbody > tr:nth-child(1n){
+    background-color: white;
+}
+tbody > tr:nth-child(2n){
+    background-color: rgb(161, 161, 161);
+
+
+}
+th{
+    padding: 13px;
+    border: 1px solid black;
+}
+td{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.num{
+    text-align: right;
+}

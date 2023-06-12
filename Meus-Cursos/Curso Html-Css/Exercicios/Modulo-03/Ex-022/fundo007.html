@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        section{
+            background-color: orangered;
+            margin:auto;
+            max-width: 900px;
+            height: 700px;
+        }
+        article{
+            background-color: white;
+            height: 200px;
+            min-width: 200px;
+            max-width: 900px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        iframe{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            oi
+            <article>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/57mhaIRqWoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

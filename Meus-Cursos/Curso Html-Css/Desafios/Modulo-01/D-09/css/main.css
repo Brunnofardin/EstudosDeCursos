@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(101, 101, 188);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+h1{
+    min-width: 200px;
+    max-width: 500px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+    margin: auto;
+    text-shadow: 1px 3px black;
+    text-align: center;
+}
+#menu-navegacao{
+    margin-top: 60px;
+    background-color:rgb(102, 102, 180);
+    min-width: 200px;
+    max-width: 420px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 1px 1px  12px rgba(0, 0, 0, 0.566);
+    border-radius: 4px;
+}
+#menu-navegacao li {
+    display: inline-block;
+    padding: 3px;
+}
+.videos{
+    min-width: 200px;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    margin: auto;
+}
+iframe{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    border-radius: 4px;
+
+}
+.ver-cursos{
+    text-align: center;
+    padding-top: 320px;
+}
+.ver-cursos a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.ver-cursos a:hover{
+    text-decoration: underline;
+    color:white;
+}
+img{
+    border-radius: 4px;
+}
+#voltar{
+    text-align: center;
+    padding-top: 90px;
+}

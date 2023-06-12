@@ -1,0 +1,171 @@
+/*Configs Globais*/
+@font-face {
+    font-family: 'Android';
+    src: url('../fonte/idroid.otf') format('truetype');
+}
+:root{
+    /*Paleta de cores*/
+
+    --cor01:#C5EBD6;
+    --cor02:#83E1AD;
+    --cor03:#3DDC84;
+    --cor04:#2FA866;
+    --cor05:#063D1E;
+
+    /*Fontes a serem usadas*/
+
+    --droid:'Android', sans-serif;
+    --Bebas:'Bebas Neue' cursive;
+}
+*{
+    margin:0;
+
+}
+
+/*Pagina-Inicial e config de diversas páginas*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: var(--cor01);
+}
+header{
+    color:white;
+    text-align: center;
+    background-image: linear-gradient(var(--cor04),var(--cor05));
+    min-height: 160px;
+}
+header h1{
+    padding-top: 24px;
+    text-shadow: 1px 4px 3px black;
+}
+header p{
+    padding-top: 20px;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    text-shadow: 1px 4px 3px black;
+}
+nav{
+    background-color: var(--cor05);
+    min-height: 34px;
+}
+nav a{
+    text-shadow: 1px 4px 3px black;
+    color:var(--cor02);
+    text-decoration: none;
+    padding: 13px;
+    font-weight: bolder;
+}
+nav a:hover{
+    background-color: var(--cor04);
+    border-radius: 3px;
+}
+a.links:hover{
+    color:red;
+    text-decoration: underline;
+}
+main{
+    padding: 13px;
+    background-color: white;
+    max-width: 1040px;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+article h1{
+    color:var(--cor05);
+    padding-bottom: 10px;
+    font-family: var(--droid);
+}
+article h2{
+    color: var(--cor04);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--droid);
+    font-size: 1.4em;
+}
+article p{
+    text-indent: 10px;
+    line-height: 27px;
+}
+abbr{
+    text-decoration: none;
+}
+img.nt{
+    width:100%;
+    display: block;
+    margin: auto;
+}
+#boneco-android{
+    max-width: 560px;
+}
+
+footer{
+    color:white;
+    background-color: var(--cor05);
+    text-align: center;
+    min-height: 30px;
+}
+footer p{
+    padding-top:6px;
+}
+
+/*Pagina de contato*/
+
+h2#txt{
+    color:white;
+
+}
+
+h2#txt:hover{
+    color:blue;
+}
+em{
+    background-color: var(--cor03);
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
+a.contato:hover{
+    color:red;
+
+}
+
+h2#subtitulo{
+    color:var(--cor04);
+    font-family: var(--droid), Helvetica, sans-serif;
+    text-align: center;
+}
+#redes{
+    padding: 23px;
+    padding-top: 40px;
+    padding-bottom: 17px;
+    min-width: 220px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    text-indent: none;
+
+}
+.redes{
+    min-width: 10px;
+    max-width: 22px;
+}
+.contato{
+    min-width: 10px;
+    max-width:600px;
+    padding-right: 6px;
+}
+#credit{
+    margin-top: 70px;
+}
+#creditando{
+    background-color: var(--cor03);
+    border-radius: 7px;
+    padding: 13px;
+    line-height: 24px;
+    text-indent: 10px;
+    max-width: 700px;
+    margin: auto;
+}
