@@ -1,0 +1,168 @@
+---------------------------MODULO-2 TRABALHANDO COM CONTEÚDO ---------------------------------------------------------------
+
+COMANDOS
+--------
+
+CONTEUDO - CONTEDU POSSUENTE
+
+PADDING - PADDING FICA JUNTO AO CONTEUDO
+
+BORDER - FICA DEPOIS DO PADDING
+
+OTLINE - OTLINE FICA ENTRA A BORDA E O OUTLINE.
+
+MARGIN - É O ULTIMO ELEMENTO  DO CONTEUDO E ELE FICA DA BORDA PARA FORA.
+
+
+---------------------------- MODULO-2 TRABALHANDO COM RESPONSIVIDADE---------------------------------------------------
+
+
+PARA TORNAR UMA IMAGEM FLEXVEL USAMOS 2 COMANDOS:
+
+MIN-WIDTH:200PX      - LARGURA MÍNIMA QUE UM ELEMNTO DEVE TER
+
+MAX-WIDTH:1040PX     - LARGURA MÁXIMA QUE UM ELEMENTO PODE CHEGAR
+
+ALGO IMPORTANTE DE CITAR É QUE, A IMAGEM SE ADAPTA AO TAMNHO DA TELA ENTRE 200PX A 1040PX COMO FOI USADO NO EXEMPLO.
+
+
+
+
+------------------------ MODULO-3 TRABALHANDO COM IMAGENS-------------------------------------------------------------~
+
+BACKGROUND-IMAGE:LINEAR-GRADINETE(TO BOTTOM COR 1, COR2, COR 3); - SREVE PARA FAZER UM DEGRADÊ COM 3 CORES OU MAIS DE CIMA PARA BAIXO.
+
+BACKGROUND-IMAGE : URL(LOCAL DO ARQUIVO) - CARREGA UMA IMAGEM DE FUNDO.
+
+BACKGROUND-IMAGE:REPEAT; - SERVE PARA FAZER UMA IMAGEM SE REPETIR VÁRIAS VEZES NO FUNDO DO TEU SITE.
+
+BACKGROUND-IMAGE:NO-REPEAT; - SERVE PARA UMA IMAGEM PARAR DE SE REPETIR NO FUNDO DO SEU SITE.
+
+BACKGROUND-SIZE: PX PX; - SERVE PARA DEFINIR A ALTURA E LARGURA DA SUA IMAGEM DE FUNDO.
+
+
+
+---------------------------- POSISCIONAMENTO VERTICAL E HORIZONTAL-------------------------------------------------
+
+
+SEMPE A PARTE DO CONTAINER TERÁ POSITION RELATIVE
+
+
+E O CONETUDO DO QUAL DESEJA POSICIONAR ABSOLUTE
+
+
+ASSIM PODEREMOS MEXER
+
+NOS ELEMNTOS :
+
+TOP
+
+E
+
+LEFT
+
+
+E TRANFORMAR ISTO PARA NEGATIVO E POSICIONAR PARA CIA OU ESQUERDA
+
+
+
+------------------------------------------- TARBALHANDO OM TABELAS---------------------------------------------------------
+
+
+PARA CIRAR UMA TABELA USAMOS A TAG <TABLE>
+
+
+A ESTRUTURA DE UMA TABELA BÁSICA É :  TABLE  - TABELA
+                                          TR - LINHA
+                                            TD - DADO
+
+
+VERTICAL-AILING - DECIDE ONDE SEU TD - DADOS  IRAM FICAR SEJA NO TOPO OU EMBAIXO ETC.. DE FORMA VERTCAL
+
+
+
+
+TABELAS GRANDES :
+
+
+
+          THEAD - CABEÇALHO DA TABELA 
+          TBODY - CORPO DA TABELA
+          TFOOT - RODAPÉ DA TABELA
+
+
+ABREVIAÇÕES
+
+TH - ALGO IMPORTANTE
+
+TD - UM DADO 
+
+TR -  UMA LINHA
+
+
+SCOPE DIZ A QUAL GRUPO SEU TITULO PERTENCE.
+
+
+COLSPAN - ESPANSÃO DE COLUNA
+
+ROWSPAN - EXPANSÃO DE LINHA
+
+
+
+
+COLGROUP
+
+
+COL - PARA CADA COLUNA QUE VOCÊ TIVER EM SUA TABELA - ATRIBUA UMA CLASSE E CONFIGURE TODAS SEM PRECISAR D ECONFIGURAR UMA A UMA
+
+---------------------------------------------- IFRAME------------------------------------------------------------------------
+
+
+LARGURA PADRÃO 300X150PX
+
+------------------------------------------- MEDIA QUERIES ---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROPIEDADES NOVAS :
+
+height: 100vh;
+width: 100vw;
+
+
+
+VH - VIEW PORT 
+
+VW - LARGURA DA MINHA VIEW
+
+POSITION ABSOLUTE - POSIÇÃO ABSOLUTA
+
+POSITION RELATIVE - POSIÇÃO RELATIVA
+
+TOP : - TOPO
+
+LEFT - ESQUERDA OU LADO ESQUERDO
+
+
+TRANFORM(TRANSLETE) - SERVE PARA TRANFORMAR PARA NEGATIVO TOPO PRA CIMA, LEFT PRA ESQUERDA
+
+
+
+box-sizing: border-box; - sereve para fazer a borda fazer parte do conteudo
+
+
+transform: translate(-4px,-4px,); - tranforma algo para esquerda e para cima
+
+----------------------------------------- MENU RESPONSIVO / HAMBURGUER ------------------------------------------------------------

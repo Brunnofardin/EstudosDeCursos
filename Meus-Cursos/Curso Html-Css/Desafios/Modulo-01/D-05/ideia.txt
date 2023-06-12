@@ -1,0 +1,19 @@
+A ideia é criar uma página de perfil social contendo:
+
+
+1 foto minha
+
+minhas redes sociais
+
+parágrafo de quem sou eu
+
+
+Links :
+
+
+Git-Hub : https://github.com/Brunnofardin
+
+Linkedin: https://www.linkedin.com/in/brunno-fardin-b42791233/
+
+Youtube: https://www.youtube.com/channel/UC46bdkygIeBB3EJZ3kn822w
+

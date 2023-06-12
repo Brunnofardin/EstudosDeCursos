@@ -1,0 +1,45 @@
+Iremos criar listas enumeradas 
+
+
+com emojis e seus códigos 
+
+
+
+
+  <h1> Meus emojis favoritos </h1>
+
+ 
+  <h2> carinhas </h2>
+
+  <ul> 
+     <li>     
+              U+1F913
+              U+1F92F
+              U+1F976
+      </li>
+   </ul>
+    
+
+
+   <h2>Mãos</h2>
+  
+    <ul>
+     <li>
+           U+1F596
+           U+1F91D
+           U+1F44D
+
+     </li>
+    </ul>
+   
+
+   <h2>Animais</h2>
+   
+   <ul>
+   <li>
+        U+1F431
+        U+1F436
+        U+1F981
+
+   </li>
+   </ul>

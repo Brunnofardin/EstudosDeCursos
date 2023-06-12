@@ -1,0 +1,3 @@
+A ideia desta vez é usar 9 imagens de um mapa só que essas imagens estão em pedaços
+
+então iremos posisciona-las e formar o mapa por completo
