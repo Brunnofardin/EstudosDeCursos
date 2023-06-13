@@ -1,0 +1,4 @@
+ Bom este projeto é meu primeiro projeto
+responsivo e feito pensado priemiramente
+no mobile e depois em outras versões com
+o uso de media queries e java-script.
