@@ -1,4 +1,4 @@
-----MODULO-2 TRABALHANDO COM CONTEUDO---------
+----MODULO-2 TRABALHANDO COM CONTEUDO-----
 
 COMANDOS
 --------
@@ -28,7 +28,7 @@ ALGO IMPORTANTE DE CITAR É QUE, A IMAGEM SE ADAPTA AO TAMNHO DA TELA ENTRE 200P
 
 
 
----- MODULO-3 TRABALHANDO COM IMAGENS--------
+---- MODULO-3 TRABALHANDO COM IMAGENS----
 
 BACKGROUND-IMAGE:LINEAR-GRADINETE(TO BOTTOM COR 1, COR2, COR 3); - SREVE PARA FAZER UM DEGRADÊ COM 3 CORES OU MAIS DE CIMA PARA BAIXO.
 
@@ -66,7 +66,7 @@ E TRANFORMAR ISTO PARA NEGATIVO E POSICIONAR PARA CIA OU ESQUERDA
 
 
 
--------- TARBALHANDO OM TABELAS---------------
+-------- TARBALHANDO OM TABELAS--------
 
 
 PARA CIRAR UMA TABELA USAMOS A TAG <TABLE>
@@ -115,12 +115,12 @@ COLGROUP
 
 COL - PARA CADA COLUNA QUE VOCÊ TIVER EM SUA TABELA - ATRIBUA UMA CLASSE E CONFIGURE TODAS SEM PRECISAR D ECONFIGURAR UMA A UMA
 
---------------------- IFRAME-----------------
+--------------------- IFRAME----------
 
 
 LARGURA PADRÃO 300X150PX
 
---------------- MEDIA QUERIES ------------
+--------------- MEDIA QUERIES ---------
 
 
 
@@ -154,4 +154,4 @@ box-sizing: border-box; - sereve para fazer a borda fazer parte do conteudo
 
 transform: translate(-4px,-4px,); - tranforma algo para esquerda e para cima
 
----- MENU RESPONSIVO / HAMBURGUER ------------
+---- MENU RESPONSIVO / HAMBURGUER ------
