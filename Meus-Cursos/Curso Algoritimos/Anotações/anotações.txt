@@ -3,6 +3,14 @@ ______________________________
 _______________________________
 
 
+O que é algoritimo?
+
+São conjuntos de passos 
+para resolução de um problema
+
+
+
+
 
 -----VARIAVEIS------------
 
@@ -72,6 +80,9 @@ STR - STRING OU CARACTERE
 
 BOOLEAN - LÓGICO
 
+-------DECLARAR VARIAVEL-----
+
+NOMEVARIAVEL:TIPO
 
 --------ATRIBUIÇÕES--------
 
