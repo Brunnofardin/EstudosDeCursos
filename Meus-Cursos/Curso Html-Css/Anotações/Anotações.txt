@@ -1,4 +1,162 @@
+=====================================
+    ANOTAÇÕES DO CURSO  HTML E CSS
+=====================================
+
+
+------------------------------
+    SERVIDOR ? E CLIENTE ?
+------------------------------
+
+SERVIDOR - ENTREGA DE DADOS.
+
+CLIENTE  - RECEBIMENTO DE DADOS.
+
+
+-------------------------------
+     FONT-END ? BACK-END ? 
+
+         FULL STACK ?
+-------------------------------
+
+
+
+CLIENT-SIDE :  TECNOLOGIAS
+              PARA O LADO DO
+              CLIENTE.
+
+SERVER-SIDE :  DESNVOLVE PARA 
+              O LADO DO SERVIDOR .
+
+
+
+   FRONT-END :
+  ------------
+
+DEV - DESENVOLVERDOR WEB.
+
+ DESENVOLVEDOR PARA O LADO 
+DO CLIENTE.
+
+
+* PARTE VISUAL.
+
+* INTERATIVIDADE.
+
+* DAR UMA BOA EXPERIÊNCIA PARA O USUARIO.
+
+* (HTML,CSS,JAVA-SCRIPT,GIMP,PHOTOSHOP).
+
+
+
+   BACK-AND :
+  ------------
+
+* LIGAÇÃO ENTRE O CÓDIGO COM O SERVIDOR.
+
+* ENTRADA E SAIDA DE DADOS.
+
+* COLETA DE DADOS.
+
+* (PHP,JAVA-SCRIPT NODE JS,C,PYTHON,JAVA).
+
+
+   FULL STACK :
+  --------------
+
+* SABE DE TUDO UM POUCO.
+
+*  LIDA COM OS DOIS LADOS
+  (BACK-AND E FRONT-END).
+
+
+
+-----------------------------------
+   PARÁGRAFOS E QUEBRAS DE LINHAS
+-----------------------------------
+
+TAG <P> E TAG <BR>
+-------------------
+
+BR - BREAK ROW ( QUEBRA DE LINHA )
+
+<P> - CRIA UM PARÁGRAFO
+
+EX:
+   
+    <P>
+       Olá Mundo
+    </P>
+
+
+<BR> - CRIA UMA QUEBRA DE LINHA
+
+
+EX:
+
+   <P>
+     Olá Mundo <BR>
+     Meu primeiro parágrafo
+   </P>
+
+-----------------------------------
+ SIMBOLO DE MAIOR E MENOR QUE
+-----------------------------------
+
+&LT - MENOR QUE (<)
+
+&GT - MAIOR QUE (>)
+
+
+
+AULA 1 CAPITULO 5 PARADA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ----MODULO-2 TRABALHANDO COM CONTEUDO-----
+
 
 COMANDOS
 --------
@@ -17,9 +175,9 @@ MARGIN - É O ULTIMO ELEMENTO  DO CONTEUDO E ELE FICA DA BORDA PARA FORA.
 -- MODULO-2 TRABALHANDO COM RESPONSIVIDADE--
 
 
-PARA TORNAR UMA IMAGEM FLEXVEL USAMOS 2 COMANDOS:
+PARA TORNAR UMA IMAGEM FLEXIVEL USAMOS 2 COMANDOS:
 
-MIN-WIDTH:200PX      - LARGURA MÍNIMA QUE UM ELEMNTO DEVE TER
+MIN-WIDTH:200PX      - LARGURA MÍNIMA QUE UM ELEMENTO DEVE TER
 
 MAX-WIDTH:1040PX     - LARGURA MÁXIMA QUE UM ELEMENTO PODE CHEGAR
 
@@ -28,7 +186,7 @@ ALGO IMPORTANTE DE CITAR É QUE, A IMAGEM SE ADAPTA AO TAMNHO DA TELA ENTRE 200P
 
 
 
----- MODULO-3 TRABALHANDO COM IMAGENS----
+---- MODULO-3 TRABALHANDO COM BACKGROUND----
 
 BACKGROUND-IMAGE:LINEAR-GRADINETE(TO BOTTOM COR 1, COR2, COR 3); - SREVE PARA FAZER UM DEGRADÊ COM 3 CORES OU MAIS DE CIMA PARA BAIXO.
 
@@ -62,11 +220,11 @@ E
 LEFT
 
 
-E TRANFORMAR ISTO PARA NEGATIVO E POSICIONAR PARA CIA OU ESQUERDA
+E TRANFORMAR ISTO PARA NEGATIVO E POSICIONAR PARA CIMA OU ESQUERDA
 
 
 
--------- TARBALHANDO OM TABELAS--------
+-------- TARBALHANDO COM TABELAS--------
 
 
 PARA CIRAR UMA TABELA USAMOS A TAG <TABLE>
@@ -113,22 +271,42 @@ ROWSPAN - EXPANSÃO DE LINHA
 COLGROUP
 
 
-COL - PARA CADA COLUNA QUE VOCÊ TIVER EM SUA TABELA - ATRIBUA UMA CLASSE E CONFIGURE TODAS SEM PRECISAR D ECONFIGURAR UMA A UMA
+COL - PARA CADA COLUNA QUE VOCÊ TIVER EM SUA TABELA 
 
---------------------- IFRAME----------
+ATRIBUA UMA CLASSE E CONFIGURE TODAS SEM PRECISAR 
+
+DE CONFIGURAR UMA A UMA
+
+-------------IFRAME----------
 
 
 LARGURA PADRÃO 300X150PX
 
---------------- MEDIA QUERIES ---------
+
+
+
+
+           FORMULARIOS
+------------------------------
+
+
+
+
+
+
+
+
+
+---------MEDIA QUERIES ----
 
 
 
 
 PROPIEDADES NOVAS :
 
-height: 100vh;
-width: 100vw;
+HEIGHT: 100vh;
+
+WIDTH: 100vw;
 
 
 
@@ -149,8 +327,7 @@ TRANFORM(TRANSLETE) - SERVE PARA TRANFORMAR PARA NEGATIVO TOPO PRA CIMA, LEFT PR
 
 
 
-box-sizing: border-box; - sereve para fazer a borda fazer parte do conteudo
-
+BOX-SIZING: BORDER-BOX; - SERVE PARA FAZER A BORDA FAZER PARTE DO CONTEUDO
 
 transform: translate(-4px,-4px,); - tranforma algo para esquerda e para cima
 
