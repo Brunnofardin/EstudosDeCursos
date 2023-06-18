@@ -526,8 +526,12 @@ idades.filter(V,I,A)=>{
 
 }
 
+        FIND
+---------------------------------
 
-
+PERMITE PESQUISAR OS ELEMNTOS DE 
+UMA ARRAY E RETORNA O PRIMEIRO 
+ELEMENTO ENCONTRADO
 
 
 
