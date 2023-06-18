@@ -153,11 +153,75 @@ TER EM MÃOS O CÓDIGO DO EMOJI EX:
 
 &7F932; - SIMBOLO EMOJI CARINHA FELIZ
 
+--------------------------------------
+           LISTAS
+--------------------------------------
+
+PARA CRIAR UMA LISTA USAMOS :
+
+
+OL -  LISTA ORDENADA (ORDERED LIST)
+------------------------------------
+
+LI - ITEM LISTA (LIST ITEM)
+
+
+EXISTEM PARAMETROS QUE PODE SER COLOCADOS 
+EM OL PARA SER UMA LISTA ALFABÉTICA(A,B,C,
+D..Z)  OU UMA LISTA NUMERIA (1,2,3,4...).
+
+<OL TYPE='1>
+<OL TYPE='A'>
+
+PODEMOS DIZER TABEM PARA LISTA COMEÇAR EM 4 
+BASTA USAR O PARAMETRO START
+
+EX:
+
+<OL TYPE='1' START='4'>
 
 
 
+UL - LISTAS NÃO ORDENADAS (UNORDERED LIST)
+--------------------------------------------
+
+SEM NÚMERAÇÃO (ITENS QUE NÃO NECESSITAM SER
+NUMERADOS)
+
+TAMBEM PODES PASSAR O PARAMETRO DE TIPO PARA ELAS:
+
+DISK - DISCO PRETINHO
+
+CIRCLE - BOLINHA ABERTA
+
+SQUARE - BOLINHA QUADRADINHA
+
+<UL TYPE='CIRCLE'>
 
 
+LISTA DE DEFINIÇÃO
+----------------------------------------
+
+DL - DEFINITION LIST (LISTA DE DEFINIÇÃO)
+
+DT - TERMO
+DD - DESCRIÇÃO EX:
+
+<DL>
+   <DT>CARRO</DT>
+   <DD>DE 4 RODAS VOADOR</DD>
+   
+</DL>
+
+
+
+---------------------------------------
+            LINKS
+---------------------------------------
+
+A - ANCORA
+
+HREF - IPERLINK 
 
 
 
