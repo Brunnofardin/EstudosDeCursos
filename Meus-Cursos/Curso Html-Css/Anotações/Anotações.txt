@@ -221,18 +221,43 @@ DD - DESCRIÇÃO EX:
 
 A - ANCORA
 
-HREF - IPERLINK 
+HREF - REFERÊCIA DE HIPERTEXTO
+
+REL - RELATIVO A
+
+<A HREF='URL' REL=''>
+---------------------------------------
+  TIPOS DE REL
+---------------------------------------
+
+NEXT - PROXIMO
+
+PREVIOUS - ANTERIOR
+
+AUTHOR - VAI PARA O SITE DO AUTOR DO ARTIGO
+
+EXTERNAL - EXTERNO
+
+NOFOLOLW - SITE NÃO ENDOSSADO
+
+----------------------------------------
+TIPOS DE MEDIA TYPES
+-----------------------------------------
+
+IMAGE/JPEG
+
+APLICATION/ZIP
+
+APLICATION/PDF
+
+VIDEO/MP4
+
+AUDIO/ACC
 
 
-
-
-
-
-
-
-
-
-
+-----------------------------------------
+LINKS PARA DOWLOADS
+-----------------------------------------
 
 
 
