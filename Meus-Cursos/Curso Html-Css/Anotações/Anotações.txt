@@ -108,12 +108,50 @@ EX:
 
 
 
-AULA 1 CAPITULO 5 PARADA
+------------------------------------
+    FORMATOS DE IMAGENS
+------------------------------------
+
+JPEG - CRIADO EM 1983.
+
+* COMPACTA IMAGENS.
+
+* DIMINUI O ESPAÇO.
 
 
+PNG - CRIADO EM 1996.
+
+* CRIADO PELA W3C.
+
+* COMPACTAÇÃO.
+
+* TRANSPARENTE.
 
 
+Como usar uma imgem em HTML ?
 
+             Texto alternativo
+             |
+<img src='' alt=''>
+  |       |       
+ imagem   caminho
+
+-------------------------------------
+        SIMBOLOS E EMOJIS
+-------------------------------------
+
+PARA CARREGAR SIMBOLOS USAMOS:
+
+(&NOMEDOSIMBOLO;)
+
+EX:
+
+  &copy; - copirate
+
+COM EMOJIS É O MESMO PROCEDIEMNTO,BASTA 
+TER EM MÃOS O CÓDIGO DO EMOJI EX:
+
+&7F932; - SIMBOLO EMOJI CARINHA FELIZ
 
 
 
