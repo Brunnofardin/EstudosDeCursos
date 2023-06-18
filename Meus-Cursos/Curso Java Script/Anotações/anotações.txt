@@ -531,9 +531,16 @@ idades.filter(V,I,A)=>{
 
 PERMITE PESQUISAR OS ELEMNTOS DE 
 UMA ARRAY E RETORNA O PRIMEIRO 
-ELEMENTO ENCONTRADO
+ELEMENTO ENCONTRADO DE ACORDO
+COM SUA PESQUISA
 
 
+find((e,i,array)=>{
+  
+})
+
+find retorna par uma FUNÇÃO
+o elemento, o indice e a array
 
   STOP PROPAGATION
 ----------------------------------
