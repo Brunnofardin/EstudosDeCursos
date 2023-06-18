@@ -1,1 +1,0 @@
-i18n.setData(JSON.parse("{\"plugin-default-block-placeholder\":\"Type something\",\"plugin-default-text-default-content\":\"Text\",\"plugin-default-text-name\":\"Text\"}"),'en');

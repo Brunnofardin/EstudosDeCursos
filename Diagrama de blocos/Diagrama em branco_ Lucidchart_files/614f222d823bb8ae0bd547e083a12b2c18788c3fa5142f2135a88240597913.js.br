@@ -1,2 +1,0 @@
-function l_lGh(a,b){return l_gVe(a,c=>c instanceof b)}var l_mGh=class extends l_Nv{filter(a){a&&-1<a.indexOf("::")&&(a="http://"+a.substr(a.indexOf("::")+2));return a}};const l_nGh=new l_g("ThumbURL"),l_oGh=new l_g("URL");var l_pGh=class extends l_LI{constructor(a){super(a,null,[]);this.Qid=new l_mGh(l_nGh,"",this.internal.ab);this.url=new l_Nv(l_oGh,"",this.internal.ab);this.Lad.setValue(0)}Kb(){return l_4d(super.Kb(),["dockOnAnotherBlock"])}Iya(){return!1}X1a(){return!0}};
-//# sourceURL=/js/application/chart_app/chunk/gen_1000000000000000038400.js?compiled=1
