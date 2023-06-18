@@ -258,11 +258,29 @@ AUDIO/ACC
 -----------------------------------------
 LINKS PARA DOWLOADS
 -----------------------------------------
+<a href='' rel='' dowload='' type''>
 
 
 
+----------------------------------
+ TAGS SEMÂTICAS
+ --------------------------------
 
+HEADER - CABEÇALHO
 
+MAIN - CONTEUDO DO SITE
+
+FOOTER - CREDITOS,LINKS EXTRAS ETC...
+
+NAV - MENU NAVEGAÇÃO ETC...
+
+MENU - MENU DE NAVEGAÇÃO ETC..
+
+SECTION - SEÇÃO
+
+ARTICLE - ARTIGO
+
+ANSIDE - CONTEUDO PERIFÉRICO AO ARTIGO
 
 
 
@@ -413,18 +431,66 @@ LARGURA PADRÃO 300X150PX
 
 
 
-           FORMULARIOS
+       FORMULARIOS
 ------------------------------
 
 
+CRIADO ENTRE AS TAGS (<form> e </form>)
+
+<form> E </form>
+
+<label> - etiqueta para inputs
+
+<Label for='IdDaInput'>texto</label>
+
+<input type='submit' value='Enviar' id='id'>
 
 
+    Desligando/ligando autocomplete
+-------------------------------------
+
+autocomplete='on'
+
+autocomplete='off'
 
 
+        Action=''
+----------------------------------------
+
+quando for enviado vai para 
+action(arquivo)
 
 
+      Get e Post
+-------------------------
 
----------MEDIA QUERIES ----
+method='metodo'
+
+Get - deixa os dados na URL (max-3000mil bytes)
+
+post - deixa os dados "ocultos"
+
+         TYPES
+-----------------------------
+reset - apagar /resetar dados
+
+submit - enviar
+
+
+parametros
+-----------------------------
+
+placeholder - dá uma dica do que é para fazer
+
+size - tamanho 
+
+required - requer algo
+
+minlength - comprimento minimo
+
+maxlength - comprimento máximo
+
+---------MEDIA QUERIES --------------------------
 
 
 
@@ -459,3 +525,7 @@ BOX-SIZING: BORDER-BOX; - SERVE PARA FAZER A BORDA FAZER PARTE DO CONTEUDO
 transform: translate(-4px,-4px,); - tranforma algo para esquerda e para cima
 
 ---- MENU RESPONSIVO / HAMBURGUER ------
+
+
+
+no futuro estudar https para não revelar dados
