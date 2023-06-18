@@ -1,0 +1,2 @@
+var l_XZ=class extends l_LI{isType(a){return"shape"===a}};
+//# sourceURL=/js/application/chart_app/chunk/gen_61101000000200000580800010000041200.js?compiled=1

@@ -1,0 +1,1 @@
+i18n.setData(JSON.parse("{\"advanced-options-swimlane-header-color\":\"Header\",\"advanced-options-swimlane-lane-color\":\"Lane\",\"advanced-options-swimlane-lanes\":\"Lanes\",\"advanced-options-swimlane-orientation\":\"Orientation\",\"advanced-options-swimlane-text-orientation\":\"Text Orientation\"}"),'en');

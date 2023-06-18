@@ -1,0 +1,42 @@
+@media screen and (min-width:498px){
+    :root{
+        --cor1:gray;
+        --cor2:darkgray;
+        --cor3:white;
+        --cor4:#636060;
+        --cor5:#363636;
+    
+    }
+    menu{
+        display: block;
+        padding-top: 20px;
+        padding-left: 80px;
+        padding-bottom: 10px;
+        text-align: left;
+    }
+    menu ul li{
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: var(--cor5);
+        display: inline-block;
+    }
+    span.material-icons{
+        display: none;
+    }
+    .top1{
+        margin-top: 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+    div#inputs{
+        padding-top: 40px;
+        text-align: center;
+    }
+    input{
+        cursor: pointer;
+        height: 50px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}

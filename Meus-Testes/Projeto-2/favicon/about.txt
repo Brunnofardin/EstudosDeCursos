@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Mate
+- Font Author: Copyright 2011 The Mate Project Authors (https://github.com/etunni/mate) with Reserved Font Name "Mate"
+- Font Source: http://fonts.gstatic.com/s/mate/v15/m8JdjftRd7WZ2z28WoXSaLU.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

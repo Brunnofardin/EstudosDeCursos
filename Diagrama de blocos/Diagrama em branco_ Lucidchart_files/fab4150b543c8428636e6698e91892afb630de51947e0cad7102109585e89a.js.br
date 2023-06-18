@@ -1,0 +1,4 @@
+function l_VKh(a,b){const c=a.SNa.value;if(!c)return!1;c.tMb(b);a.dispatchEvent(l_faf);a.SNa.value=void 0;return!0}
+var l_WKh=class extends l_HN{constructor(a,b,c){super(a);this.lu=b;this.Oe=c;this.name="stamp-new-generator";this.i9b=!0;this.SNa=new l_v(this,void 0,l_c)}cursor(){if(this.isPrimary&&this.SNa.value)return"crosshair"}tk(){return this.isPrimary&&!!this.SNa.value}Zr({kc:a}){return this.isPrimary&&l_VKh(this,a.fb)}EU({element:a,kc:b,zoom:c}){if(a instanceof l_1J&&!l_HN.mba(b.fb,a,c,null))return this.isPrimary&&l_VKh(this,b.fb)}};
+l_WKh=__decorate([l_r(),__metadata("design:paramtypes",[l_FN,l_dK,l_jK])],l_WKh);
+//# sourceURL=/js/application/chart_app/chunk/gen_40000000000001000000000000000040200.js?compiled=1

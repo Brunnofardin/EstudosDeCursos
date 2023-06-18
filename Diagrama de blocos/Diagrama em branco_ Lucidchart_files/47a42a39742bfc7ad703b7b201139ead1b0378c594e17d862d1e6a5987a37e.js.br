@@ -1,0 +1,1 @@
+i18n.setData(JSON.parse("{\"plugin-flowchart-shape-process\":\"Process\",\"plugin-flowchart-shape-process-keywords\":\"square,rectangle\",\"plugin-flowchart-shape-roundedrectcontainer\":\"Rounded Rectangle Container\"}"),'en');
