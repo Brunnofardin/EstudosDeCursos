@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 1.3em;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        header{
+            height: 30px;
+            text-align: center;
+            color: white;
+            background-color: darkblue;
+        }
+        main{
+            background-color: black;
+        }
+        abbr{
+            text-decoration: none;
+        }
+        h1{
+            color: black;
+            text-align: center;
+            background-color: rgb(255, 192, 109);
+        }
+        h2{
+            color: white;
+            background-color:darkcyan;
+
+        }
+        section{
+            /*top right bottom left*/
+            padding:6px ;
+            margin-top: 20px;
+            background-color: darkgray;
+        }
+        #formulario{
+            display: block;
+            text-align: center;
+        }
+        #enviar{
+            margin-top: 10px;
+        }
+        input{
+            margin: auto;
+          
+            display: block;
+        }
+        ol,ul li{
+            line-height: 28px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color:red;
+        }
+        footer{
+            height: 27px;
+            text-align: center;
+            color: white;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <header>Testando meu conhecimento em semântica</header>
+    <main>
+        <article>
+            <section >
+                <h1>Trabalhando com links para dowloader</h1>
+                <p><strong>Clique no link</strong> <mark>abaixo</mark> e veja meu pdf <em><abbr title="Brunno Fardin de Souza">com minhas imagens</abbr></em></p>
+                <a href="./pdf.pdf" rel="external" download="pdf.rar">Baixe aqui</a>
+            </section>
+            <section id="formulario">
+                <h1>Fromulários</h1>
+                <p>Observe o formulário abaixo: </p>
+                <form action="" autocomplete="on" method="post">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="" id="nome" required> <br>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="" id="sobrenome" required> <br>
+                    <label for="idade">Idade</label>
+                    <input type="number" name="" id="idade" required> <br>
+                    <label for="email">e-mail </label>
+                    <input type="email" name="" id="email" required> <br>
+                    <label for="senha">senha</label>
+                    <input type="password" name="" id="senha" required>
+                    <input type="submit" value="Enviar" id="enviar">
+
+                </form>
+            </section>
+            <section>
+                <h1>Endereço</h1>
+                <p><address><abbr style="text-decoration: none;" title="Endereço">Av. beira mar 1922 praia do morro guarapari</abbr></addres></p>
+            </section>
+            <section>
+                <h2>Java script</h2>
+                <p>Código java-script:</p>
+                <p><code>let nome = document.getElementbyid('nome')</code></p>
+            </section>
+            <section>
+                <h1>Tags</h1>
+                <h2>Tags semânticas</h2>
+                <ol type="1">
+                    <li>Header (cabeçalho)</li>
+                    <li>Main (conteudo da página)</li>
+                    <li>Footer (links extras,créditos etc...)</li>
+                    <li>Article (artigo)</li>
+                    <li>Ansider (algo extra do artigo)</li>
+                </ol>
+                <h2>Tags mortas</h2>
+                <ul type="circle">
+                    <li><code>&lt;i&gt;</code> (ítalico)</li>
+                    <li><code>&lt;font-colo&gt;</code> (cor)</li>
+                    <li><code>&lt;b&gt;</code> (negrito)</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    <footer>Desenvolvido por Brunno Fardin de Souza</footer>
+</body>
+</html>
