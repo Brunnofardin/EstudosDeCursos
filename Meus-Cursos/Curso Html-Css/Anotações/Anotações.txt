@@ -146,7 +146,7 @@ PARA CARREGAR SIMBOLOS USAMOS:
 
 EX:
 
-  &copy; - copirate
+  &copy; - copirate (©)
 
 COM EMOJIS É O MESMO PROCEDIEMNTO,BASTA 
 TER EM MÃOS O CÓDIGO DO EMOJI EX:
