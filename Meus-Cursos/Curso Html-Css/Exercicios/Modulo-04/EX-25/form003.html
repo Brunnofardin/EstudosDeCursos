@@ -4,29 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            background-color:#6868ff;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            margin-top: 10px;
+        }
+        section{
+            color: black;
+            position: absolute;
+            width: 90%;
+            min-height: 50%;
+            padding: 10px;
+            left: 50%;
+            top: 50%;
+            text-align: center;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            box-shadow: 1px 1px 10px black;
+        }
+    </style>
 </head>
 <body>
     
     <h1>Teste de formulário </h1>
-    <form action="java.js" autocomplete="on" method="get">
-        <p>
+    <form action="./brunno.txt" autocomplete="on" method="get">
+      <section id="dados_pessoais">
+        <p id="nome-sobrenome">
             <label for="nome">Nome:</label>
-            <input type="text" name="" id="nome" required placeholder="nome completo" autocomplete="name">
+            <input type="text" name="" id="nome" autocomplete="name" required size="8"> <br>
+            <label for="sobrenome">Sobrenome: </label>
+            <input type="text" name="" id="sobrenome" autocomplete="name" required>
+
         </p>
-        <p>
-            <label for="media">Media</label>
-            <input type="number" name="" id="media" min="0" max="10" required step="0.1">
+        <p id="idade">
+            <label for="idade">Idade: </label>
+            <input type="number" name="" id="idade"  required>
+
         </p>
-        <p>
-            <label for="mes">Mês da prova</label>
-            <input type="month" name="" id="mes"> <br>
-            <label for="dia">Dia da prova</label>
-            <input type="date" name="" id="dia">
+        <p id="dia">
+            <label for="Dia">Data: </label>
+            <input type="date" name="" id="Dia" required>
+
         </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
+      </section>
     </form>
 </body>
 </html>

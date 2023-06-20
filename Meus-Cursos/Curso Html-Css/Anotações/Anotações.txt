@@ -3,20 +3,20 @@
 =====================================
 
 
-------------------------------
+==================================
     SERVIDOR ? E CLIENTE ?
-------------------------------
+================================== 
 
 SERVIDOR - ENTREGA DE DADOS.
 
 CLIENTE  - RECEBIMENTO DE DADOS.
 
 
--------------------------------
+===================================
      FONT-END ? BACK-END ? 
 
          FULL STACK ?
--------------------------------
+===================================
 
 
 
@@ -70,9 +70,9 @@ DO CLIENTE.
 
 
 
------------------------------------
+=======================================
    PARÁGRAFOS E QUEBRAS DE LINHAS
------------------------------------
+=======================================
 
 TAG <P> E TAG <BR>
 -------------------
@@ -98,9 +98,9 @@ EX:
      Meu primeiro parágrafo
    </P>
 
------------------------------------
+=======================================
  SIMBOLO DE MAIOR E MENOR QUE
------------------------------------
+=======================================
 
 &LT - MENOR QUE (<)
 
@@ -108,9 +108,9 @@ EX:
 
 
 
-------------------------------------
+========================================
     FORMATOS DE IMAGENS
-------------------------------------
+========================================
 
 JPEG - CRIADO EM 1983.
 
@@ -136,9 +136,9 @@ Como usar uma imgem em HTML ?
   |       |       
  imagem   caminho
 
--------------------------------------
+=======================================
         SIMBOLOS E EMOJIS
--------------------------------------
+=======================================
 
 PARA CARREGAR SIMBOLOS USAMOS:
 
@@ -153,9 +153,9 @@ TER EM MÃOS O CÓDIGO DO EMOJI EX:
 
 &7F932; - SIMBOLO EMOJI CARINHA FELIZ 😃
 
---------------------------------------
+========================================
            LISTAS
---------------------------------------
+========================================
 
 PARA CRIAR UMA LISTA USAMOS :
 
@@ -215,9 +215,9 @@ DD - DESCRIÇÃO EX:
 
 
 
----------------------------------------
+=======================================
             LINKS
----------------------------------------
+======================================
 
 A - ANCORA
 
@@ -226,9 +226,9 @@ HREF - REFERÊCIA DE HIPERTEXTO
 REL - RELATIVO A
 
 <A HREF='URL' REL=''>
----------------------------------------
-  TIPOS DE REL
----------------------------------------
+------------------------------------
+TIPOS DE REL
+------------------------------------
 
 NEXT - PROXIMO
 
@@ -240,9 +240,9 @@ EXTERNAL - EXTERNO
 
 NOFOLOLW - SITE NÃO ENDOSSADO
 
-----------------------------------------
+------------------------------------
 TIPOS DE MEDIA TYPES
------------------------------------------
+------------------------------------
 
 IMAGE/JPEG
 
@@ -255,16 +255,16 @@ VIDEO/MP4
 AUDIO/ACC
 
 
------------------------------------------
-LINKS PARA DOWLOADS
------------------------------------------
+------------------------------------
+LINKS PARA DOWLOAD
+-----------------------------------
 <a href='' rel='' dowload='' type''>
 
 
 
-----------------------------------
+===================================
  TAGS SEMÂTICAS
- --------------------------------
+====================================
 
 HEADER - CABEÇALHO
 
@@ -299,8 +299,9 @@ OTLINE - OTLINE FICA ENTRA A BORDA E O OUTLINE.
 MARGIN -  É O ULTIMO ELEMENTO  DO CONTEUDO E ELE 
         FICA DA BORDA PARA FORA.
 
-
---RESPONSIVIDADE------------
+=================================
+         RESPONSIVIDADE
+=================================
 
 
 PARA TORNAR UMA CAIXA FLEXIVEL USAMOS 2 COMANDOS:
@@ -320,24 +321,26 @@ TELA ENTRE 200PX A 1040PX COMO FOI USADO NO EXEMPLO.
 
 
 
+====================================
+        BACKGROUND
+====================================
 
-----PROPIEDADES BACKGROUND----
+BACKGROUND-IMAGE:LINEAR-GRADINETE(TO BOTTOM COR 1,
+ COR2,COR 3); - SREVE PARA FAZER UM DEGRADÊ COM 3 
+CORES OU MAIS DE CIMA PARA BAIXO.
 
-BACKGROUND-IMAGE:LINEAR-GRADINETE(TO BOTTOM COR 1, COR2,
- COR 3); - SREVE PARA FAZER UM DEGRADÊ COM 3 CORES OU MAIS
-DE CIMA PARA BAIXO.
+BACKGROUND-IMAGE : URL(LOCAL DO ARQUIVO) -  CARREGA UMA
+                                          IMAGEM DE FUNDO.
 
-BACKGROUND-IMAGE : URL(LOCAL DO ARQUIVO) -  CARREGA UMA IMAGEM DE
-                                           FUNDO.
+BACKGROUND-IMAGE:REPEAT; - SERVE PARA FAZER UMA IMAGEM SE
+                         REPETIR VÁRIAS VEZES NO FUNDO DO 
+                         TEU SITE.
 
-BACKGROUND-IMAGE:REPEAT; - SERVE PARA FAZER UMA IMAGEM SE REPETIR
-                         VÁRIAS VEZES NO FUNDO DO TEU SITE.
+BACKGROUND-IMAGE:NO-REPEAT; - SERVE PARA UMA IMAGEM PARAR DE
+                           SE REPETIR NO FUNDO DO SEU SITE.
 
-BACKGROUND-IMAGE:NO-REPEAT; - SERVE PARA UMA IMAGEM PARAR DE SE REPETIR
-                            NO FUNDO DO SEU SITE.
-
-BACKGROUND-SIZE: PX PX; - SERVE PARA DEFINIR A ALTURA E LARGURA DA SUA 
-                        IMAGEM DE FUNDO.
+BACKGROUND-SIZE: A-PX L-PX; - SERVE PARA DEFINIR A ALTURA E
+                        LARGURA DA SUA  IMAGEM DE FUNDO.
 
 
 
@@ -362,40 +365,90 @@ E TRANFORMAR ISTO PARA NEGATIVO E POSICIONAR PARA
 CIMA OU ESQUERDA
 
 
-
--------- TARBALHANDO COM TABELAS--------
-
-
-PARA CIRAR UMA TABELA USAMOS A TAG <TABLE>
+======================================
+            TABELAS
+======================================
 
 
-A ESTRUTURA DE UMA TABELA BÁSICA É :  TABLE  - TABELA
-                                          TR - LINHA
-                                            TD - DADO
+PARA CIRAR UMA TABELA USAMOS 
+A TAG <TABLE>
 
 
-VERTICAL-AILING - DECIDE ONDE SEU TD - DADOS  IRAM FICAR 
-SEJA NO TOPO OU EMBAIXO ETC.. DE FORMA VERTCAL
+A ESTRUTURA DE UMA TABELA BÁSICA É 
+:  TABLE  - TABELA
+      TR - LINHA
+      TD - DADO
+EX:
+  <table>
+    <tr>
+      <td>
+       Nome:
+       </td>
+    </tr>
+  </table>
+
+
+VERTICAL-AILING - DECIDE ONDE SEU TD - DADOS
+IRAM FICAR SEJA NO TOPO OU EMBAIXO ETC.. DE 
+FORMA VERTCAL
 
 
 TABELAS GRANDES :
+         
+          ESTRUTURA
 
           THEAD - CABEÇALHO DA TABELA 
           TBODY - CORPO DA TABELA
           TFOOT - RODAPÉ DA TABELA
 
-ABREVIAÇÕES
+          ABREVIAÇÕES
 
-TH - ALGO IMPORTANTE
+          TH - ALGO IMPORTANTE
 
-TD - UM DADO 
+          TD - UM DADO 
 
-TR -  UMA LINHA
+          TR -  UMA LINHA
+
+          EX:
+             
+               <TABLE>
+                    <THEAD>
+                         <TR>
+                            <TH>
+                               NOME
+                            </TH>
+                            <TH>
+                                IDADE
+                            </TH>
+                          </TR>
+                    </THEAD>
+                    <TBODY>
+                          <TR>
+                              <TD>
+                                 BRUNNO
+                              </TD>
+                              <TD>
+                                  17
+                              </TD>
+                          </TR>
+
+                    </TBODY>
+                    <TFOOT>
+                         <TR>
+                            <TD>
+                                TOTAL DE RESGISTROS:
+                            </TD>
+                            <TD>
+                                 1
+                            </TD>
+                         <TR>
+                    </TFOOT>
+               </TABLE>
 
 
-SCOPE DIZ A QUAL GRUPO SEU TITULO PERTENCE ATRAVÉS DE
-ESPANSÃO.
 
+SCOPE DIZ A QUAL GRUPO SEU TITULO PERTENCE
+ATRAVÉS DE ESPANSÃO.
 
 COLSPAN - ESPANSÃO DE COLUNA
 
@@ -405,22 +458,26 @@ ROWSPAN - EXPANSÃO DE LINHA
 COLGROUP
 
 
-COL - PARA CADA COLUNA QUE VOCÊ TIVER EM SUA TABELA 
+COL - PARA CADA COLUNA QUE VOCÊ TIVER EM SUA
+TABELA 
 
-ATRIBUA UMA CLASSE E CONFIGURE TODAS SEM PRECISAR 
-DE CONFIGURAR UMA A UMA.
+ATRIBUA UMA CLASSE E CONFIGURE TODAS SEM
+PRECISAR DE CONFIGURAR UMA A UMA.
 
--------------IFRAME-----------
+============================
+       IFRAME
+============================
 
 LARGURA PADRÃO 300X150PX
 
 
-
+==============================
        FORMULARIOS
-------------------------------
+==============================
 
 
-CRIADO ENTRE AS TAGS (<form> e </form>)
+SÃO CRIADOS ENTRE AS TAGS (<form> e 
+</form>)
 
 <form> E </form>
 
@@ -431,49 +488,97 @@ CRIADO ENTRE AS TAGS (<form> e </form>)
 <input type='submit' value='Enviar' id='id'>
 
 
-    Desligando/ligando autocomplete
+Desligando/ligando autocomplete
 -------------------------------------
 
 autocomplete='on'
 
 autocomplete='off'
 
+tipos de autocomplete
+-------------------
 
-        Action=''
-----------------------------------------
+autocomplete='name'
 
-quando for enviado vai para 
-action(arquivo)
+autocomplete='password'
+
+autocomplete='username'
+
+e muitos outros mais
+
+ACTION=''
+-------------------------------------
+
+será enviado para arquivo
+
+action='arquivo' - qual arquivo?
 
 
-      Get e Post
+MÉTODO GET E POST
 -------------------------
 
-method='metodo'
+method='' - QUAL MÉTODO?
 
-Get - deixa os dados na URL (max-3000mil bytes)
+get - deixa os dados na URL 
+com um tamanho maximo de -
+-(Três mil bytes)
 
 post - deixa os dados "ocultos"
 
-         TYPES
+Guanabara disse que no futuro tenho
+que aprender http para deixar senhas
+criptografadas
+
+TYPES
 -----------------------------
-reset - apagar /resetar dados
 
-submit - enviar
+ex:
+  <input type='text' placeholder='Nome:'>
+   input do tipo texto Dica: Nome
+
+type='submit' - enviar
+ 
+type='reset' - apagar /resetar dados
+
+type'password' - senha
+
+type='date' - dia atual
+
+type='month' - mês atual
+
+type'Number' - caixa numérica
 
 
-parametros
+PARÂMETROS
 -----------------------------
 
 placeholder - dá uma dica do que é para fazer
 
-size - tamanho 
+size='valor' - tamanho da caixa de digitação
 
-required - requer algo
+required - requer algo/exije que seja digitado
 
-minlength='VALOR' - comprimento minimo
+minlength='valor' - comprimento minimo da string
 
-maxlength='VALOR' - comprimento máximo
+maxlength='valor' - comprimento máximo da string
+
+------------------------------------
+AGRUPAMENTO DE CAMPOS
+------------------------------------
+
+ex: dados pessoais
+
+fieldset - grupo de CAMPOS
+
+legend - legenda
+
+ex:
+  <fieldset>
+      <legend>Dados pessoais<legend>
+        <input type='Number' id''></input>
+        <input type='email' id''></input>
+        <input type='tel' id''></input>
+  </fieldset>
 
 
 CONTROLES DE FORMULÁRIO
@@ -483,21 +588,25 @@ MIN='VALOR' - MINIMO PARA CAIXA NUMÉRICA
 
 MAX='VALOR' - MÁXIMO PARA CAIXA NUMÉRICA
 
-STEP='VALOR' - DE QUANTO EM QUAnTO SERÁ 
+STEP='VALOR' - DE QUANTO EM QUANTO SERÁ 
               DIGITADO
 
+========================================
+          MEDIA QUERIES 
+========================================
 
-observação :
 
-min e max são para caixas numéricas
 
-já 
 
-maxlength e minlength - são para caixas de str
-
----------MEDIA QUERIES --------------------------
 
 
 =======================================
             FIM
+
+anotações extras:
+-----------------
+Guanabara disse:
+---------------
+
+Estudar mais sobre Regex
 ========================================
