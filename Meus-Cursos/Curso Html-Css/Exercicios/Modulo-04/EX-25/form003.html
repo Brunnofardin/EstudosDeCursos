@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Teste de formulário </h1>
+    <form action="java.js" autocomplete="on" method="get">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="" id="nome" required placeholder="nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="media">Media</label>
+            <input type="number" name="" id="media" min="0" max="10" required step="0.1">
+        </p>
+        <p>
+            <label for="mes">Mês da prova</label>
+            <input type="month" name="" id="mes"> <br>
+            <label for="dia">Dia da prova</label>
+            <input type="date" name="" id="dia">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
