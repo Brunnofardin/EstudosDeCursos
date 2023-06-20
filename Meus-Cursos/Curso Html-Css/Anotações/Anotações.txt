@@ -486,6 +486,7 @@ MAX='VALOR' - MÁXIMO PARA CAIXA NUMÉRICA
 STEP='VALOR' - DE QUANTO EM QUAnTO SERÁ 
               DIGITADO
 
+
 observação :
 
 min e max são para caixas numéricas
