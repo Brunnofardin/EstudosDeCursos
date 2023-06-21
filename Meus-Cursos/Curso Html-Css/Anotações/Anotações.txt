@@ -548,6 +548,20 @@ type='month' - mês atual
 
 type'Number' - caixa numérica
 
+type='radio' - selcionador bolinha
+
+type='chekbox' - selecionador em caixa
+
+
+observação:
+
+para inputs tipo radio
+o name (nome) deve será
+exatamente igual para que
+a inputs se identifique como 
+grupo da outra e você consiga 
+marcar e desmarcar
+
 
 PARÂMETROS
 -----------------------------
@@ -562,6 +576,11 @@ minlength='valor' - comprimento minimo da string
 
 maxlength='valor' - comprimento máximo da string
 
+cheked - marcado
+
+value='valor' - serve para colocar um valor como
+                valor da caixa de Texto
+
 ------------------------------------
 AGRUPAMENTO DE CAMPOS
 ------------------------------------
@@ -574,22 +593,24 @@ legend - legenda
 
 ex:
   <fieldset>
+
       <legend>Dados pessoais<legend>
         <input type='Number' id''></input>
         <input type='email' id''></input>
         <input type='tel' id''></input>
+
   </fieldset>
 
 
 CONTROLES DE FORMULÁRIO
 ----------------------------
 
-MIN='VALOR' - MINIMO PARA CAIXA NUMÉRICA
+MIN='VALOR' - MINIMO PARA CAIXA NU  MÉRICA
 
 MAX='VALOR' - MÁXIMO PARA CAIXA NUMÉRICA
 
 STEP='VALOR' - DE QUANTO EM QUANTO SERÁ 
-              DIGITADO
+              DIGITADO  NA CAIXA (INPUT)
 
 ========================================
           MEDIA QUERIES 
@@ -600,13 +621,13 @@ STEP='VALOR' - DE QUANTO EM QUANTO SERÁ
 
 
 
-=======================================
-            FIM
-
-anotações extras:
------------------
+========================================
+           anotações extras:
+          -----------------
 Guanabara disse:
----------------
+----------------
 
 Estudar mais sobre Regex
-========================================
+=======================================
+            FIM
+=======================================
