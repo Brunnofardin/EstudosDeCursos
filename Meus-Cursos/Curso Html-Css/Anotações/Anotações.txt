@@ -628,6 +628,66 @@ Guanabara disse:
 ----------------
 
 Estudar mais sobre Regex
-=======================================
-            FIM
-=======================================
+========================================
+            FIM HTML
+========================================
+            CSS 3
+========================================
+
+
+TIPOS DE ELEMENTOS
+---------------------------------------
+BOX-LEVEL - ELEMNTOS QUE OCUPÃO 100% DA
+           TELA
+
+INLINE-LEVEL - ELEMNTOS QUE OCUPAM MENOS 
+              DE UMA LINHA DA TELA
+
+---------------------------------------
+      CENTRALIZAMENTO
+---------------------------------------
+HÁ POSICIONAMENTO VERTICAL E HORIZONTAL:
+
+
+HORIZONTAL
+------------------
+
+MARGIN:AUTO - CENTRALIZAMENTO HORIZONTAL
+
+VERTICAL
+-------------------
+
+POSITION ABSOLUTE - FICA EM UMA SEGUNDA 
+                    CAMADA DO CONTEUDO
+
+PERMITE TRABALHAR COM OUTROS DOIS TERMOS
+SENDO ELES:
+
+        LEFT - ESQUERDA
+
+        TOP - TOPO
+
+COM ISSO VOCÊ PODE FAZER O CENTRALIZAMENTO
+VERTICAL
+
+
+
+SHORTHANDS 
+--------------------
+
+(BACKGROUND)
+--------------
+
+BACKGROUND-COLOR:;
+BACKGROUND-IMAGE:;
+BACKGROUND-POSITION:;
+BACKGROUND-REPEAT:;
+BACKGROUND-SIZE:;
+BACKGROUND-ATTACHEMENT:;
+
+BACKGROUND:BLUE,URL(./IMG/IMG.EXEMPLO),CENTER NO-REPEAT 16EM FIXED
+
+
+=========================================
+              FIM
+=========================================
