@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        body{
+            font-size: 1.3em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+            border: 1px solid black;
+        }
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div{
+            width: 50%;
+            height: 400px;
+            position: relative;
+            margin: auto;
+        }
+        nav{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        ul li,a{
+            line-height: 28px;
+            text-decoration: none;
+            list-style: none;
+        }
+        li{
+            box-sizing: border-box;
+            border-radius: 3px;
+            cursor: pointer;
+            height: 60px;
+            width: 190px;
+            margin-top: 10px;
+            
+        }
+        li#facebook{
+            color: white;
+            background-color:blue;
+        }
+        li#instagram{
+            background-image: linear-gradient(to right,red,orange,yellow,pink);
+        }
+        li#whatsapp{
+            background-color: greenyellow;
+        }
+        li#github{
+            background-color: black;
+        }
+        li a{
+            height: 100%;
+            width: 100%;
+            display: block;
+            color: white;
+        }
+        li:hover{
+            transform: translate(-7px,-7px);
+            transition: 1s;
+            border: 1px solid white;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li id="facebook"><a href="" >Facbook</a></li>
+                <li id="instagram"><a href="" >Instagram</a></li>
+                <li id="whatsapp"><a href="" >Whatsapp</a></li>
+                <li id="github"><a href="" >GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

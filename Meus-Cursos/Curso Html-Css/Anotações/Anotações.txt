@@ -634,9 +634,10 @@ Estudar mais sobre Regex
             CSS 3
 ========================================
 
+----------------------------------------
+      TIPOS DE ELEMENTOS
+----------------------------------------
 
-TIPOS DE ELEMENTOS
----------------------------------------
 BOX-LEVEL - ELEMNTOS QUE OCUPÃO 100% DA
            TELA
 
@@ -646,6 +647,7 @@ INLINE-LEVEL - ELEMNTOS QUE OCUPAM MENOS
 ---------------------------------------
       CENTRALIZAMENTO
 ---------------------------------------
+
 HÁ POSICIONAMENTO VERTICAL E HORIZONTAL:
 
 
@@ -672,20 +674,34 @@ VERTICAL
 
 
 
-SHORTHANDS 
---------------------
+
+
+          BOX
+-----------------------------
+
+BOX-SIZING:BORDER BOX; - SERVE PARA QUE A BORDA
+                        FAÇA PARTE DA CAIXA
+
+TRANFORM(TRASLETE(-10PX,-PARAMETRO2))
+                  ESQUERDA, CIMA
+
+TRASITION;TRANFORM TEMPO; - UM ATRASO DE ANIMAÇÃO
+
+        SHORTHANDS 
+------------------------------------
 
 (BACKGROUND)
 --------------
 
-BACKGROUND-COLOR:;
+BACKGROUND-COLOR:; 
 BACKGROUND-IMAGE:;
 BACKGROUND-POSITION:;
 BACKGROUND-REPEAT:;
 BACKGROUND-SIZE:;
 BACKGROUND-ATTACHEMENT:;
 
-BACKGROUND:BLUE,URL(./IMG/IMG.EXEMPLO),CENTER NO-REPEAT 16EM FIXED
+BACKGROUND:BLUE,URL(./IMG/IMG.EXEMPLO),CENTER NO-REPEAT
+16EM FIXED;
 
 
 =========================================
