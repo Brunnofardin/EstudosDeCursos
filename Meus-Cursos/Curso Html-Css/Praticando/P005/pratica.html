@@ -31,7 +31,7 @@
             border-radius: 0px 10px 10px;
             flex-grow: 1;
             margin: auto;
-            max-width: 800px;
+            max-width: 80%;
             margin-top: 16px;
             margin-bottom: 10px;
             padding: 10px;
@@ -52,6 +52,10 @@
         h2{
             margin-top: 20px;
         }
+        img{
+            width: 100%;
+        }
+        
         #fter{
             text-align: center;
             margin-bottom: 10px;
@@ -165,6 +169,20 @@
 
                 </ul>
             </article>
+        </section>
+        <section>
+            <h2>Imagens flexiveis</h2>
+            <p>Reduza o tamnho do seu navegador e veja o que acontece</p>
+           <p>
+            <picture>
+                <source media="(max-width: 498px )" srcset="./img/imagem-320x600.png">
+                <source media="(max-width:678px )" srcset="./img/imagem-620x1000.png">
+                <source media="(max-width:1000px)" srcset="./img/imagem-1000x1000">
+                <img src="./img/Imagem-1000x1000.png" alt="">
+            </picture>
+           </p>
+           
+            
         </section>
 
   
