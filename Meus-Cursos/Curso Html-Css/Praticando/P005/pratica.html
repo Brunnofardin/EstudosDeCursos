@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 1.2em;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #4343ff;
+        }
+        *{
+            margin: 0px;
+        }
+        header{
+            text-align: center;
+            color: beige;
+            min-height: 60px;
+            height: auto;
+            width: 100%;
+            background-color: black;
+        }
+        abbr{
+            text-decoration: none;
+        }
+        main{
+            border-top-left-radius: 0px;
+            border-radius: 0px 10px 10px;
+            flex-grow: 1;
+            margin: auto;
+            max-width: 800px;
+            margin-top: 16px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            
+        }
+        p{
+            text-align: justify;
+            text-indent: 20px;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+        ul,li{
+            line-height: 28px;
+            
+        }
+        h2{
+            margin-top: 20px;
+        }
+        #fter{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        footer{
+            font-size: 1.3em;
+            color: white;
+            text-align: center;
+            background-color: black;
+            height: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Colocando em prática</h1></header>
+    <main>
+        <section>
+            <article>
+                <h2>Ênfase</h2>
+                <p>Ênfase é um substantivo feminino que significa realce, <strong>destaque exaltação ou importância</strong>. Expressar ênfase é demonstrar entusiasmo e eloquência exagerados no momento de falar ou gesticular. Ex.: Seu discurso foi realizado “com ênfase”.</p>
+                <p>Entende-se por “dar ênfase”, o ato de focar, de salientar, de enfatizar certas palavras, frases ou ideias, com o propósito de dar-lhes uma importância especial. Ex.: Ele procurou "dar ênfase" ao seu trabalho social.</p>
+                <p><em>A ênfase pode ser transmitida através da entonação de uma palavra ou de uma frase</em>, que pronunciada de forma exagerada ou repetitiva, por meio de um discurso, uma narrativa ou um texto, toma um real destaque.</p>
+                <p>Enfático é um adjetivo que qualifica aquele indivíduo que dá ênfase em algum aspecto de sua explanação. Ex.: Ele "foi enfático" ao falar da importância da educação infantil.</p>
+                <p>Em Linguística, alguns recursos são usados para dar ênfase às palavras, entre eles, a metáfora e a metonímia.</p>
+                <p>São sinônimos de ênfase: destaque, relevo, alarde, entusiasmo, ostentação, abordagem, foco, exaltação, louvor, efervescência, exibição etc.</p>
+                <p>
+                    Ver também
+                    Enfatizar
+                    Metonímia
+                    Este conteúdo foi útil?SimNã
+                </p>
+            
+            </article>
+            <anside>
+                <p>Outros conteúdos que podem interessar</p>
+                <ul>
+                    <li>Significado de Enfatizar</li>
+                    <li><ins>Significado de Epistemológico</ins></li>
+                    <li>Significado de Hostilidade</li>
+                    <li>Significado de Metonímia</li>
+                    <li><del>Exemplos de Figuras de linguagem</del></li>
+                    <li>7 exemplos de artigos de opinião para entender este gênero textual</li>
+                    <li><del>Desenvolvimento infantil</del></li>
+                    <li>Significado de Empoderar</li>
+                </ul>
+            </anside>
+        </section>
+        <section>
+            <article>
+                <h2>Códigos</h2>
+                <p>
+                    Para pegramos um elemntos do html usando java-script ultilizamos a seguinte linha de código:
+                </p>
+                <p>
+                    <code>var elemento = document.getElemntbyid('id')</code>
+                </p>
+                <p>
+                    Temos várias opções por ID por Classe,Tag,seletores  etc..
+                    veja abaixo como escrever-lós
+                </p>
+                <ul>
+                    <li><abbr title="Por id">var elemento getElementbyid("id")</abbr></li>
+                    <li><abbr title="Pela TAG">var elemento getElementbyTagname("tag")</abbr></li>
+                    <li><abbr title="Por classe">var elemento getElementbyClassname("class")</abbr></li>
+                    <li><abbr title="Por id ou classe lembrando que id usamos: (#) e classe usmos (.) ex: #nome ; .cores">var elemento queryselectorAll("id")</abbr></li>
+                </ul>
+            </article>
+            <h3>Programa em java-script</h3>
+            <p>Observe:</p>
+            <p>
+                <code>
+                    <pre>
+                        n = 5
+
+                        if(n%2==1){
+
+                            console.log('Ímpar')
+
+                        }else{
+
+                            console.log('Par')
+                        }
+                    </pre>
+                </code>
+            </p>
+            <form action="">
+                <label for="resposta">Qual é o resultado?</label>
+                <input type="text" name="" id="resposta" placeholder="Ímpar ou Par?">
+                <input type="button" value="Enviar" id="envio">
+            </form>
+            <p id="res">
+            </p>
+        </section>
+
+  
+
+    </main>
+    <footer><p id="fter">&copy;BFS<br> <address>Av. Beira mar 1922 praia do morro guarapari</address> <br> <q>As pessoas não sabem o que querem até você mostrar a elas</q></p></footer>
+    <script >
+        var res = document.getElementsByTagName('input')[0]
+        console.log(res)
+        var msg = document.getElementById('res')
+        let envio = document.getElementById('envio')
+        envio.addEventListener('click',()=>{
+            if(res.value.toUpperCase()=='IMPAR'){
+                msg.innerHTML='Acertou!'
+            }else{
+                msg.innerHTML='Não foi dessa vez, 5 mod 2  é resto 1 ,ou seja, ímpar'
+            
+                
+            }
+            
+        })
+       
+    </script>
+</body>
+</html>
