@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="">
+        <p>
+          <label for="es">Nomes</label>
+          <select name="" id="">
+           <optgroup label="Nomes Masculinos">
+               <option value="">Brunno</option>
+               <option value="">Guilherme</option>
+               <option value="">Brenno</option>
+           </optgroup>
+
+           <optgroup label="Nomes femininos">
+               <option value="">Maria</option>
+               <option value="">Marrie</option>
+               <option value="">Marina</option>
+           </optgroup>
+          </select>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="prof">Profissão: </label>
+            <input type="text" name="" id="prof" list="dt">
+        </p>
+        <p>
+            <datalist id="dt">
+                <optgroup label="COPS">
+                    <option value="PM">Policial Militar</option>
+                    <option value="RT">Rota</option>
+                    <option value="Ex">Exercito</option>
+
+                </optgroup>
+            </datalist>
+        </p>
+    </form>
+</body>
+</html>

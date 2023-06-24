@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        :root{
+           
+            --cor1:#F56600;
+            --cor2:#FA0D3C;
+          
+        }
+        *{
+            margin: 0;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            text-align: center;
+            text-shadow: 1px 1px  0px black;
+            color: white;
+            background-color: var(--cor1);
+            height: 60px;
+            width: 100%;
+
+        }
+        main{
+            position: relative;
+            flex-grow: 1;
+            background-color: beige;
+        }
+        input{
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        section{
+            padding: 10px;
+            box-shadow: 1px 1px 6px #0000007c;
+            width: 90%;
+            background-color: white;
+            height: 600px;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+        }
+        footer{
+            text-align: center;
+            color: white;
+            font-size: 1.3em;
+            background-color: var(--cor1);
+            height: 90px;
+            width: 100%;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Bem-Vindo</h1></header>
+    <main>
+        <section>
+            <form action="" autocomplete="on" method="post">
+                <fieldset>
+                    <legend>"Dados Pessoais"</legend>
+                    <p>
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="nome" placeholder="ex: Brunno">
+                    </p>
+                    <p>
+                        <label for="idade">Idade: </label>
+                        <input type="text" id="idade" placeholder="ex:22">
+                    </p>
+                    <p>
+                    <p>
+                        <label for="Foto">Foto de perfil: </label> 
+                        <input type="file" name="" id="Foto">
+                    </p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </p>
+
+                        
+                </fieldset>
+
+            </form>
+
+        </section>
+    </main>
+    <footer><p>Brunno Fardin de Souza</p></footer>
+</body>
+</html>

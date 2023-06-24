@@ -545,6 +545,11 @@ type='radio' - selcionador bolinha
 
 type='chekbox' - selecionador em caixa
 
+type='color' - seletor de cores
+
+type='range' - seletor de satisfação
+
+type='file' - permite escolher um arquivo
 
 Observação:
 
@@ -605,6 +610,35 @@ MAX='VALOR' - MÁXIMO PARA CAIXA NUMÉRICA
 STEP='VALOR' - DE QUANTO EM QUANTO SERÁ 
               DIGITADO  NA CAIXA (INPUT)
 
+
+CONTROLES FORA DE INPUTS
+-----------------------------------
+
+SELECT
+-------------------
+
+<select> - seletor
+
+<option> - oção dentro do seletor
+
+<optgroup label='etiqueta'> grupo de opções
+
+selected - selecionado
+
+DATALIST
+--------------------
+
+<input type='text' id='' list='iDdaDataList'>
+<datalist id='tal'>
+     <option value=''></option>
+     <option value=''></option>
+     <option value=''></option>
+</datalist>
+
+AREA DE TEXTO
+-----------------------
+
+<TEXTAREA>
 =-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
             FIM HTML5
 =-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=
