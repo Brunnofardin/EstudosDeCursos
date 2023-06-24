@@ -259,6 +259,7 @@ AUDIO/ACC
 ------------------------------------
 LINKS PARA DOWLOAD
 -----------------------------------
+
 <a href='' rel='' dowload='' type''>
 
 
@@ -311,9 +312,9 @@ PARAMETROS TAGS SEMÂNTICAS
 ---------------------------
 
 
-================================
+========================================
     TAGS "NORMAIS"
-================================
+========================================
 
 SOURCE MEDIA='(LARGURA:PX) SRCSET='' - FONTE
 
@@ -321,81 +322,13 @@ IMG SRC='' ALT='' - PERMITE CRIAR IMAGENS
 
 P - CRIA PARÁGRAFOS
 
-============================
+======================================
   HIERAQUIA DE TITULOS
-============================ 
+======================================
 
 
-
-CITE='QUEM ESTÁ CITANDO' - PARA BLOCKQUOTE
-
-=================================
-    RESPONSIVIDADE DE CAIXAS
-=================================
-
-
-PARA TORNAR UMA CAIXA FLEXIVEL USAMOS 2
-COMANDOS:
-
-MIN-WIDTH:;    - LARGURA MÍNIMA DA CAIXA 
-
-MAX-WIDTH:;    - LARGURA MÁXIMA DA CAIXA
-
-
-EX:
-
-MIN-WIDTH:200PX;
-MAX-WIDTH:1040PX;
-
-ALGO IMPORTANTE DE CITAR É QUE, A CAIXA SE ADAPTA AO 
-TAMNHO DA TELA ENTRE 200PX A 1040PX COMO FOI USADO NO
-EXEMPLO.
-
-
-
-====================================
-        BACKGROUND
-====================================
-
-BACKGROUND-IMAGE:LINEAR-GRADINETE(TO BOTTOM COR 1,
- COR2,COR 3); - SREVE PARA FAZER UM DEGRADÊ COM 3 
-CORES OU MAIS DE CIMA PARA BAIXO.
-
-BACKGROUND-IMAGE : URL(LOCAL DO ARQUIVO) -  CARREGA UMA
-                                          IMAGEM DE FUNDO.
-
-BACKGROUND-IMAGE:REPEAT; - SERVE PARA FAZER UMA IMAGEM SE
-                         REPETIR VÁRIAS VEZES NO FUNDO DO 
-                         TEU SITE.
-
-BACKGROUND-IMAGE:NO-REPEAT; - SERVE PARA UMA IMAGEM PARAR DE
-                           SE REPETIR NO FUNDO DO SEU SITE.
-
-BACKGROUND-SIZE: A-PX L-PX; - SERVE PARA DEFINIR A ALTURA E
-                        LARGURA DA SUA  IMAGEM DE FUNDO.
-
-
-
-POSISCIONAMENTO VERTICAL E HORIZONTAL
--------------------------------------
-
-SEMPE A PARTE DO CONTAINER TERÁ POSITION RELATIVE
-
-E O CONETUDO DO QUAL DESEJA POSICIONAR ABSOLUTE
-
-ASSIM PODEREMOS MEXER
-
-NOS ELEMENTOS :
-
-TOP
-
-E
-
-LEFT
-
-E TRANFORMAR ISTO PARA NEGATIVO E POSICIONAR PARA
-CIMA OU ESQUERDA
-
+CITE='QUEM ESTÁ CITANDO' 
+PARA BLOCKQUOTE
 
 ======================================
             TABELAS
@@ -403,132 +336,154 @@ CIMA OU ESQUERDA
 
 
 PARA CIRAR UMA TABELA USAMOS 
-A TAG <TABLE>
+A TAG <TABLE> E </TABLE>
 
 
-A ESTRUTURA DE UMA TABELA BÁSICA É 
-:  TABLE  - TABELA
-      TR - LINHA
-      TD - DADO
+ESTRUTURA BÁSICA DE TABELA
+---------------------------
+TABLE  - TABELA
+TR - LINHA
+TD - DADO
+
 EX:
-  <table>
+<table>
     <tr>
       <td>
        Nome:
-       </td>
+      </td>
     </tr>
-  </table>
+</table>
 
 
-VERTICAL-AILING - DECIDE ONDE SEU TD - DADOS
-IRAM FICAR SEJA NO TOPO OU EMBAIXO ETC.. DE 
-FORMA VERTCAL
+VERTICAL-AILING - DECIDE ONDE SEU TD
+
+IRA FICAR SEJA NO TOPO OU EMBAIXO ETC.
+DE FORMA VERTCAL
 
 
 TABELAS GRANDES :
-         
-          ESTRUTURA
+        
+ESTRUTURA
+--------------
 
-          THEAD - CABEÇALHO DA TABELA 
-          TBODY - CORPO DA TABELA
-          TFOOT - RODAPÉ DA TABELA
+THEAD - CABEÇALHO DA TABELA 
+TBODY - CORPO DA TABELA
+TFOOT - RODAPÉ DA TABELA
 
-          ABREVIAÇÕES
+ABREVIAÇÕES
 
-          TH - ALGO IMPORTANTE
+TH - ALGO IMPORTANTE
 
-          TD - UM DADO 
+TD - UM DADO 
 
-          TR -  UMA LINHA
+TR -  UMA LINHA
 
-          EX:
-             
-               <TABLE>
-                    <THEAD>
-                         <TR>
-                            <TH>
-                               NOME
-                            </TH>
-                            <TH>
-                                IDADE
-                            </TH>
-                          </TR>
-                    </THEAD>
-                    <TBODY>
-                          <TR>
-                              <TD>
-                                 BRUNNO
-                              </TD>
-                              <TD>
-                                  17
-                              </TD>
-                          </TR>
+EX:
+    
+  <TABLE>
+        <THEAD>
+              <TR>
+                <TH>
+                    NOME
+                </TH>
+                <TH>
+                      IDADE
+                </TH>
+              </TR>
+        </THEAD>
+        <TBODY>
+              <TR>
+                  <TD>
+                      BRUNNO
+                  </TD>
+                  <TD>
+                      17
+                  </TD>
+              </TR>
 
-                    </TBODY>
-                    <TFOOT>
-                         <TR>
-                            <TD>
-                                TOTAL DE RESGISTROS:
-                            </TD>
-                            <TD>
-                                 1
-                            </TD>
-                         <TR>
-                    </TFOOT>
-               </TABLE>
+        </TBODY>
+        <TFOOT>
+              <TR>
+                <TD>
+                    TOTAL DE RESGISTROS:
+                </TD>
+                <TD>
+                        1
+                </TD>
+              <TR>
+        </TFOOT>
+  </TABLE>
 
 
 
-SCOPE DIZ A QUAL GRUPO SEU TITULO PERTENCE
-ATRAVÉS DE ESPANSÃO.
+SCOPE DIZ A QUAL GRUPO SEU TITULO 
+PERTENCE ATRAVÉS DE ESPANSÃO.
+
+TIPOS DE EXPANSÃO
+-------------------
 
 COLSPAN - ESPANSÃO DE COLUNA
 
 ROWSPAN - EXPANSÃO DE LINHA
 
 
+CONJUNTO DE GRUPO
+-------------------
+
 COLGROUP
 
-
-COL - PARA CADA COLUNA QUE VOCÊ TIVER EM SUA
-TABELA 
-
-ATRIBUA UMA CLASSE E CONFIGURE TODAS SEM
-PRECISAR DE CONFIGURAR UMA A UMA.
+COL - PARA CADA COLUNA QUE VOCÊ TIVER 
+EM SUA TABELA ATRIBUA UMA CLASSE E
+CONFIGURE TODAS SEM PRECISAR DE 
+CONFIGURAR UMA A UMA.
 
 ============================
        IFRAME
 ============================
 
-LARGURA PADRÃO 300X150PX
+LARGURA PADRÃO 300X 150 PX
+
+PODERÁ SER MODIFICADA VIA CSS
 
 
 ==============================
        FORMULARIOS
 ==============================
 
-
-SÃO CRIADOS ENTRE AS TAGS (<form> e 
-</form>)
+FORMULÁRIOS EM HTML SÃO CRIADOS
+ENTRE AS TAGS (<form> e </form>)
 
 <form> E </form>
 
+DICAS
+------
+
 <label> - etiqueta para inputs
 
-<Label for='IdDaInput'>texto</label>
+PARÂMETROS Label
+-----------------
 
-<input type='submit' value='Enviar' id='id'>
+FOR='' - PARA QUEM?
+
+ID='' - IDENTIFICADOR X
+
+TEXTO - TEXTO DE DICAS
+
+EX:
+
+<Label for='IdDaInput'>NOME: </label>
+
 
 
 Desligando/ligando autocomplete
 -------------------------------------
 
-autocomplete='on'
+autocomplete='on' - ligado
 
-autocomplete='off'
+autocomplete='off'- desligado
 
 tipos de autocomplete
--------------------
+----------------------
 
 autocomplete='name'
 
@@ -536,14 +491,18 @@ autocomplete='password'
 
 autocomplete='username'
 
+autocomplete='email'
+
+autocomplete='tel'
+
 e muitos outros mais
 
 ACTION=''
 -------------------------------------
 
-será enviado para arquivo
-
 action='arquivo' - qual arquivo?
+
+será enviado para arquivo.
 
 
 MÉTODO GET E POST
@@ -557,16 +516,18 @@ com um tamanho maximo de -
 
 post - deixa os dados "ocultos"
 
-Guanabara disse que no futuro tenho
-que aprender http para deixar senhas
-criptografadas
+ex:
+   <form method='POST'>
+
+   </form>
 
 TYPES
 -----------------------------
 
 ex:
   <input type='text' placeholder='Nome:'>
-   input do tipo texto Dica: Nome
+    |     |       |     |
+   input do tipo texto com Dica: Nome
 
 type='submit' - enviar
  
@@ -585,14 +546,14 @@ type='radio' - selcionador bolinha
 type='chekbox' - selecionador em caixa
 
 
-observação:
+Observação:
 
 para inputs tipo radio
 o name (nome) deve será
 exatamente igual para que
-a inputs se identifique como 
-grupo da outra e você consiga 
-marcar e desmarcar
+as inputs se identifiquem como 
+grupo uma da outra, e você consiga 
+marcar e desmarcar sem problemas.
 
 
 PARÂMETROS
@@ -644,45 +605,46 @@ MAX='VALOR' - MÁXIMO PARA CAIXA NUMÉRICA
 STEP='VALOR' - DE QUANTO EM QUANTO SERÁ 
               DIGITADO  NA CAIXA (INPUT)
 
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            FIM HTML5
+=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=
+        Guanabara disse:
+      --------------------
+
+* Estudar mais sobre Regex;
+
+* Protocolo HTTP para segurança de dados;
+
 ========================================
-          MEDIA QUERIES 
+            INICIO CSS3
 ========================================
 
 
 
-
-
-
-========================================
-           anotações extras:
-          -----------------
-Guanabara disse:
-----------------
-
-Estudar mais sobre Regex
-========================================
-            FIM HTML
-========================================
-            CSS 3
-========================================
           PISCICOLOGIA DAS CORES
 ----------------------------------------
 
- sites ()=>{
+SITES RECOMENDADOS
+ -----------------------
+
   https://paletton.com/#uid=1000u0k00u
   48F00g0qF9Tt3FTv-
 
-  https://m2.material.io/design/color/the-color
-  -system.html#color-theme-creation
+  https://m2.material.io/design/color/the-
+  color-system.html#color-theme-creation
 
   https://www.colorzilla.com/firefox/
 
- }
-
+ 
+ TIPOS DE CORES
+ -------------------
  * CORES PRIMÁRIAS{
+
      AMARELO,AZUL,VERMELHO
  }
+
  * CORES SECUNDÁRIAS{
+
   
       JUNÇÃO DAS CORES PRIMÁRIAS
 
@@ -693,8 +655,10 @@ Estudar mais sobre Regex
       VIOLETA(AZUL + VERMELHO)
 
       VERDE (AZUL + AMARELO)
+
  }
  * CORES TERCIÁRIAS{
+
        
       JUNÇÃO DAS CORES PRIMÁRIAS E 
       SECUNDÁRIAS
@@ -711,17 +675,19 @@ Estudar mais sobre Regex
 
       AZUL ESVERDEADO
 
+
       
  }
- -------------------------
- TEMPERATURA E HARMONIA
- --------------------------
+ -----------------------------------
+ TEMPERATURA E HARMONIA DAS CORES
+ -----------------------------------
 
-
- CORES QUENTES - SENSAÇÃO DE CALOR E
+CORES QUENTES - SENSAÇÃO DE CALOR E.
                 PROXIMIDADE
                 
-CORES FRIAS - SENSAÇÕES MAIS CALMAS
+CORES FRIAS - SENSAÇÕES MAIS CALMAS.
+
+
 ----------------------------------------
       TIPOS DE ELEMENTOS
 ----------------------------------------
@@ -744,28 +710,22 @@ HORIZONTAL
 
 MARGIN:AUTO - CENTRALIZAMENTO HORIZONTAL
 
+
 VERTICAL
--------------------
+----------------
 
-POSITION ABSOLUTE - FICA EM UMA SEGUNDA 
-                    CAMADA DO CONTEUDO
+POSITION ABSOLUTE - VERTICAL
 
-PERMITE TRABALHAR COM OUTROS DOIS TERMOS
-SENDO ELES:
+O POSITION ABSOLUTEPERMITE TRABALHAR COM 
+OUTROS DOIS TERMOS SENDO ELES:
 
         LEFT - ESQUERDA
 
         TOP - TOPO
 
-COM ISSO VOCÊ PODE FAZER O CENTRALIZAMENTO
-VERTICAL
-
-
-
-
-
-          BOX
------------------------------
+--------------------------------------
+       BOX ANIMATIONS
+--------------------------------------
 
 BOX-SIZING:BORDER BOX; - SERVE PARA QUE A 
                       BORDA FAÇA PARTE DA 
@@ -777,7 +737,7 @@ TRANFORM(TRASLETE(-10PX,-PARAMETRO2))
 TRASITION;TRANFORM TEMPO; - UM ATRASO DE
                            ANIMAÇÃO
 
-        SHORTHANDS 
+      SHORTHANDS (MÃOZINHA)
 ------------------------------------
 
 (BACKGROUND)
@@ -790,14 +750,32 @@ BACKGROUND-REPEAT:;
 BACKGROUND-SIZE:;
 BACKGROUND-ATTACHEMENT:;
 
-BACKGROUND:BLUE,URL(./IMG/IMG.EXEMPLO),CENTER 
-NO-REPEAT 16EM FIXED;
-
----- PROPIEDADES CONTEUDO-------------------
+BACKGROUND:COR,URL(),CENTER NO-REPEAT 16EM 
+FIXED ;
 
 
-COMANDOS
---------
+(FONT)
+-----------
+
+FONT-FAMILY - FAMYLIA DA FONTE
+FONT-WEIGHT - GRAU DE NEGRITUDE
+FONT-SIZE - TAMANHO DA LETRA
+FONT-STYLE - ESTILO EX: ITÁLICO
+
+PRECEDENCIA:
+
+1° STYLE
+2° WEIGHT
+3° SIZE
+4° FAMILY
+
+FONT(STYLE,WEIGHT,SIZE,FAMYLI)
+=======================================
+       PROPIEDADES CONETUDO
+=======================================
+
+TIPOS
+-----------
 
 CONTEUDO - CONTEUDO POSSUENTE
 
@@ -810,6 +788,6 @@ OTLINE - OTLINE FICA ENTRA A BORDA E O OUTLINE.
 MARGIN -  É O ULTIMO ELEMENTO  DO CONTEUDO E 
          ELE  FICA DA BORDA PARA FORA.
 
-=========================================
-              FIM
-=========================================
+=-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-==-=-=-=
+              FIM CSS3
+=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-==-==-=-=-=

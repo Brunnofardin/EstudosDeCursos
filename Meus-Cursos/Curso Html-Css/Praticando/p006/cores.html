@@ -11,10 +11,6 @@
             --cor-3:#5801FF;
 
         }
-        @font-face {
-            font-family: 'desenho';
-            src: url(./Break_Love_Font[1].ttf);
-        }
         *{
             margin: 0px;
         }
@@ -22,10 +18,11 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            font-family: 'desenho';
             font-size: 1.2em;
         }
         header{
+            text-shadow: 1px 1px 2px black;
+            color: white;
             background-color: var(--cor2);
             height: 60px;
             width: 100%;
@@ -53,15 +50,21 @@
             width: 100%;
             background-color: var(--cor2);
         }
+        footer p{
+            font-weight: bolder;
+            font-size: 1.2em;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <header></header>
+    <header><h1>Bem-vindo</h1></header>
     <main>
         <h1>Piscicologia das cores</h1>
         <p>Sabia que as cores podem fazer com que um cliente escolha o comprar ou não o seu produto? Pois é isso mesmo segue a tabela abaixo:</p>
         <img src="./Piscicologia das cores.png" alt="Imagem com significado de cada cor">
     </main>
-    <footer></footer>
+    <footer><p>Brunno Fardin de Souza</p></footer>
 </body>
 </html>
