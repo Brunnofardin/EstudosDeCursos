@@ -665,6 +665,19 @@ Estudar mais sobre Regex
 ========================================
             CSS 3
 ========================================
+          PISCICOLOGIA DAS CORES
+----------------------------------------
+
+ sites ()=>{
+  https://paletton.com/#uid=1000u0k00u
+  48F00g0qF9Tt3FTv-
+
+  https://m2.material.io/design/color/the-color
+  -system.html#color-theme-creation
+
+  https://www.colorzilla.com/firefox/
+
+ }
 
 ----------------------------------------
       TIPOS DE ELEMENTOS
@@ -711,13 +724,15 @@ VERTICAL
           BOX
 -----------------------------
 
-BOX-SIZING:BORDER BOX; - SERVE PARA QUE A BORDA
-                        FAÇA PARTE DA CAIXA
+BOX-SIZING:BORDER BOX; - SERVE PARA QUE A 
+                      BORDA FAÇA PARTE DA 
+                      CAIXA
 
 TRANFORM(TRASLETE(-10PX,-PARAMETRO2))
                   ESQUERDA, CIMA
 
-TRASITION;TRANFORM TEMPO; - UM ATRASO DE ANIMAÇÃO
+TRASITION;TRANFORM TEMPO; - UM ATRASO DE
+                           ANIMAÇÃO
 
         SHORTHANDS 
 ------------------------------------
@@ -732,8 +747,8 @@ BACKGROUND-REPEAT:;
 BACKGROUND-SIZE:;
 BACKGROUND-ATTACHEMENT:;
 
-BACKGROUND:BLUE,URL(./IMG/IMG.EXEMPLO),CENTER NO-REPEAT
-16EM FIXED;
+BACKGROUND:BLUE,URL(./IMG/IMG.EXEMPLO),CENTER 
+NO-REPEAT 16EM FIXED;
 
 ---- PROPIEDADES CONTEUDO-------------------
 
@@ -749,8 +764,8 @@ BORDER - FICA DEPOIS DO PADDING
 
 OTLINE - OTLINE FICA ENTRA A BORDA E O OUTLINE.
 
-MARGIN -  É O ULTIMO ELEMENTO  DO CONTEUDO E ELE 
-        FICA DA BORDA PARA FORA.
+MARGIN -  É O ULTIMO ELEMENTO  DO CONTEUDO E 
+         ELE  FICA DA BORDA PARA FORA.
 
 =========================================
               FIM
