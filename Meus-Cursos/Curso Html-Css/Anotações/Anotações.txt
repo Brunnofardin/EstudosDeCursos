@@ -679,6 +679,49 @@ Estudar mais sobre Regex
 
  }
 
+ * CORES PRIMÁRIAS{
+     AMARELO,AZUL,VERMELHO
+ }
+ * CORES SECUNDÁRIAS{
+  
+      JUNÇÃO DAS CORES PRIMÁRIAS
+
+      LARANJA, VIOLETA,VERDE
+
+      LARANJA(AMARELO + VERMELHO)
+      
+      VIOLETA(AZUL + VERMELHO)
+
+      VERDE (AZUL + AMARELO)
+ }
+ * CORES TERCIÁRIAS{
+       
+      JUNÇÃO DAS CORES PRIMÁRIAS E 
+      SECUNDÁRIAS
+
+      AMARELO ESVERDEADA
+
+      AMERELO ALARANJADO
+
+      VERMELHO ALARANJADA
+
+      VERMELHO ARROXEADO
+
+      AZUL ARROXEADO
+
+      AZUL ESVERDEADO
+
+      
+ }
+ -------------------------
+ TEMPERATURA E HARMONIA
+ --------------------------
+
+
+ CORES QUENTES - SENSAÇÃO DE CALOR E
+                PROXIMIDADE
+                
+CORES FRIAS - SENSAÇÕES MAIS CALMAS
 ----------------------------------------
       TIPOS DE ELEMENTOS
 ----------------------------------------
