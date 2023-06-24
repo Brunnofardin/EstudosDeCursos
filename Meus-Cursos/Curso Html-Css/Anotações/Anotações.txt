@@ -521,7 +521,7 @@ ex:
 
    </form>
 
-TYPES
+TYPES (INPUTS(ENTRADAS))
 -----------------------------
 
 ex:
@@ -529,27 +529,27 @@ ex:
     |     |       |     |
    input do tipo texto com Dica: Nome
 
-type='submit' - enviar
+input type='submit' - enviar
  
-type='reset' - apagar /resetar dados
+input type='reset' - apagar /resetar dados
 
-type'password' - senha
+input type'password' - senha
 
-type='date' - dia atual
+input type='date' - dia atual
 
-type='month' - mês atual
+input type='month' - mês atual
 
-type'Number' - caixa numérica
+input type'Number' - caixa numérica
 
-type='radio' - selcionador bolinha
+input type='radio' - selcionador bolinha
 
-type='chekbox' - selecionador em caixa
+input type='chekbox' - selecionador em caixa
 
-type='color' - seletor de cores
+input type='color' - seletor de cores
 
-type='range' - seletor de satisfação
+input type='range' - seletor de satisfação
 
-type='file' - permite escolher um arquivo
+input type='file' - permite escolher um arquivo
 
 Observação:
 
@@ -578,6 +578,54 @@ cheked - marcado
 
 value='valor' - serve para colocar um valor como
                 valor da caixa de Texto
+------------------------------
+CONTROLES DE FORMULÁRIO
+------------------------------
+
+MIN='VALOR' - MINIMO PARA CAIXA NU  MÉRICA
+
+MAX='VALOR' - MÁXIMO PARA CAIXA NUMÉRICA
+
+STEP='VALOR' - DE QUANTO EM QUANTO SERÁ 
+              DIGITADO  NA CAIXA (INPUT)
+
+==============================
+CONTROLES FORA DE INPUTS
+==============================
+--------------------
+SELECT
+-------------------
+
+<select> - seletor
+
+<option> - oção dentro do seletor
+
+<optgroup label='etiqueta'> grupo de opções
+
+selected - selecionado
+--------------------
+DATALIST
+--------------------
+
+<input type='text' id='' list='iDdaDataList'>
+<datalist id='tal'>
+     <option value=''></option>
+     <option value=''></option>
+     <option value=''></option>
+</datalist>
+-----------------------
+AREA DE TEXTO
+-----------------------
+
+<TEXTAREA>
+
+
+------------------------
+SAÍDA DE DADOS
+-----------------------
+
+<OUTPUT>
+
 
 ------------------------------------
 AGRUPAMENTO DE CAMPOS
@@ -600,48 +648,11 @@ ex:
   </fieldset>
 
 
-CONTROLES DE FORMULÁRIO
-----------------------------
 
-MIN='VALOR' - MINIMO PARA CAIXA NU  MÉRICA
-
-MAX='VALOR' - MÁXIMO PARA CAIXA NUMÉRICA
-
-STEP='VALOR' - DE QUANTO EM QUANTO SERÁ 
-              DIGITADO  NA CAIXA (INPUT)
-
-
-CONTROLES FORA DE INPUTS
------------------------------------
-
-SELECT
--------------------
-
-<select> - seletor
-
-<option> - oção dentro do seletor
-
-<optgroup label='etiqueta'> grupo de opções
-
-selected - selecionado
-
-DATALIST
---------------------
-
-<input type='text' id='' list='iDdaDataList'>
-<datalist id='tal'>
-     <option value=''></option>
-     <option value=''></option>
-     <option value=''></option>
-</datalist>
-
-AREA DE TEXTO
------------------------
-
-<TEXTAREA>
 =-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
             FIM HTML5
 =-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=
+
         Guanabara disse:
       --------------------
 
