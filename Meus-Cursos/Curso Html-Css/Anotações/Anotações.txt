@@ -833,6 +833,17 @@ OTLINE - OTLINE FICA ENTRA A BORDA E O OUTLINE.
 MARGIN -  É O ULTIMO ELEMENTO  DO CONTEUDO E 
          ELE  FICA DA BORDA PARA FORA.
 
+--------------------------------
+          MEDIA QUERIES
+--------------------------------
+O QUE SÃO MEDIA QUERIES?
+
+SÃO REGRAS ULTILZIADAS NO CSS PARA
+EXIBIR CONTEUDOS EM DIFERENTES 
+MIDIAS (TELAS) DE DIVERSOS 
+TAMANHOS
+
+
 =-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-==-=-=-=
               FIM CSS3
 =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-==-==-=-=-=
