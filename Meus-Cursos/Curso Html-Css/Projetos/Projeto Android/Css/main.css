@@ -21,6 +21,7 @@ body{
 
 }
 header{
+    font-size: 1.2em;
     text-shadow: 1px 1px black;
     text-align: center;
     color: white;
@@ -30,20 +31,21 @@ header{
 
 }
 header p{
-    margin-top: 20px;
+    margin: 20px;
 }
 header h1{
     color: white;
     padding-top:20px ;
 }
 menu{
-    height: 60px;
+    height: 80px;
     width: 100%;
     background-color:var(--cor5);
-}
+} 
 menu ul li{
+    margin-top: 38px;
     font-weight: bolder;
-    height: 40px;
+    height: 30px;
     padding: 4px;
     margin-left: 40px;
     display: inline-block;
@@ -65,7 +67,7 @@ main a{
 }
 menu ul li:hover{
     transition: 1s;
-    border-radius: 3px;
+    border-radius: 6px;
     background-color: var(--cor4);
 
 }
@@ -166,4 +168,8 @@ footer{
 footer p{
     font-size: 1.3em;
     padding-top: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
 }
