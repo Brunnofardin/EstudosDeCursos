@@ -1,0 +1,36 @@
+@media screen and (max-width:704px){
+    :root{
+        --cor1:#0817FF;
+        --cor2:#0550E8;
+        --cor3:#6565ff;
+    
+    }
+    #burguer{
+        padding: 10px;
+        border: 1px solid var(--cor3);
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        display: block;
+        background-color:var(--cor1) ;
+    }
+    #burguer:hover{
+        background-color: var(--cor2);
+        border: 1px solid white;
+
+    }
+    menu{
+        padding-top: 10px;
+        text-align: center;
+    }
+    menu li{
+        margin-left: 0;
+        margin-top: 0;
+        display: block;
+    }
+    menu li:hover{
+        transform: translate(-0px,-0px);
+        transition: 1s;
+    }
+
+}

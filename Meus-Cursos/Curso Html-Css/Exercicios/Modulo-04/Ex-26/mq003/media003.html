@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Para todos tipos de midias*/
+        @charset "UTF-8";
+        @media all{
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: beige;
+    
+            }
+            header{
+                font-size: 1.4em;
+                color: white;
+                text-align: center;
+                height: 90px;
+                background-image: linear-gradient(to top,darkgray,#444444);
+            }
+            h1,h2{
+                margin-top: 40px;
+                text-align: center;
+            }
+            menu{
+                font-weight: bolder;
+                padding: 4px;
+                background-color: darkgray;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            menu li{
+                padding: 10px;
+                background-color: #444444;
+                display: inline-block;
+            }
+            menu li:hover{
+                background-color: lightgrey;
+            }
+            menu a:hover{
+                display: block;
+                height: 100%;
+                text-align: center;
+                width: 100%;
+                color: black;
+            }
+            section#imagens{
+                height:600px;
+                width: 90%;
+                margin: auto;
+            }
+            main{
+                line-height: 29px;
+                padding: 10px;
+                background-color: white;
+            }
+            article{
+                display: block;
+                margin: auto;
+                max-width: 700px;
+            }
+            p{
+                margin-top: 27px;
+                text-align: justify;
+                text-indent: 28px;
+            }
+            footer{
+                font-weight: bolder;
+                margin-top: 10px;
+                padding: 10px;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                background-color: darkgray;
+            }
+
+        }
+
+        /*Orientação deitado*/
+        @media screen and (orientation:landscape){
+            section#imagens{
+                background: #1414ff url('./img/cev-landscape.jpg') no-repeat  fixed left bottom ;
+                background-size:contain;
+             }
+
+        }
+        /*Orientação em pé*/
+        @media screen and (orientation: portrait){
+            section#imagens{
+                background: #1414ff url('./img/cev-portrait.jpg') no-repeat  fixed left bottom ;
+                background-size:contain;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>Bem-Vindo</header>
+    <menu>
+        <ul>
+            <li><a href="#">Opção-1</a></li>
+            <li><a href="#">Opção-2</a></li>
+            <li><a href="#">Opção-3</a></li>
+        </ul>
+    </menu>
+    <main>
+        <h1>Trabalhando com media queries e media features</h1>
+        <article>
+            <h1>Tipos de media queries</h1>
+            <h2>Meida All, media Screen, media Print</h2>
+            <p>Exitem diversos tipos de media queries mas os mais usados são: </p>
+            <ul>
+                <li>Media ALL</li>
+                <li>Media Screen</li>
+                <li>Media Print</li>
+            </ul>
+            <h2>Media Print</h2>
+            <p>Media print serve para impressoras, não tem quando você dá ctrl+p em site para imprimi-lo? Já paraou pra pensar que aquela é uma versão diferente do site? Que o menu some,os links somem? Pois é meu amigo isso é uma versão diferente do site, usada com a media querie do tipo print,que traduzido para o portgugûes significa "IMPRIMIR"</p>
+            <h2>Media Sreen</h2>
+            <p>Media screen serve para telas sem especificar o tamanho digamos que é uma versão que atende a todos mais que naverdade causa vários problemas, citados abaixo: </p>
+            <ul>
+                <li>Responsividade</li>
+                <li>Tamnho inadequados</li>
+            </ul>
+            <h2>Media ALL</h2>
+            <p>Como o própio nome diz ('TODOS') será uma vesão para todos tipos de tela que não ira mudar de modo algun</p>
+
+        </article>
+        <h1>Mude a orienção do dispositivo</h1>
+        <section id="imagens">
+            
+        </section>
+
+    </main>
+    <footer>Desenvolvido por: Brunno Fardin de Souza</footer>
+    
+</body>
+</html>

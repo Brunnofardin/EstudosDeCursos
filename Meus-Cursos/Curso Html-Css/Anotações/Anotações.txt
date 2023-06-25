@@ -776,8 +776,8 @@ BOX-SIZING:BORDER BOX; - SERVE PARA QUE A
                       BORDA FAÇA PARTE DA 
                       CAIXA
 
-TRANFORM(TRASLETE(-10PX,-PARAMETRO2))
-                  ESQUERDA, CIMA
+TRANFORM(TRANSLETE(PARAMETRO,PARAMETRO2))
+                  ( ESQUERDA,  CIMA )
 
 TRASITION;TRANFORM TEMPO; - UM ATRASO DE
                            ANIMAÇÃO
@@ -852,9 +852,9 @@ OTLINE - OTLINE FICA ENTRA A BORDA E O OUTLINE.
 MARGIN -  É O ULTIMO ELEMENTO  DO CONTEUDO E 
          ELE  FICA DA BORDA PARA FORA.
 
---------------------------------
+=======================================
           MEDIA QUERIES
---------------------------------
+=======================================
 O QUE SÃO MEDIA QUERIES?
 
 SÃO REGRAS ULTILZIADAS NO CSS PARA
@@ -864,6 +864,7 @@ TAMANHOS EX: TABLET, CELULARES ETC..
 
 MEDIA QUERIE == MEDIA TYPE + MEDIA FEATURES
 
+-----------------------
 MEDIA TYPES
 ---------------------
 
@@ -876,7 +877,7 @@ MEDIA='PRINT' - PARA IMPRESSORAS
 media types são escritas fora do
 parênteses
 
-
+------------------------
 MEDIA FEATURES
 ------------------------
 
@@ -886,7 +887,7 @@ SERVEM PARA DEFINIR PARA QUAL TELA
 A MEDIA QUERIE SERÁ USADA
 
 
-
+regra = @media tela ...
 
 Media features são escritas entre
 parênteses ( )
@@ -920,6 +921,13 @@ Altura maior que largura? - portrait
 
 Largura maior que altuta - landsacpe
 
+-------------------------
+MOBILE FIRST
+-------------------------
+TODA VEZ QUE FORMOS DESENVOLVER UM PROJETO 
+TEMOS QU EFAZER PRIMEIRAMENTE UMA VERSÃO PARA 
+MOBILE E DEPOIS PENSAR EM COMPUTADORES TABLETS
+ETC..
 
 =-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-==-=-=-=
               FIM CSS3
