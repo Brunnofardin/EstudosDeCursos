@@ -768,38 +768,74 @@ OUTROS DOIS TERMOS SENDO ELES:
 
         TOP - TOPO
 
---------------------------------------
-       BOX ANIMATIONS
---------------------------------------
-
-BOX-SIZING:BORDER BOX; - SERVE PARA QUE A 
-                      BORDA FAÇA PARTE DA 
-                      CAIXA
-
-TRANFORM(TRANSLETE(PARAMETRO,PARAMETRO2))
-                  ( ESQUERDA,  CIMA )
-
-TRASITION;TRANFORM TEMPO; - UM ATRASO DE
-                           ANIMAÇÃO
-
+====================================
       SHORTHANDS (MÃOZINHA)
-------------------------------------
+====================================
 
-(BACKGROUND)
+( BACKGROUND )
 --------------
 
-BACKGROUND-COLOR:; 
-BACKGROUND-IMAGE:;
-BACKGROUND-POSITION:;
-BACKGROUND-REPEAT:;
-BACKGROUND-SIZE:;
-BACKGROUND-ATTACHEMENT:;
+COLOR- COR
+    RGB
+     HEXADECIMAL
+      
 
-BACKGROUND:COR,URL(),CENTER NO-REPEAT 16EM 
-FIXED ;
+IMAGE - IMAGEM 
+     PNG
+      JPEG
+       GIF
+        FAVICON
+
+POSITION- POSIÇÃO
+      CENTER
+       LEFT 
+         TOP
+           BOTTOM
+          LEFT CENTER
+        RIGHT CENTER
+      CENTER BOTTOM
+
+REPEAT - REPETIR
+        NO-REPEAT
+         REPEAT
+
+SIZE - TAMANHO
+       COVER
+        CONTAIN
+
+ATTACHEMENT - ?
+        FIXED
 
 
-(FONT)
+PRECEDÊNCIA
+
+1° BACKGROUND-COLOR:; 
+2° BACKGROUND-IMAGE:;
+3° BACKGROUND-POSITION:;
+4° BACKGROUND-REPEAT:;
+5° BACKGROUND-SIZE:;
+6° BACKGROUND-ATTACHEMENT:;
+
+
+( MARGIN )
+-------------------
+
+PRECENDÊNCIA
+
+1° MAGRIN-TOP
+2° MAGRIN-RIGHT
+3° MAGRIN-BOTTOM
+4° MAGRIN-RIGHT
+
+( PADDING )
+-----------------
+
+1° PADDING-TOP
+2° PADDING-RIGHT
+3° PADDING-BOTTOM
+4° PADDING-RIGHT
+
+( FONT )
 -----------
 
 FONT-FAMILY - FAMYLIA DA FONTE
@@ -807,14 +843,14 @@ FONT-WEIGHT - GRAU DE NEGRITUDE
 FONT-SIZE - TAMANHO DA LETRA
 FONT-STYLE - ESTILO EX: ITÁLICO
 
-PRECEDENCIA:
+PRECEDÊNCIA:
 
 1° STYLE
 2° WEIGHT
 3° SIZE
 4° FAMILY
 
-FONT(STYLE,WEIGHT,SIZE,FAMYLI)
+
 =======================================
          DISPLAY
 =======================================
@@ -835,11 +871,12 @@ GLOSSÁRIO:
   CAIXA FAZ REFERÊNCIA Á BOX-LEVEL
 
 =======================================
-       PROPIEDADES CONETUDO
+       PROPIEDADES CONTEUDO
 =======================================
 
 TIPOS
 -----------
+
 
 CONTEUDO - CONTEUDO POSSUENTE
 
@@ -855,6 +892,7 @@ MARGIN -  É O ULTIMO ELEMENTO  DO CONTEUDO E
 =======================================
           MEDIA QUERIES
 =======================================
+
 O QUE SÃO MEDIA QUERIES?
 
 SÃO REGRAS ULTILZIADAS NO CSS PARA
@@ -877,9 +915,9 @@ MEDIA='PRINT' - PARA IMPRESSORAS
 media types são escritas fora do
 parênteses
 
-------------------------
-MEDIA FEATURES
-------------------------
+=================================
+      MEDIA FEATURES
+=================================
 
 PARA QUE SERVEM?
 
@@ -904,8 +942,9 @@ media='screen' and (algo)
 
 (min-width:28626px) largura mínima
 
-
+---------------
 observações:
+---------------
 
 max - máximo
 
@@ -921,27 +960,82 @@ Altura maior que largura? - portrait
 
 Largura maior que altuta - landsacpe
 
--------------------------
-MOBILE FIRST
--------------------------
-TODA VEZ QUE FORMOS DESENVOLVER UM PROJETO 
-TEMOS QU EFAZER PRIMEIRAMENTE UMA VERSÃO PARA 
-MOBILE E DEPOIS PENSAR EM COMPUTADORES TABLETS
-ETC..
+==================================
+      MOBILE FIRST
+==================================
+
+TODA VEZ QUE FORMOS DESENVOLVER UM
+PROJETO TEMOS QU EFAZER PRIMEIRAMENTE
+UMA VERSÃO PARA MOBILE E DEPOIS PENSAR
+EM COMPUTADORES TABLETS ETC..
 
 
 
-IMPORTANTE LEMBRAR DE VERIFICAR O TYPICAL
-DEVICE BREAKPOINTS DO SEU ANO atual
+IMPORTANTE LEMBRAR DE VERIFICAR O
+TYPICALDEVICE BREAKPOINTS DO SEU ANO
+ATUAL
+
 
 O MEU É  DE 2023 E ESTÁ ASSIM:
 
 Mobile devices – 320px — 480px.
+
 iPads, Tablets – 481px — 768px.
-Small screens, laptops – 769px — 1024px.
+
+Telas grandes, laptops – 769px — 1024px.
+
 Desktops, large screens – 1025px — 1200px.
+
 Extra large screens, TV – 1201px, and more.
 
+
+=================================
+           ANIMAÇÕES
+==================================
+
+TRANSITION
+---------------
+trasition: parametros e segundos - trasição
+
+ex:
+  trasintion:width 1s height 1s;
+
+insto causará um atraso 
+de 1s durante o aumento ou 
+diminuição da largura 
+
+TIME FUNCTION
+--------------
+
+transition-timing-funtion:ease;
+
+suavisa a animação
+
+
+TRANSFORM
+------------
+
+transform:trasnlete(para1,para2)
+
+para1 - topo
+
+para2 - esquerda
+
+translatar o topo e a esquerda
+====================================
+          PRATICIDADE
+====================================
+
+  OVERFLOW
+------------------
+overflow: hidden; - tudo que estiver fora da
+borda fica escondido
+
+
+BOX SIZING
+--------------------
+box-sizing: border-box; - serve para que a BORDA
+conte como parte do conteudo
 
 =-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-==-=-=-=
               FIM CSS3
