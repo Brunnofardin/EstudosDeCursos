@@ -31,6 +31,7 @@
     menu li:hover{
         transform: translate(-0px,-0px);
         transition: 1s;
+        
     }
 
 }

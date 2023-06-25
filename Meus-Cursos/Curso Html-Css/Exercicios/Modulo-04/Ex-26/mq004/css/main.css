@@ -28,7 +28,6 @@ header p{
     display: none;
 }
 menu{
-    display: none;
     height: auto;
     background-color: var(--cor1);
 }
