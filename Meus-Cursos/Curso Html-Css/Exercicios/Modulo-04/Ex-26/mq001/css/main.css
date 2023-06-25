@@ -1,0 +1,64 @@
+/*Estilo para tela*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+main{
+    line-height: 28px;
+    padding: 10px;
+    background-color: darkgrey;
+}
+header{
+    color: #0000e2;
+    background-image: linear-gradient(to top, darkgrey,darkgray);
+    height: 60px;
+    text-align: center;
+}
+header a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+menu{
+    padding: 10px;
+    background-color: darkgrey;
+
+}
+main h1{
+    text-align: center;
+}
+article{
+    border-radius: 6px;
+    padding: 10px;
+    background-color: white;
+    display: block;
+    max-width: 600px;
+    margin: auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+menu ul li{
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 30px;
+    display: inline-block;
+}
+menu ul li:hover{
+    border-radius: 6px;
+    background-color: beige;
+}
+p{
+    text-indent: 28px;
+    text-align: justify;
+}
+footer{
+    margin-top: 20px;
+    padding: 4px;
+    background-color: darkgrey;
+}
+footer p{
+    text-align: center;
+}

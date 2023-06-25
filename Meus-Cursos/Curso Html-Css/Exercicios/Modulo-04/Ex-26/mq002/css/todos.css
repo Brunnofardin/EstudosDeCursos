@@ -1,0 +1,72 @@
+/*Para todos tipos de midias*/
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+
+}
+header{
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    height: 90px;
+    background-image: linear-gradient(to top,darkgray,#444444);
+}
+h1,h2{
+    margin-top: 40px;
+    text-align: center;
+}
+menu{
+    font-weight: bolder;
+    padding: 4px;
+    background-color: darkgray;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+menu li{
+    padding: 10px;
+    background-color: #444444;
+    display: inline-block;
+}
+menu li:hover{
+    background-color: lightgrey;
+}
+menu a:hover{
+    display: block;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+section#imagens{
+    height:600px;
+    width: 90%;
+    margin: auto;
+}
+main{
+    line-height: 29px;
+    padding: 10px;
+    background-color: white;
+}
+article{
+    display: block;
+    margin: auto;
+    max-width: 700px;
+}
+p{
+    margin-top: 27px;
+    text-align: justify;
+    text-indent: 28px;
+}
+footer{
+    font-weight: bolder;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: darkgray;
+}

@@ -1,0 +1,21 @@
+/*Estilo para impressora*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+}
+menu{
+    display: none;
+}
+main a{
+    text-decoration: none;
+    color: black;
+}
+main p{
+    line-height: 29px;
+}
+main::after{
+    content: 'Acesse https://github.com e veja o perfil do criador desta aba';
+}
+footer a{
+    display: none;
+}

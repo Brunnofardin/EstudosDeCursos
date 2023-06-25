@@ -1,0 +1,5 @@
+/*Aparelhos em pé*/
+section#imagens{
+    background: #1414ff url('../img/cev-portrait.jpg') no-repeat  fixed left bottom ;
+    background-size:contain;
+}

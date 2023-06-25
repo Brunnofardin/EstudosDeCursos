@@ -1,0 +1,14 @@
+/*Para impressoras*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+}
+article h1,h2{
+    line-height: 27px;
+}
+header{
+    display: none;
+}
+menu{
+    display: none;
+}

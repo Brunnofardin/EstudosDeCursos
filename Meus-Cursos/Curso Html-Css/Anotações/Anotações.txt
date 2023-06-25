@@ -816,6 +816,25 @@ PRECEDENCIA:
 
 FONT(STYLE,WEIGHT,SIZE,FAMYLI)
 =======================================
+         DISPLAY
+=======================================
+
+DISPLAY:NONE; - NÃO VAI SER EXIBIDO
+
+DISPLAY:BLOCK; - SERÁ EXIBIDO EM FORMA DE CAIXA
+
+DISPLAY: INLINE BLOCK; SERÁ EXIBIDO COMO LINHA
+
+
+
+
+GLOSSÁRIO:
+
+  LINHA FAZ REFERÊNCIA Á INLINE LEVEL
+
+  CAIXA FAZ REFERÊNCIA Á BOX-LEVEL
+
+=======================================
        PROPIEDADES CONETUDO
 =======================================
 
@@ -840,8 +859,66 @@ O QUE SÃO MEDIA QUERIES?
 
 SÃO REGRAS ULTILZIADAS NO CSS PARA
 EXIBIR CONTEUDOS EM DIFERENTES 
-MIDIAS (TELAS) DE DIVERSOS 
-TAMANHOS
+TELAS (MEDIAS) DE DIVERSOS 
+TAMANHOS EX: TABLET, CELULARES ETC..
+
+MEDIA QUERIE == MEDIA TYPE + MEDIA FEATURES
+
+MEDIA TYPES
+---------------------
+
+MEDIA='SCREEN' PARA TELAS
+
+MEDIA='ALL' PARA TODOS TIPOS 
+
+MEDIA='PRINT' - PARA IMPRESSORAS
+
+media types são escritas fora do
+parênteses
+
+
+MEDIA FEATURES
+------------------------
+
+PARA QUE SERVEM?
+
+SERVEM PARA DEFINIR PARA QUAL TELA
+A MEDIA QUERIE SERÁ USADA
+
+
+
+
+Media features são escritas entre
+parênteses ( )
+
+ex: 
+
+media='screen' and (algo)
+
+(orientatiton:landscape) orientação paisagem
+
+(orientattion:portrait) orintção: retrato
+
+(max-width:23982px) largura máxima
+
+(min-width:28626px) largura mínima
+
+
+observações:
+
+max - máximo
+
+min - mínimo
+
+width - largura
+
+orientation - orientação
+
+and - e ou Adicionando configurações
+
+Altura maior que largura? - portrait
+
+Largura maior que altuta - landsacpe
 
 
 =-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-==-=-=-=

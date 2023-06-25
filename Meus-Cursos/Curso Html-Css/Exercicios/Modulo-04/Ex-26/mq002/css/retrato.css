@@ -1,0 +1,7 @@
+/*Aparelhos deitados*/
+
+
+section#imagens{
+    background: #1414ff url('../img/cev-landscape.jpg') no-repeat  fixed left bottom ;
+    background-size:contain;
+}
