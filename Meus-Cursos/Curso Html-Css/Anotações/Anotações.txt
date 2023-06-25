@@ -929,6 +929,20 @@ TEMOS QU EFAZER PRIMEIRAMENTE UMA VERSÃO PARA
 MOBILE E DEPOIS PENSAR EM COMPUTADORES TABLETS
 ETC..
 
+
+
+IMPORTANTE LEMBRAR DE VERIFICAR O TYPICAL
+DEVICE BREAKPOINTS DO SEU ANO atual
+
+O MEU É  DE 2023 E ESTÁ ASSIM:
+
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+
+
 =-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-==-=-=-=
               FIM CSS3
 =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-==-==-=-=-=
