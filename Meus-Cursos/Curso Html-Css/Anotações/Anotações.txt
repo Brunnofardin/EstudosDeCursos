@@ -1022,6 +1022,41 @@ para1 - topo
 para2 - esquerda
 
 translatar o topo e a esquerda
+
+
+====================================
+ COISAS NOVAS DO MODULO-04
+====================================
+
+METODO CALC
+-------------
+FAZ CONTAS EX:
+
+WIDTH:CALC(100%-10PX)
+
+PEGAR ITENS PELO TIPO
+----------------------
+
+[TYPE=]
+
+
+EX:
+
+QUERO A INPUT DO TIPO TEXTO
+
+INPUT[TYPE=TEXT]{
+
+}
+
+
+TRANSFORM
+----------------
+transleteY(valor - valor)
+
+Mexe na vertical tanto para cima
+e para baixo
+
+
 ====================================
           PRATICIDADE
 ====================================

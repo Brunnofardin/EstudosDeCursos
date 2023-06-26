@@ -12,7 +12,7 @@
 }
 body,html{
     background-color: var(--cor3);
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 
 }
@@ -58,20 +58,34 @@ span{
     color: var(--cor3);
 }
 div.campo{
+    background-color: var(--cor3);
+    border-radius: 10px;
+    height: 40px;
     color: black;
-    height: 32px;
     margin-top: 20px;
 }
 div.campo > span{
+    padding: 5px;
     text-align: center;
     color: white;
-    background-color: black;
-    width: 30px;
-    height: 38px;
-    border-radius: 4px;
+    font-size: 2em;
+    width: 40px;
+  
+    
 }
-div.campo input{
-    height:38px;
+div.campo > label{
+    display:none;
+}
+div.campo > input{
+    background-color: var(--cor1);
+    font-size: 1em;
+    height: 90%;
+    padding: 7px;
+    width: calc(100% - 45px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translateY(-10px);
+    border: 0;
 }
 form > input[type=submit]{
     border: 1px solid black;
@@ -99,6 +113,9 @@ form > a.botao{
     border: 1px solid black ;
     border-radius: 5px;
     color: black;
+}
+form a.botao > i{
+    font-size: 1.7em;
 }
 form a.botao:hover{
     background-color: var(--cor1);
