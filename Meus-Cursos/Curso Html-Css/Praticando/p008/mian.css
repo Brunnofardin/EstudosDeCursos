@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #6262ff;
+}
+section{
+    padding: 10px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 500px;
+    height: auto;
+    margin: 40px auto;
+    
+}
+section > article > section#texto{
+    margin-top: 20px;
+    height: 50%;
+}
+
+section> article > section#imagem{
+    cursor: pointer;
+    height: 50%;
+    margin-top: 20px;
+}
+section > article > section#imagem > img{
+    max-width: 100%;
+}
+
+.aumentar{
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid black;
+    transform: scale(1.5);
+}
+.transitar{
+    transition: transform 1s , border 1s;
+
+}
