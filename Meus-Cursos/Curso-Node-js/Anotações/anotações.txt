@@ -1,6 +1,18 @@
 
+Conectando ao mysql:
+   
+    mysql -h (host) -u (usuário) -p (senha)
 
------------------------------------------ -BANCO DE DADOS node.js----------------------------------------------------------------------
+
+SITE:
+  mysql
+  intaller mysql server
+  versao developer
+  only
+
+
+
+--BANCO DE DADOS Node JS-----
 
 
 DATABASE - BANCO DE DADOS
@@ -32,10 +44,13 @@ DELETE - DELETE
 DESCRIBE - DESCREVA
 
 
-UPDATE NOMEDATABELA SET CAMPODESEJADO PARA MUDAR 'O QUE VAI COLOCAR' WHERE NOME = 'NOME-EX'
+UPDATE NOMEDATABELA SET CAMPODESEJADO PARA MUDAR 
+'O QUE VAI COLOCAR' WHERE NOME = 'NOME-EX'
 
 
--------------------------------------------------------MODULOS---------------------------------------------------------------------------------------
+UPDATE FUNCIONÁRIOS SET NOMES 'JOÃO' WHERE NOMES = 'BRUNNO'
+
+--------MODULOS------------
 
 
 node_modules - contem todos os modulos de terceiro
@@ -46,11 +61,12 @@ local - tal local determinado
 
 globalmente - todos
 
-PARA INTALAR MODULOS TERCEIRIZADOS USAMOS : npm init - Cria c]o package.jason (pasta que tem todos modulos instalados)
+PARA INTALAR MODULOS TERCEIRIZADOS USAMOS : 
+  npm init - Cria o package.jason 
+  (pasta que tem todos modulos instalados)
 
-                                            npm install nomedomodulo - instala localmente
-           
-                                            npm -g install nomeModulo - instala globalmente
+             npm install nomedomodulo - instala localmente
+             npm -g install nomeModulo - instala globalmente
 
                                             
 
