@@ -322,6 +322,7 @@ IMG SRC='' ALT='' - PERMITE CRIAR IMAGENS
 
 P - CRIA PARÁGRAFOS
 
+HR - CRIA UMA LINHA HORIZONTAL
 ======================================
   HIERAQUIA DE TITULOS
 ======================================
@@ -989,41 +990,6 @@ Desktops, large screens – 1025px — 1200px.
 Extra large screens, TV – 1201px, and more.
 
 
-=================================
-           ANIMAÇÕES
-==================================
-
-TRANSITION
----------------
-trasition: parametros e segundos - trasição
-
-ex:
-  trasintion:width 1s height 1s;
-
-insto causará um atraso 
-de 1s durante o aumento ou 
-diminuição da largura 
-
-TIME FUNCTION
---------------
-
-transition-timing-funtion:ease;
-
-suavisa a animação
-
-
-TRANSFORM
-------------
-
-transform:trasnlete(para1,para2)
-
-para1 - topo
-
-para2 - esquerda
-
-translatar o topo e a esquerda
-
-
 ====================================
  COISAS NOVAS DO MODULO-04
 ====================================
@@ -1048,14 +1014,80 @@ INPUT[TYPE=TEXT]{
 
 }
 
+==================================
+           ANIMAÇÕES
+-=-=-=-=-=-=-==-=-=-=-=-==-=-=-=-=
 
-TRANSFORM
-----------------
-transleteY(valor - valor)
+==============================
+         TRANSFORM
+==============================
+transform: o que?
 
-Mexe na vertical tanto para cima
-e para baixo
+ex:
+  transform:scale();
+  transform:rotate();
+  transform:translate()
 
+
+
+ESCALA
+---------
+scale() - mexe na escala
+
+
+TRANSLATAR
+-----------
+transleteY(valor - valor) Mexe na vertical 
+                         tanto para cima e 
+                         para baixo
+ROTAÇÃO
+------------
+
+rotateZ("angle") rotaciona elemento no eixo
+                 escolido nesse exemplo usamos
+                 o eixo Z
+
+
+DALAY
+-------------
+trasition: elemento tempo tempo, ;
+
+o segundo tempo passado é o tempo de
+atraso ou ('Delay') que o elemento irá
+esperar para executar
+
+=====================================
+           TRANSITION
+=====================================
+
+qual elemento? e qual tempo? 
+
+transition: elemento tempo;
+
+ex:
+   transition : backgrond 1s;
+   transição de cor de fundo em 1s
+
+
+=====================================
+         ANIMATION
+=====================================
+
+linear - tudo igual
+
+animaition : NomeDaAnimação, tempo,
+             aceleração, Quntas vezes
+             ser executada;
+
+Referênciando a animação 
+-------------------------
+ 
+@Keyframes NomeDaAnimação{
+    from {} - de tal lugar
+    to {} - para tal lugar
+}
+
+opacity - opação
 
 ====================================
           PRATICIDADE

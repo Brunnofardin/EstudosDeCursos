@@ -1,0 +1,84 @@
+@charset "UTF-8";
+body{
+    background-color: #4f4fff;
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    margin: 20px  10px;
+}
+section#formulario{
+    text-align: center;
+    height: 400px;
+    max-width: 500px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+section#animações{
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: orangered;
+    margin: auto;
+}
+/*      ANIMAÇÕES          */
+
+form{
+    background-color: white;
+}
+div.cor{
+    transition: background-color 1s, color 2s;
+
+}
+div.cor:hover{
+    color: white;
+    background-color: #5e5e5e;
+}
+div.scala{
+    transition: transform 1s;
+
+}
+div.scala:hover{
+    transform: scale(1.1);
+
+}
+div.rotação{
+    transition: transform 1s;
+
+}
+div.rotação:hover{
+    transform: rotateZ(180deg);
+}
+div.delay{
+    transition: width 1s 1s, height 1s;
+
+}
+div.delay:hover{
+    width: 230px;
+    height: 260px;
+
+}
+.isexo:checked{
+    transform: rotateY(360deg);
+}
+.isexo{
+    transition: transform 1s;
+}
+input#nome{
+    margin-top: 20px;
+
+    transition: 1s;
+}
+input#nome:focus{
+    transform: scale(1.5);
+}
