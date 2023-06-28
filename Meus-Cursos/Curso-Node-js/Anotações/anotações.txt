@@ -1,4 +1,65 @@
 
+===================================
+         MODULOS
+====================================
+
+
+    EXPORTANDO VARIAVEIS
+=========================
+
+module.exports = NomeDoQueVaiExportar;
+
+ex: 
+  var soma = funtion(a,b){
+    return a+b
+  }
+  module.exports = soma
+
+  -------------
+   requer algo
+  -------------
+  require(./funçõessoma)
+
+
+
+=====================
+  PROTOCOLO HTTP
+=====================
+
+http - É protocolo que permite
+       que o cliente se comunique
+       com o servidor
+
+======================
+    EXPRESS
+======================
+
+var express = require(express)
+
+app = express()
+
+app.get((req,res)=>{
+
+})
+
+app.listen(porta()=>{
+  bloco de código
+})
+
+Rotas -  
+
+/:nome
+
+
+
+
+
+
+
+
+
+
+
 Conectando ao mysql:
    
     mysql -h (host) -u (usuário) -p (senha)
