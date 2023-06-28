@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações 003</title>
+    <style>
+        div.animações{
+            text-align: center;
+            color: white;
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: blue;
+            display: inline-block;
+            margin-top: 40px;
+            margin-left: 40px;
+
+        }
+        p{
+            margin-top: 40px;
+        }
+        div{
+            transition: transform 1s, scale 1s;
+        }
+        div:hover{
+            transform: rotate(360deg) scale(1.5);
+        }
+        section{
+            text-align: center;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+            background-color: beige;
+            position: relative;
+        }
+        section div{
+            position: absolute;
+            animation:Posição 4s linear infinite;
+        }
+        @keyframes Posição{
+            0%{
+                top:0;
+                left:0
+            }
+            25%{
+                top: 0;
+                left:calc(100% - 150px);
+            }
+            50%{
+                top:calc(100% - 150px);
+                left:calc(100% - 150px);
+                
+                
+            }
+            75%{
+                top:calc(100% - 150px);
+                left:0 ;
+
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <section>
+        <h1>Position</h1>
+        <div class="animações"><p>OI</p></div>
+    </section>
+</body>
+</html>

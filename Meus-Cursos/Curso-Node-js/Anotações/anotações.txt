@@ -44,30 +44,179 @@ DELETE - DELETE
 DESCRIBE - DESCREVA
 
 
-UPDATE NOMEDATABELA SET CAMPODESEJADO PARA MUDAR 
-'O QUE VAI COLOCAR' WHERE NOME = 'NOME-EX'
+==============================
+      TIPOS operadores  
+=============================
+
+VARCHAR(TamanhoMáximo) - TEXTO GERAIS
+
+CHAR - CARACTERES
+
+INT - NÚMEROS INTEIROS
+
+INTERAGER - INTEIRO
+===========================
+    BANCO DE DADOS
+===========================
+---------------------------
+  CRIANDO BANCO DE DADOS
+---------------------------
+
+CREATE DATABASE NomeDoBAnco;
+
+---------------------------
+  VENDO BANCOS DE DADOS
+---------------------------
+
+SHOW DATABASES;
+
+-----------------------------
+ SELECIONANDO BANCO DE DADOS
+-----------------------------
+
+USE Nome DoBancoDeDados
+
+=============================
+         TABELAS
+=============================
+
+----------------------------
+       CRIANDO TABELA
+----------------------------
+
+CREATE TABLE NomeDaTabela(
+  NomeDaColuna VARCHAR(50),
+  NomeDaColuna CHAR,
+  NomeDaColuna INT
+);
+
+Para criar uma tabela você
+precisará dizer os nomes das 
+colunas dentro dos parênteses.
+
+---------------------------
+VENDO TABELAS
+---------------------------
+
+SHOW TABLES;
+
+--------------------------
+    DESCREVENDO TABELA
+--------------------------
+
+DESCRIBE NomeDaTabela;
+
+--------------------------
+  INSERIDO DADOS NA TABLE
+--------------------------
+
+INSERT INTO NomeDaTabela(Nome) VALUES(
+  'Brunno'
+);
+
+Para inserir dados em algun
+lugar você deve dizer os campos 
+entre parênteses.
+
+E depois os valores a serem 
+inseridos entre prêntese,
+observação: na mesma sequência
+que você usou para referência-los.
 
 
-UPDATE FUNCIONÁRIOS SET NOMES 'JOÃO' WHERE NOMES = 'BRUNNO'
+---------------------
+  LISTANDO DADOS
+--------------------
 
---------MODULOS------------
+SELECT * FROM NomeDatabela;
 
 
-node_modules - contem todos os modulos de terceiro
+* - todos
 
-package.js - lista todos modulos instalados pelo npm
+----------------------------
+  LISTANDO DADOS ESPECIFICOS
+-----------------------------
+SELECT * FROM NomeDaTabela WHERE Algumacoisa;
 
-local - tal local determinado
+ex:
+  SELECT * FROM NomeDaTabela WHERE campoX = algo;
+  traduzindo{
+    selecione todos os dados 
+    de NomeDaTabela onde o campoX for igual
+    a algo
+  }
+  
 
-globalmente - todos
 
-PARA INTALAR MODULOS TERCEIRIZADOS USAMOS : 
-  npm init - Cria o package.jason 
-  (pasta que tem todos modulos instalados)
+WHERE - ONDE?
 
-             npm install nomedomodulo - instala localmente
-             npm -g install nomeModulo - instala globalmente
+----------------------------
+  deletando registdos do DB 
+-----------------------------
 
-                                            
+DELETE FROM NomeDaTabela WHERE CAMPOx = algo 
 
-                  
+Delete da NomeDatabela onde 
+o campoX for igual a algo
+
+
+-------------------------------
+  Altulizando DADOS NA TABELA
+--------------------------------
+
+UPDATE NomeDaTabela SET colunaY = conteudoX WHERE dadoX = dadoY
+
+Altulize a NomeDaTabela sete na colunaY o 
+conteudoX onde o dadoX for igual a dadosY
+
+
+=================================
+    CRIANDO CONEXÃO COM BD
+=================================
+
+Primeiro temo sque chamar a pacote
+sequelize para isso devemos criar 
+uma variavel e armazena-la 
+
+observe: 
+     let Sequelize = require('sequelize')
+  
+após isso temos que iniciar o pacote e 
+entra em contato com noss bd e para isso
+criamos uma nova variavel chamada por ex
+CONEXÃO
+
+observe: 
+       let conexao = new Sequelize('nomeDoBanco','Usuário','Senha',{
+           host: - onde está hospedado o banco de dados
+           dialect:  - qual dialogo ele é
+       }) 
+============================
+   POSTANDO ALGO NO BD
+----------------------------
+
+
+Para postar algo, basta chamar a 
+função Define
+
+let postar = conexao.define('NomeDaTabela',{
+  cabeçalho da tabela:{
+    type: Sequelize.STRING
+  },
+  conteudoDaTabela:{
+    type:TEXT
+  }
+})
+===============================
+   SINCRONIZANDO TABELA
+===============================
+NomeVariavel.sync({force:true})
+
+===============================
+   INSERINDO DADOS
+===============================
+
+NomeVariavel.create({
+  campo: "",
+  campo: ""
+})
