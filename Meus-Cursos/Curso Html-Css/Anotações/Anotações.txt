@@ -858,12 +858,38 @@ PRECEDÊNCIA:
 
 DISPLAY:NONE; - NÃO VAI SER EXIBIDO
 
-DISPLAY:BLOCK; - SERÁ EXIBIDO EM FORMA DE CAIXA
+DISPLAY:BLOCK; - SERÁ EXIBIDO EM FORMA DE 
+                 CAIXA OCUPANDO 100% DA TELA 
 
 DISPLAY: INLINE BLOCK; SERÁ EXIBIDO COMO LINHA
+                      OCUPANDO SOMENTE O ESPAÇO DO CONTEUDO
+
+DISPLAY:FLEX; - DEIXA UM ELEMENTO AO LADO DO OUTRO 
+                OCUPANDO SOMENTE O CONTEUDO
+                (focado para elemntos caixas uns dentro dos outros)
 
 
 
+----------------
+ FLEX
+----------------
+justify-content:flex-end; - deixa os elementos no final da página
+
+justify-content:start; - deixa os elementos  no inicio da página
+
+justify-content:center; deixa todos elementos (conteudo) centralizados
+
+justify-content:space-between; - deixa um com esço constante do outro
+
+justify-content:space-around; - deixa um espaço de circulo enre um e outro
+
+aling-items:end; todos abaixo do eixo
+
+aling-items:center; toods no centro do eixo
+
+aling-items:start; - deixa todos em cima do eixo
+
+gap - espaço entre elementos
 
 GLOSSÁRIO:
 
