@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/home',(req,res)=>{
-    res.end('Ola')
+    res.sendFile(__dirname+'/index.html')
 
 })
-app.listen(7777,()=>{console.log('Servidor ligado na porta https://localhost7777')})
+app.listen(9987,()=>{console.log('Servidor ligado na porta https://localhost9987')})

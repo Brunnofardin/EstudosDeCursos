@@ -38,7 +38,7 @@ var express = require(express)
 
 app = express()
 
-app.get((req,res)=>{
+app.get((req,res)=>{ 
 
 })
 
@@ -50,12 +50,24 @@ Rotas -
 
 /:nome
 
+=====================
+  comandos
+=====================
+send('o que?') - mandar
+
+end('o que?') - finalizar
+
+sendFile('qual?') - mandar um arquivo
+
+__dirname - diretório raiz da sua aplicação
 
 
 
+=====================
+ TIPOS DE ROTAS        
+=====================
 
-
-
+get e post
 
 
 

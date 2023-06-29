@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Calculo de IMC</h1></header>
+    <main>
+        <section id="imc">
+            <section id="imagem" class="seções">
+            </section>
+            <section id="formulário"  class="seções">
+                <form action="">
+                    <div class="inputs">
+                        <span class="material-symbols-outlined">
+                            boy
+                        </span>
+                        <input type="number" id="peso" name="" placeholder=" Peso Kg" required >
+                    </div>
+                    <div class="inputs">
+                        <span class="material-symbols-outlined">
+                            boy
+                        </span>
+                        <input type="number" id="altura" name="" placeholder=" Altura M" required>
+                    </div>
+                    <p>
+                        <input type="button" value="Calcular" class="ação" id='calcular'>
+                        <input type="reset" value="Limpar" class="ação" id="limpar">
+                    </p>
+                </form>
+            </section>
+        </section id="imc">
+        <section id="msg">
+            <h1>Resultado:</h1>
+            <p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IMC</th>
+                            <th>Classificação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>17.0-18.4</td>
+                            <td>Magreza grau 1</td>
+                        </tr>
+                        <tr>
+                            <td>18.5-24.9</td>
+                            <td>Adequado</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Sobrepeso</td>
+                        </tr>
+                        <tr>
+                            <td>30.0-34.9</td>
+                            <td>Obsidade</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </p>
+            <p id="msg1">
+            </p>
+
+        </section>
+    </main>
+    <script src="./js/main.js"></script>
+    <footer><p><a href="https://github.com/brunnofardin/" target="_blank">Brunno Fardin de Souza</a></p></footer>
+    
+</body>
+</html>

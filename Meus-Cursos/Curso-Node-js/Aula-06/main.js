@@ -11,8 +11,8 @@ app.get('/sobre',(req,res)=>{
 app.get('/Sobre',(req,res)=>{
 
 })
-app.get('/ola/:nome',(req,res)=>{
-    res.end('Olá')
+app.get('/ola/:nome/',(req,res)=>{
+    res.send(req.params.nome)
 
 })
 app.listen(9922,()=>{

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            background-color: rgb(67, 67, 255);
+        }
+        main{
+            text-align: center;
+            background-color: white;
+            width: 90%;
+            margin:50px auto;
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+        input{
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+        label{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            margin-right: 10px;
+            
+        }
+        .ação{
+            cursor: pointer;
+            height: 32px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="/registro" autocomplete="on" method="post">
+            <h1>Cadastro de Funcionários</h1>
+
+            <p>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+            </p>
+            <p>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+
+            </p>
+            <p>
+                <input type="submit" value="Enviar" class="ação">
+                <input type="reset" value="Limpar" class="ação">
+            </p>
+        </form>
+    </main>
+    
+</body>
+</html>
