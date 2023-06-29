@@ -889,6 +889,8 @@ aling-items:center; toods no centro do eixo
 
 aling-items:start; - deixa todos em cima do eixo
 
+flex-direction:colum; direcionamento de coluna
+
 gap - espaço entre elementos
 
 GLOSSÁRIO:
