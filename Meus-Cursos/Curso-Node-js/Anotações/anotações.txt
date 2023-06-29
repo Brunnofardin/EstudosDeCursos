@@ -50,9 +50,9 @@ Rotas -
 
 /:nome
 
-=====================
-  comandos
-=====================
+---------------------
+  comandos express
+--------------------
 send('o que?') - mandar
 
 end('o que?') - finalizar
@@ -70,11 +70,14 @@ __dirname - diretório raiz da sua aplicação
 get e post
 
 
-
-
-Conectando ao mysql:
+========================
+     mysql
+========================
+-------------------------
+Conectando ao mysql
+-------------------------
    
-    mysql -h (host) -u (usuário) -p (senha)
+mysql -h (host) -u (usuário) -p (senha)
 
 
 SITE:
@@ -84,8 +87,9 @@ SITE:
   only
 
 
-
---BANCO DE DADOS Node JS-----
+-----------------------
+   BANCO DE DADOS 
+-----------------------
 
 
 DATABASE - BANCO DE DADOS
@@ -118,8 +122,8 @@ DESCRIBE - DESCREVA
 
 
 ==============================
-      TIPOS operadores  
-=============================
+    TIPOS de OPERADORES 
+==============================
 
 VARCHAR(TamanhoMáximo) - TEXTO GERAIS
 
@@ -128,14 +132,16 @@ CHAR - CARACTERES
 INT - NÚMEROS INTEIROS
 
 INTERAGER - INTEIRO
+
 ===========================
     BANCO DE DADOS
 ===========================
+
 ---------------------------
   CRIANDO BANCO DE DADOS
 ---------------------------
 
-CREATE DATABASE NomeDoBAnco;
+CREATE DATABASE NomeDoBanco;
 
 ---------------------------
   VENDO BANCOS DE DADOS
@@ -174,7 +180,7 @@ VENDO TABELAS
 SHOW TABLES;
 
 --------------------------
-    DESCREVENDO TABELA
+    DESCREVENDO TA BELA
 --------------------------
 
 DESCRIBE NomeDaTabela;
@@ -197,9 +203,9 @@ observação: na mesma sequência
 que você usou para referência-los.
 
 
----------------------
+----------------------
   LISTANDO DADOS
---------------------
+----------------------
 
 SELECT * FROM NomeDatabela;
 
@@ -293,3 +299,6 @@ NomeVariavel.create({
   campo: "",
   campo: ""
 })
+===================================
+          handelbras
+===================================
