@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opeções</title>
+    <style>
+        select{
+            border: 1px solid black;
+            text-align: center;
+            height: 30px;
+            width: 100px;
+            cursor: pointer;
+        }
+        option{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com select</h1>
+    <section>
+        <select name="" id="">
+          
+        </select>
+    </section>
+
+    <script>
+        var select = document.getElementsByTagName('select')[0]
+        var tabuada = 10
+        var c = 1
+        while(c<=10){
+            var opt = document.createElement('option')
+            opt.innerHTML=`${c} X ${c} = ${c*c}`
+            select.appendChild(opt)
+            c++
+        }
+    </script>
+</body>
+</html>
