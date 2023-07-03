@@ -1132,6 +1132,65 @@ BOX SIZING
 box-sizing: border-box; - serve para que a BORDA
 conte como parte do conteudo
 
+
+==========================================
+             POSITIONS
+==========================================
+
+
+Relative
+------------
+
+
+Absolute
+-------------
+
+O position absolute nos dá 
+a possibilidade de meixer no eixo 
+X e Y do elemento ou seja posição na 
+vertical e posição horizontal. Também 
+libera a funçaõ de colocar o elemento mais 
+para frente ou mais para o fundo da tela
+
+PARÂMETROS
+-----------
+
+top - topo 
+
+left - esquerda 
+
+z-index - indice do eixo Z
+
+
+
+sticky
+--------------
+
+fixed
+------------------
+
+o position fixed
+faz o elemento ficar fixado
+a um local designado e para isso
+ele nos da 3 funções:
+
+
+top 
+
+bottom
+
+left
+
+right 
+
+
+ex:
+  Quero fixar um elemento a direita 
+
+  use: Position:fixed; 
+       Right:0;
+
+
 =-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-==-=-=-=
               FIM CSS3
 =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-==-==-=-=-= 
