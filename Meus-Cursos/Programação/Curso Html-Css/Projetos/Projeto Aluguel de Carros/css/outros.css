@@ -1,0 +1,47 @@
+@media screen and (min-width:502px){
+    main section#Slide-Carros{
+        background-size: contain;
+        background-position:  top center;
+
+    }
+    main section#Carros{
+        flex-direction: row;
+    }
+    section#Carros  .Botoes_Carros{
+       height: 47px;
+    }
+    section#Carros > #ver_carros{
+        max-width: 410px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    footer section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34%;
+        border: 0;
+        
+    }
+    ul{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul li{
+        line-height: 40px;
+    }
+    #contatos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #contatos ul{
+        flex-direction: column;
+
+    }
+
+}
