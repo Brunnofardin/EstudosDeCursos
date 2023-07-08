@@ -1,0 +1,24 @@
+@media screen and (min-width:320px) and (max-width:439px){
+    ul li a{
+        display: none;
+    }
+    div.produtos:hover{
+        transform: scale(1);
+    }
+}
+@media screen and (min-width:490px){
+    ul li a{
+        display: flex;
+    }
+    #menuflutuante{
+        max-width: 400px;
+        display: none;
+    }
+    
+}
+@media screen and (min-width:645px){
+    #fale a{
+        display: flex;
+    }
+    
+}
