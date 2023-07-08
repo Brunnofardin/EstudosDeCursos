@@ -13,9 +13,42 @@ Conteudo M-1
 
 * Tipos de variaveis
 
+SIGLA PHP
+-----------
+
+Personal Home Page
+
+Hypertext Preprocessor
 
 Top - 6 livros 
 ----------------
 
+Documentação PHP (php.net)
 
+Aprendendo PHP
+
+Envolução PHP
+--------------
+1994 - criado por Rasmus Leordorf 
+
+Projeto apache
+
+MySQL
+
+1995  - Form interpreter
+
+1996 - open source (software livre)
+
+1997 - israel institute of Technologic
+               Andi Gutmans e Zeev Suraski
+
+1998 - 3.0 PHP3 colin - logo
+                Vincent - elefante
+    
+1999 - ZEND PHP4 A PH8..
+
+Mascote
+--------------
+ 
+Surge da própia sigla PHP
 
