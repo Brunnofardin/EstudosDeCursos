@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+header{
+    color: white;
+    background-color: black;
+    height: auto;
+}
+header > nav{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > nav > section{
+    display: flex;
+    text-align: center;
+    height: 40px;
+    width:auto;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: white;
+    min-height: 100vh;
+}
+main section#itens{
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+div.produtos{
+    height: 300px;
+    max-width: 300px;
+    min-width: 260px;
+    margin: 10px;
+    border-radius: 7px;
+    display: inline-block;
+    background-color: blueviolet;
+    transition: transform 1s;
+    text-shadow: 1px 1px black;
+    border: 1px solid black;
+}
+div.produtos:hover{
+    transform: scale(1.03);
+}
+
+
+section.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+}
+
+div.produtos   div.img{
+    margin-top: 15px;
+    border: 1px solid black;
+    height:60%;
+    width: 90%;
+
+}
+.btns{
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    border: 1px solid white;
+}
+.btns > .btn1,.btn2{
+    font-weight: bolder;
+    color: white;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+
+}
+
+div.produtos  div.img > img{
+    height: 100%;
+    width: 100%;
+}
