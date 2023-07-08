@@ -6,11 +6,11 @@ const conteudo = document.getElementsByClassName('conteudo');
 const imagens = document.getElementsByClassName('imgs');
 const btns1 = document.getElementsByClassName('btn1');
 const btns2 = document.getElementsByClassName('btn2');
-const burguer = document.getElementById('burguer')
+const burguer = document.getElementById('burguer');
+const previous = document.getElementById('previous')
 const menuflutuante = document.getElementById('menuflutuante');
 
-
-// Mneu flutuante
+// Menu flutuante
 
 burguer.addEventListener('click',()=>{
     if(menuflutuante.style.display=='flex'){
@@ -18,6 +18,10 @@ burguer.addEventListener('click',()=>{
     }else{
         menuflutuante.style.display='flex'
     }
+})
+
+previous.addEventListener('click',()=>{
+    menuflutuante.style.display='none'
 })
 
 // Criação dinâmicas de divs/sections
@@ -47,7 +51,7 @@ function CriarDiv(qtd){
 
         let criarImage = document.createElement('img')
         criarImage.setAttribute('class','imgs')
-        criarImage.src='./img/monalisa.jpg'
+        criarImage.src=''
            
         // Armazenando imagem
 
@@ -92,26 +96,13 @@ function CriarDiv(qtd){
         c++
     }    
 }    
-CriarDiv(9)
+CriarDiv(1)
 
-function Criarsection(qtd){
-    let c = 1
-    while (c <= qtd){
-        let section =  document.createElement('section')
-        section.setAttribute('class','smf')
-        c++
-        menuflutuante.appendChild(section)
-
-    } 
-
-
-}
-Criarsection(3)
 
 
 function mudarImagem(imagem='',i=0){
     const imgs = [...imagens]
-    imgs[i].src = imagem
+    imgs.src = imagem
 }    
 let imagemdesejada =''
 mudarImagem(imagemdesejada,0)

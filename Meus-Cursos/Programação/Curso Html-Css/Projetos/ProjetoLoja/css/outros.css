@@ -1,12 +1,9 @@
-@media screen and (min-width:320px) and (max-width:439px){
+@media screen and (min-width:320px) and (max-width:577px){
     ul li a{
         display: none;
     }
-    div.produtos:hover{
-        transform: scale(1);
-    }
 }
-@media screen and (min-width:490px){
+@media screen and (min-width:578px){
     ul li a{
         display: flex;
     }
@@ -19,6 +16,12 @@
 @media screen and (min-width:645px){
     #fale a{
         display: flex;
+    }
+    section#s1{
+        display: none;
+    }
+    nav#itensmenu ul li{
+        display: none;
     }
     
 }
