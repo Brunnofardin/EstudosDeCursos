@@ -52,3 +52,60 @@ Mascote
  
 Surge da própia sigla PHP
 
+
+Instalção AMP
+--------------
+
+Apache
+
+Mysql 
+
+Php interpreter
+
+XAMPP
+
+
+=============================
+ CRIANDO PRIMEIRO COMANDO
+=============================
+
+
+Supertags
+------------
+<script> script
+
+<?php ?> Super Tag PHP
+
+<?  ?> SHort open tag
+
+<%  %> ASp tag
+
+<?=  ?> short tag PHP
+
+Tudo dentro de tag central será
+código php
+
+
+echo 
+---------
+
+echo "" - dentro das aspas o que vai aparecer
+
+echo "\u{}" dentro da chaves o código do emoji
+      para mostrar um emoji na tela
+
+$nomeVariavel =  - inicia uma variavel
+
+
+concatenação
+--------------
+usamos ( . )
+
+ex:
+
+echo "Olá mundo".nome;
+
+Date
+--------
+date(d/M/Y) dia mês e ano
+            day, month and year
