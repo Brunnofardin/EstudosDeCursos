@@ -414,25 +414,6 @@ CONSOE.LOG(VARIAVEL.NEXT().VALUE) ESCREVA
         METODOS                   
 -----------------------------------
 
-elemnto.target - recebe o caminho do elemento
-
-
-
-
-        MAP()
--------------------
-
-
-
-MAP(PAR1,PAR2)
-
-
-PAR1 - ELEMENTO
-
-PAR2 - INDICE
-
-
-
 
 
 
@@ -441,9 +422,9 @@ PAR2 - INDICE
 ---------------------
 
 
- SERVE PARA CRIAR UM ATRAZO DE EXECUÇÃO
-COM DETERMINADO TEMPO PASSADO POR
-PARAMETRO
+ SERVE PARA CRIAR UM ATRAZO 
+ DE EXECUÇÃO COM DETERMINADO
+TEMPO PASSADO POR PARAMETRO
 
 
 
@@ -451,7 +432,7 @@ PARAMETRO
   CREATE ELEMENT
 ----------------------
 
-  CREATEELEMENT(NOMEDOQUEQUERCRIAR)
+CREATEELEMENT(NOMEDOQUEQUERCRIAR)
 
  CRIA UM ELEMNTO HTML NA MEMÓRIA DO
 
@@ -462,19 +443,11 @@ PARAMETRO
   SET ATRIBUTE
 ----------------------
 
- SETATRIBUTE('ATRIBUTO','CONTEUDO')
+ SETATRIBUTE('PAR1','PAR2')
 
+ PAR1 - ATRIBUTO
 
- O ATRIBUTO SÃO OS ELEMNTOS DE
-
-MANIPULAÇÃO.
-
-
-    EX: ID,CLASS,IMG,AUDIO ETC...
-
-JÁ O CONTEUDO É O NOME DO ATRIBUTO
-
-EX: ID =  "NOME" CLASS = 'LISTAS'
+ PAR2 - CONTEUDO DO ATRIBUTO
 
 
   APPENDCHILD()
@@ -487,78 +460,231 @@ nomeDoPai.APPENDCHILD()
 
 BASTA PASSAR O NOME DO ELEMENTO
 
-DENTO DO PARAMETRO
+PAI + APPENDCHILD(NOMEELEMENTOFILHO)
 
 ex:
+  var div = document.crateelement('div);
+  body.appendchild(div);
+
+        MAP
+-------------------
+
+Explicação
+------------
+O metodo map pecorre
+uma array por inteiro 
+pegando cada um dos 
+elementos.
+
+Funcionamento
+-------------
+
+MAP(PAR1,PAR2,PAR3)
 
 
-var div = document.crateelement('div)
+Parâetros
+------------
 
-body.appendchild(div)
+PAR1 - ELEMENTO
+
+PAR2 - INDICE
+
+PAR3 - ARRAY
 
 
        REMOVE
--------------------------------
+----------------------
 
-PAI.REMOVE(NOMEDOELEMENTO PARA REMOVER)
+Explicação
+------------
 
-PEGUE DE ONDE ESTÁ O PAI E REMOVA
-O FILHO
+O metodo remove necessita 
+do elemento pai do qual 
+você deseja remover o filho 
+e também necessita do elemento
+filho que irá ser removido
 
+Funcionamento
+--------------
 
-
-         FILTER  
------------------------------------
-
-FILTRA ELEMENTOS
-
-NOMEDAVARIAVEL.FILTER(VALOR,INDICE,ARRAY)
-
-
-
-valor indIce e array
+PAI.REMOVE(PAR1)
 
 
+Parâmetros
+-------------
+
+PAR1 - ELEMENTO QUE DESEJA REMOVER
+
+  FILTER  
+------------
+
+Explicação
+-------------
+
+Filtra elementos de uma
+array e cria uma nova array
+com somente  os  elementos que
+você deseja trabalhar
+
+Funcionamento 
+---------------
 idades = [3,2,3,4,6]
-idades.filter(V,I,A)=>{
 
-
+let f = idades.filter(V,I,A)=>{
+  return v >= 18
 
 }
 
-        FIND
----------------------------------
+Parâmetros
+---------------
 
-PERMITE PESQUISAR OS ELEMNTOS DE 
-UMA ARRAY E RETORNA O PRIMEIRO 
-ELEMENTO ENCONTRADO DE ACORDO
-COM SUA PESQUISA
+V - valor 
+
+I - indIce
+
+A - array
 
 
-find((e,i,array)=>{
+
+   FIND
+-------------
+
+PERMITE PESQUISAR OS
+ELEMNTOS DE UMA ARRAY 
+E RETORNA O PRIMEIRO 
+ELEMENTO ENCONTRADO DE
+ACORDO COM SUA PESQUISA
+
+Funcionamento
+----------------
+
+NomeDaVariavel.find((E,I,A)=>{
+  return el == 18
   
 })
 
-find retorna par uma FUNÇÃO
-o elemento, o indice e a array
+Parâmetros
+---------------
 
-  STOP PROPAGATION
-----------------------------------
+E - elemento 
+
+I - indice 
+
+A - array
+
+
+   Every
+------------
+
+Explicação
+-----------
+ELe procura saber se 
+todos elementos da array 
+estão de acordo com a regra 
+expecificada. 
+
+
+Funcionamento
+---------------
+
+array.every((E,I,A)=>{
+  if(el == 18){
+    console.log("Todos são igual a 18")
+  }else{
+    console.log("Não são todos igual a 18")
+  }
+  
+})
+
+
+Parâmetros
+------------
+
+E - Elemento
+
+I - indice 
+
+A - array 
+
+
+ SOME
+-----------
+
+Explicação
+------------
+Quando um valor do array 
+concedir com elemento você
+está procurando ele retornara
+o elemento
+
+
+Funcionamento 
+---------------
+
+NomedaArray.some((E,I,A)=>{
+  return el == 18
+})
 
 
 
 
- UMA DIV FUNCIONA COMO UMA BOLHA E QUANDO ADICIONAMOS 
+Parâmetros
+---------------
 
+E - elemento
+
+I - indice 
+
+A - array 
+
+
+ Reduce
+--------------
+
+Explicação
+-----------
+
+Com o reduce nós  podemos
+reduzir uma  array.
+
+Funcionamento
+---------------
+
+NomeDaArray.reduce((P,E,I,A)=>{
+
+})
+
+
+Parâmetros
+-------------
+
+P -  Elemento anterior
+
+E -  Elemento atual
+
+I -  Indice
+
+A -
+
+
+
+ STOP PROPAGATION
+---------------------
+
+Explicação
+-------------
+UMA DIV FUNCIONA COMO
+UMA BOLHA E QUANDO ADICIONAMOS 
 UM EVENTO A ELA, QUERENDO OU NÃO
-
-OS ELEMNTOS QUE ESTIVEREM DENTRO DESTA DIV RECEBERAM O EVENTAO TABEM
-
-
-PARA ISSO EXISTE O stopPropagation
+OS ELEMNTOS QUE ESTIVEREM DENTRO DESTA
+DIV RECEBERAM O EVENTAO TABEM PARA ISSO
+EXISTE O stopPropagation
 
 
 
+
+Funcionamento
+--------------
 
 f.addenventlistener('click',(evento)=>{
       evento.stopPropragation
@@ -567,23 +693,27 @@ f.addenventlistener('click',(evento)=>{
 })
 
 
+ Iteradores
+-----------------
+Iteradores são o que os 
+metodos usam para nos dar
+o resultado desejada por exemplo
+o próximo elemento etc..
+
+let iterador = NomedaArray[Symbol.in=terator]()
+
+Funções 
+----------
+.next()
 
 
+Elementos para praticidade
+---------------------------
 
-
-
-
-
-
-
-
-
------------------------------------------
-
- OFSETTOP - SERVE PARA PEGAR A ALTURA EM PIXELS ENTRE 
-
-O ELEMENTO E O PAI
-
+OFSETTOP - SERVE PARA PEGAR A 
+           ALTURA EM PIXELS ENTRE 
+           O ELEMENTO E O PAI E O 
+           FILHO
 
 ONSCROLL - BARRA DE ROLAGEM LIGADA ou acionada
 
@@ -592,81 +722,108 @@ SCROOLY - ALTURA DA VERTICAL
 
 
 
-
-
-
-
-
-
-
-
-
-
 FUNCIONAMENTO DO DOM
 -------------------------------
 
-element
+ELEMENT - Elemento
 
-FILHO - CHILDREN
+CHILDREN - Filho
 
+PARENT - Pai
 
-RAIZ/ PAI - PARENT
+SIBLINGS - Irmãos misturados 
 
+NEXT SIBLIGS - Primeior irmão
 
-IRMÃOS "MISTURADOS" - SIBLINGS
+PREVIOUS SIBLINGS - Próximo irmão 
 
+FIST CHILD - Primeiro final c
 
-PRIMEIRA IRMA "MISTURADA " - NEXT SIBLINGS
-
-
-ULTIMA IMRMA "MISTURADOS" - PREVIOUS SIBLINGS
-
-PRIMIERA FILHA - FIRST CHILD
+LAST CHILD - Ultimo filho
 
 
-ULTIMA FILHA - LAST CHILD
+   ADD ANTES DE ALGO
+-------------------------
+O insert before serve para 
+inserirmos algo antes de algo
 
- 
+Parâmetros
+---------------   
 
-                 PARENT
+NomeContainer.insertbefore(par1,par2)
 
-  CHILDREN    FIRST CHILDREN    PREVIOUS CHILDREN - DENTRO DO PAI
+par1 - ADICONAR QUEM?
 
-  SIBLINGS       FIRST SIBILINGS    PREVIOUS SINBLINGS - DENTRO DO PAI AO LADO DO CHILDEN
+par2 - ANTES DE QUEM?
 
+
+  ADD ALGO DEPOIS DE ALGO
+--------------------------
+Para adicionar algo depois de
+algo teremos que ultilizar o dom
+
+ex: 
+  <html> 
+    <head>
+
+    </head>
+
+   <body>
+       <div id='d1'>
+
+       </div>
+       <div id='d3'>
+
+       </div>
+   </body>
+
+  </html>
+
+Digamos que eu queria inserir algo 
+depois da div de identificador ('d1')
+
+basta eu ultilizar os elementos dom 
+
+Observe:
+   <script>
+      let body = docume.getElementByTagName('body');
+      let div1 = document.getElementById('d1');
+      let div2 = document.createElement('div');
+      div2.setAtribute('id','d2')
+      let proximoirmao = div1.nextsibling
+      body.insertbefore(div2, proximoirmao)
+
+
+
+      
+
+
+   </script>
+
+na linha 0 eu busquei o elemento pai no caso BODY
+na linha 1 eu busquei a div 1
+na linha 2 eu criei uma div 
+na linha 3 eu dei um atrbuto id para ela (d2)
+na linha 4 eu peguei o proximo irmao da div1 (d3)
+na linha 5 eu inseri a  (d2)  antes do proximo irmao (d3)
+
+resultado:
+    <html> 
+      <head>
+
+      </head>
+
+   <body>
+       <div id='d1'>
+
+       </div>
+       <div id='d2'>
+
+       </div>
+       <div id='d3'>
+
+       </div>
+   </body>
+
+  </html>
    
- 
-
-
-  REMOVE
-----------------------
-
-
-REMOVE()
-
-
-
-
-  ADICIONANDO ELEMNTOS ANTES E DEPOIS DE ALGO
-------------------------------------------------
-
-
-PARA INSERIRMOS ALGO ANTES DE UM ELEMENTO USAMOS
-O METODO INSERTBEFORE()
-
-O METODO INSERT RECEBE DOIS PARAMETROS
-
-QUEM DEPOIIS DE QUEM
-
-OU SEJA
-
-ADICONAR QUEM? DEPOIS DE QUEM?
-
-CONTAINER.INSERTBEFORE(ELEMENTO,DEPOISdeELEMENTO)
-
-
-E SEU QUISER ADICIONAR DEPOIS?
-
-
-USE A ARVORE GENEOLOGICA.
-
