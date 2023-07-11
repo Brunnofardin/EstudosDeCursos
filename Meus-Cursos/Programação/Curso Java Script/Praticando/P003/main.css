@@ -1,0 +1,72 @@
+
+body{
+    background-color:hwb(246 27% 0%);
+}
+.find{
+    margin-top: 20px;
+    height: 60px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #5db1d8;
+}
+#array{
+    text-shadow: 1px 1px 3px black ;
+    text-align: justify;
+    height: auto;
+    line-height: 27px;
+}
+#ipns{
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+#btn-pesquisar{
+    width: 100px;
+    height: 38px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid white;
+    transition: transform 1s;
+}
+#btn-pesquisar > input{
+    border: 0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: blue;
+    
+}
+#btn-pesquisar:hover{
+    transform: scale(1.12);
+}
+#btn-pesquisar input:hover{
+    background-color: #ff4343;
+}
+#iten-pesquisa {
+    padding: 1px;
+    height: 34px;
+    width: 180px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: hsl(240, 100%, 95%);
+}
+#iten-pesquisa > input{
+    margin:1px;
+    border: 0;
+    width: 97%;
+    height: 90%;
+    border-radius: 10px;
+}
+#res,#array{
+    height: auto;
+    padding: 2px;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}

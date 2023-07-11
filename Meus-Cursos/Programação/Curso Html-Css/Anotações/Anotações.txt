@@ -1194,3 +1194,44 @@ ex:
 =-=-=-=-=-=-==-=-=-=-=-=-==-=-=-=-==-=-=-=
               FIM CSS3
 =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-==-==-=-=-= 
+   SITES RECOMENDADOS PARA DEV WEB
+=========================================
+
+   Bonecos
+==============
+
+https://undraw.co/illustrations
+ 
+
+    Icones
+==============
+
+https://fonts.google.com/icons
+
+
+    Fontes 
+==============
+
+https://www.dafont.com/pt/
+
+  Paleta de cores 
+===================
+
+Aicolors
+------------
+https://aicolors.co/
+
+Adobe color
+----------
+https://color.adobe.com/pt/create/color-wheel
+
+  Imagens sem direitos
+=======================
+
+https://www.pexels.com/pt-br/
+
+
+   Icone favoritos
+=====================
+
+https://favicon.io/
