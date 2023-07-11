@@ -1,6 +1,64 @@
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
+    font-family: Arial, Helvetica, sans-serif;
     background-color:hwb(246 27% 0%);
+}
+header{
+    padding: 10px;
+    display: flex;
+    height:auto;
+    background-color: black;
+    justify-content: space-between;
+}
+header > section{
+    color: white;
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    justify-content: center;
+}
+header > section#logo{
+    margin:10px;
+    font-size: 1.7em;
+
+}
+header > #painel{
+    display: flex;
+    margin: 10px;
+    padding: 6px;
+    height: 30px;
+    width: auto;
+    align-items: center;
+    justify-content: space-around;
+
+}
+header > #painel > div{
+    display: flex;
+    height: 40px;
+    width: 100px;
+    margin-left: 10px;
+    font-weight: bolder;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    border: 1px solid white;
+}
+header >  #painel > div > p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    background-color:blue;
+    justify-content: center;
+    align-items: center;
+}
+header > #painel > div > p:active{
+    background-color: #0505b6;
 }
 .find{
     margin-top: 20px;
@@ -9,12 +67,13 @@ body{
     border-radius: 10px;
     border: 2px solid white;
     background-color: #5db1d8;
+    margin: 10px;
 }
 #array{
     text-shadow: 1px 1px 3px black ;
     text-align: justify;
     height: auto;
-    line-height: 27px;
+    line-height: 37px;
 }
 #ipns{
     padding: 10px;
@@ -26,6 +85,7 @@ body{
 #btn-pesquisar{
     width: 100px;
     height: 38px;
+    margin-left: 20px;
     overflow: hidden;
     border-radius: 4px;
     border: 1px solid white;
@@ -64,9 +124,114 @@ body{
     border-radius: 10px;
 }
 #res,#array{
+    padding: 20px;
     height: auto;
-    padding: 2px;
     font-size: 1.3em;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+#imagens{
+    background: url(./img/undraw_mobile_search_jxq5.svg) center no-repeat ;
+    background-size:contain;
+    max-width: 500px;
+    height: 500px;
+    margin: 40px auto;
+    text-align: center;
+}
+#imagens img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width:490px){
+    #imagens{
+        background-image: url('./img/undraw_mobile_devices_k1ok.svg');
+    }
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    header > section#title{
+        display: none;
+
+    }
+    header section#painel{
+        margin-left: 17px;
+        width: 60%;
+    }
+    #array{
+        font-size: 1.2em;
+    }
+    #iten-pesquisa{
+        height: 38px;
+        width: 140px;
+    }
+    #iten-pesquisa > input{
+        text-align: center;
+        font-size: 1em;
+    }
+    #btn-pesquisar{
+        height: 37px;
+        width: 130px;
+    }
+    #res{
+        font-size: 1.2em;
+    }
+
+@media screen and (min-width:600px){
+    #imagens{
+        background-image: url('./img/undraw_online_test_re_kyfx.svg');
+    }
+    header{
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    header section#title{
+        display: flex;
+    }
+    header section#painel{
+        width: auto;
+    }
+    #array{
+        font-size: 1.4em;
+    }
+    #iten-pesquisa{
+        height: 36px;
+        width: 230px;
+    }
+    #iten-pesquisa > input{
+        text-align: center;
+        font-size: 1em;
+    }
+    #btn-pesquisar{
+        height: 37px;
+        width: 160px;
+    }
+    #res{
+        font-size: 1.2em;
+    }
+}
+@media screen and (min-width:900px){
+    #array{
+        font-size: 1.6em;
+    }
+    #iten-pesquisa{
+        height: 39px;
+        width: 300px;
+    }
+    #iten-pesquisa > input{
+        text-align: center;
+        font-size: 1.1em;
+    }
+    #btn-pesquisar{
+        height: 38px;
+        width: 170px;
+    }
+    #imagens{
+        background-image: url('./img/undraw_devices_re_dxae\ \(1\).svg');
+    }
+    #res{
+        font-size: 1.4em;
+    }
 }

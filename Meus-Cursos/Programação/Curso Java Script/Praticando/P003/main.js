@@ -31,3 +31,43 @@ elementos_pesquisar.map((e,i,a)=>{
         })
     }
 })
+
+const theme = [...document.getElementsByClassName('theme')]
+const body = document.getElementsByTagName('body')[0]
+const header = document.getElementsByTagName('header')[0]
+const elfind = [...document.getElementsByClassName('find')] 
+theme.map((el,i)=>{
+    el.addEventListener('click',()=>{
+        if(i==0){
+            body.style.background='hwb(246 27% 0%)'
+            header.style.background='black'
+            const find = elfind.map((el,i)=>{
+                el.style.background=' #5db1d8'
+                el.style.border='2px  solid white'
+            
+            })
+
+        }else{
+            body.style.background='beige'
+            header.style.background='black'
+            const find = elfind.map((el,i)=>{
+                el.style.background=' #686868'
+                el.style.border='2px  solid black'
+                
+            
+            })
+        }
+    })
+
+})
+
+
+
+
+
+
+
+
+
+
+
