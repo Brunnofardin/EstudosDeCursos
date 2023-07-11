@@ -686,8 +686,8 @@ EXISTE O stopPropagation
 Funcionamento
 --------------
 
-f.addenventlistener('click',(evento)=>{
-      evento.stopPropragation
+elemento.addenventlistener('click',(evento)=>{
+      evento.stopPropragation()
 
 
 })

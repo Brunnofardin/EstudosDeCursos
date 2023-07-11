@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            min-height: 100vh;
+            background-color: beige;
+        }
+        header{
+            height: 60px;
+            background-color: black;
+        }
+        section#pai{
+            width: 90%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            
+        }
+        #cont{
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            padding: 10px;
+            width:80%;
+            height: 300px;
+            margin: auto;
+            background-color: blue;
+            border: 3px solid white;
+
+        }
+        #el{
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            height: 65%;
+            margin: auto;
+            position: absolute;
+            border: 3px solid white;
+            background: red;
+            transform: translate(-50%,-50%);
+        }
+        @media screen and (min-width:490px){
+            section#pai{
+                width: 100%;
+                display: inline-block;
+            
+            }
+            #cont{
+                max-width: 350px;
+            
+
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section id="pai">
+            <div id="cont">
+                <div id="el">
+                </div>
+            </div>
+            <div id="cont">
+                <div id="el">
+                </div>
+            </div>
+            <div id="cont">
+                <div id="el">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
