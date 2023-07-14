@@ -115,4 +115,10 @@ res.send("") - mandar conteudo
 
 Nada mais é do que você juntar o seu 
 código, por em uma caixa de ferramentas,
-e usá-lo quando for preciso
+e usá-lo quando for preciso.
+
+
+Sintaxe
+----------
+const express = require('express')
+const rotas = express.Router();
