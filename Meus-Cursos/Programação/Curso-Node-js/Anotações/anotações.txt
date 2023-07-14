@@ -1,4 +1,3 @@
-
 ===================================
         Curso node js
 ====================================
@@ -20,14 +19,14 @@ const http = require("http")
 
 })
 
-     texto
+texto
 ----------------
 
 text/plain - texto normal
 
 text/html - texto html
 
-      head
+head
 ----------------
 writeHead(200,{
 
@@ -35,7 +34,7 @@ writeHead(200,{
 
 });
 
-  Ultilitários
+Ultilitários
 ------------------
 
 .write("texto") - escrever resposta
@@ -55,12 +54,12 @@ ex:
 
 
 ===========================
-          MODULOS
+      MODULOS
 ===========================
 
- 
-         Fs  
---------------------------
+---------------------------
+         FS
+---------------------------
 
 File system serve para 
 ler,editar e copiar arquivos
@@ -77,8 +76,8 @@ fs.appendFile('nomedoarquivo.txt','conteudo',(err)=>{
 
 
 })
-
-     Express
+-------------------------
+      EXPRESS
 -------------------------
 
 O express serve para criar 
@@ -95,17 +94,25 @@ use o comando pelo prompt comando:
 
 npm install express --save
 
-VSC
+Vsc
 ----------
 const express = require("express");
 const app = express();
 
+
 Ultilitários
 -----------------
-
 app.get("rota",função(requisição,resposta){
 
 })
 
 res.send("") - mandar conteudo
 
+
+====================================
+   Modulorização de elementos
+====================================
+
+Nada mais é do que você juntar o seu 
+código, por em uma caixa de ferramentas,
+e usá-lo quando for preciso
