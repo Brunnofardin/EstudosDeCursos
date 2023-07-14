@@ -1,304 +1,111 @@
 
 ===================================
-         MODULOS
+        Curso node js
 ====================================
 
+         Http
+----------------------------
 
-    EXPORTANDO VARIAVEIS
-=========================
+Protocolo que permite 
+trabalhar com requisição 
+e respota.
 
-module.exports = NomeDoQueVaiExportar;
+  Requerindo http
+------------------
+const http = require("http")
 
-ex: 
-  var soma = funtion(a,b){
-    return a+b
-  }
-  module.exports = soma
-
-  -------------
-   requer algo
-  -------------
-  require(./funçõessoma)
-
-
-
-=====================
-  PROTOCOLO HTTP
-=====================
-
-http - É protocolo que permite
-       que o cliente se comunique
-       com o servidor
-
-======================
-    EXPRESS
-======================
-
-var express = require(express)
-
-app = express()
-
-app.get((req,res)=>{ 
+  Criar servidor
+------------------
+.createServer((requisição,resposta)=>{
 
 })
 
-app.listen(porta()=>{
-  bloco de código
-})
+     texto
+----------------
 
-Rotas -  
+text/plain - texto normal
 
-/:nome
+text/html - texto html
 
----------------------
-  comandos express
---------------------
-send('o que?') - mandar
+      head
+----------------
+writeHead(200,{
 
-end('o que?') - finalizar
+  'containt-Type','text/plain'
 
-sendFile('qual?') - mandar um arquivo
+});
 
-__dirname - diretório raiz da sua aplicação
+  Ultilitários
+------------------
 
+.write("texto") - escrever resposta
 
+.end("") - finalizar resposta
 
-=====================
- TIPOS DE ROTAS        
-=====================
+.url - conteudo da url
 
-get e post
-
-
-========================
-     mysql
-========================
--------------------------
-Conectando ao mysql
--------------------------
-   
-mysql -h (host) -u (usuário) -p (senha)
-
-
-SITE:
-  mysql
-  intaller mysql server
-  versao developer
-  only
-
-
------------------------
-   BANCO DE DADOS 
------------------------
-
-
-DATABASE - BANCO DE DADOS
-
-USE - USE
-
-UPDATE - ALTULIZAR
-
-CREATE - CRIAR
-
-SHOW - VER
-
-TABLE - TABELA
-
-SELECT - SELECIONE
-
-FROM -  DE
-
-WHERE - ONDE/CONDIÇÃO
-
-INSERT - INSIRA
-
-INTO - EM
-
-VALUES - VALORES
-
-DELETE - DELETE
-
-DESCRIBE - DESCREVA
-
-
-==============================
-    TIPOS de OPERADORES 
-==============================
-
-VARCHAR(TamanhoMáximo) - TEXTO GERAIS
-
-CHAR - CARACTERES
-
-INT - NÚMEROS INTEIROS
-
-INTERAGER - INTEIRO
-
-===========================
-    BANCO DE DADOS
-===========================
-
----------------------------
-  CRIANDO BANCO DE DADOS
----------------------------
-
-CREATE DATABASE NomeDoBanco;
-
----------------------------
-  VENDO BANCOS DE DADOS
----------------------------
-
-SHOW DATABASES;
-
------------------------------
- SELECIONANDO BANCO DE DADOS
------------------------------
-
-USE Nome DoBancoDeDados
-
-=============================
-         TABELAS
-=============================
-
-----------------------------
-       CRIANDO TABELA
-----------------------------
-
-CREATE TABLE NomeDaTabela(
-  NomeDaColuna VARCHAR(50),
-  NomeDaColuna CHAR,
-  NomeDaColuna INT
-);
-
-Para criar uma tabela você
-precisará dizer os nomes das 
-colunas dentro dos parênteses.
-
----------------------------
-VENDO TABELAS
----------------------------
-
-SHOW TABLES;
-
+      Rotas
 --------------------------
-    DESCREVENDO TA BELA
---------------------------
-
-DESCRIBE NomeDaTabela;
-
---------------------------
-  INSERIDO DADOS NA TABLE
---------------------------
-
-INSERT INTO NomeDaTabela(Nome) VALUES(
-  'Brunno'
-);
-
-Para inserir dados em algun
-lugar você deve dizer os campos 
-entre parênteses.
-
-E depois os valores a serem 
-inseridos entre prêntese,
-observação: na mesma sequência
-que você usou para referência-los.
-
-
-----------------------
-  LISTANDO DADOS
-----------------------
-
-SELECT * FROM NomeDatabela;
-
-
-* - todos
-
-----------------------------
-  LISTANDO DADOS ESPECIFICOS
------------------------------
-SELECT * FROM NomeDaTabela WHERE Algumacoisa;
+.url
 
 ex:
-  SELECT * FROM NomeDaTabela WHERE campoX = algo;
-  traduzindo{
-    selecione todos os dados 
-    de NomeDaTabela onde o campoX for igual
-    a algo
+  if(requisição.url == ''){
+     resposta.write("olá")
   }
-  
 
 
-WHERE - ONDE?
+===========================
+          MODULOS
+===========================
 
-----------------------------
-  deletando registdos do DB 
------------------------------
+ 
+         Fs  
+--------------------------
 
-DELETE FROM NomeDaTabela WHERE CAMPOx = algo 
+File system serve para 
+ler,editar e copiar arquivos
 
-Delete da NomeDatabela onde 
-o campoX for igual a algo
+Ultilitários
+-------------
 
-
--------------------------------
-  Altulizando DADOS NA TABELA
---------------------------------
-
-UPDATE NomeDaTabela SET colunaY = conteudoX WHERE dadoX = dadoY
-
-Altulize a NomeDaTabela sete na colunaY o 
-conteudoX onde o dadoX for igual a dadosY
+fs.readFile('./trajeto../',(err,arquivo)=>{ - Ler arquivo
 
 
-=================================
-    CRIANDO CONEXÃO COM BD
-=================================
+}) 
 
-Primeiro temo sque chamar a pacote
-sequelize para isso devemos criar 
-uma variavel e armazena-la 
-
-observe: 
-     let Sequelize = require('sequelize')
-  
-após isso temos que iniciar o pacote e 
-entra em contato com noss bd e para isso
-criamos uma nova variavel chamada por ex
-CONEXÃO
-
-observe: 
-       let conexao = new Sequelize('nomeDoBanco','Usuário','Senha',{
-           host: - onde está hospedado o banco de dados
-           dialect:  - qual dialogo ele é
-       }) 
-============================
-   POSTANDO ALGO NO BD
-----------------------------
+fs.appendFile('nomedoarquivo.txt','conteudo',(err)=>{
 
 
-Para postar algo, basta chamar a 
-função Define
-
-let postar = conexao.define('NomeDaTabela',{
-  cabeçalho da tabela:{
-    type: Sequelize.STRING
-  },
-  conteudoDaTabela:{
-    type:TEXT
-  }
 })
-===============================
-   SINCRONIZANDO TABELA
-===============================
-NomeVariavel.sync({force:true})
 
-===============================
-   INSERINDO DADOS
-===============================
+     Express
+-------------------------
 
-NomeVariavel.create({
-  campo: "",
-  campo: ""
+O express serve para criar 
+rotas com mais facilidades
+
+
+Instalação
+-------------
+
+Prompt
+---------
+Estando já na pasta de seu projeto
+use o comando pelo prompt comando:
+
+npm install express --save
+
+VSC
+----------
+const express = require("express");
+const app = express();
+
+Ultilitários
+-----------------
+
+app.get("rota",função(requisição,resposta){
+
 })
-===================================
-          handelbras
-===================================
+
+res.send("") - mandar conteudo
+
