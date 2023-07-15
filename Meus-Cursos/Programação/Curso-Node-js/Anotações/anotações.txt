@@ -145,3 +145,14 @@ module.exports = rotas
 ===================================
     Ligação com banco de dados
 ===================================
+
+Baixar mysql comunit server
+
+
+=============================
+  Comandos node js
+=============================
+
+__dirname - diretório atual
+
+res.sendFile("caminho do arquivo") - setar arquivo
