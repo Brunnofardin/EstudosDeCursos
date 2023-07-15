@@ -117,8 +117,31 @@ Nada mais é do que você juntar o seu
 código, por em uma caixa de ferramentas,
 e usá-lo quando for preciso.
 
+Passagem de parâmetros
+------------------------
+elemento.get('/rota:parâmetro'(req,res)=>{
+       req.parms.parâmetro
+
+})
 
 Sintaxe
 ----------
-const express = require('express')
-const rotas = express.Router();
+const express = require('express') - modulo express
+const rotas = express.Router(); - express rotas
+
+
+rotas.get('/',(req,res)=>{ - requisição,resposta
+    res.json({ola:'Seja bem vindo'})
+
+})
+
+rotas.get('/:cursoid',(req,res)=>{
+    const curso = req.params.cursoid - parâmetros
+
+})
+
+module.exports = rotas
+
+===================================
+    Ligação com banco de dados
+===================================
