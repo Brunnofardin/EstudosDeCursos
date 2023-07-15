@@ -142,9 +142,17 @@ rotas.get('/:cursoid',(req,res)=>{
 
 module.exports = rotas
 
-===================================
-    Ligação com banco de dados
-===================================
+=============================
+  Comandos node js
+=============================
+
+__dirname - diretório atual
+
+res.sendFile("caminho do arquivo") - setar arquivo
+
+==========================================
+    Ligação com banco de dados (prompt)
+==========================================
 
 Tipos primitivos
 ------------------
@@ -177,19 +185,24 @@ Prática
 ----------
 -u root -h localhost -p 263534553#@
 
-=-=-=-=-==-=-=-=-=-=-
-Vendo banco de dados 
----------------------
+
+=============================
+ Lidando com banco de dados
+=============================
+
+=-=-=-=-==-=-=-=-=-=-=-=-=
+  Vendo banco de dados 
+------------------------- 
 SHOW DATABASES;
 
-=-=-=-=-==-=-=-=-=-=-=
-Usando banco de dados
-----------------------
+=-=-=-=-==-=-=-=-=-=-=-==
+  Usando banco de dados
+--------------------------
 USE NomDoBanco;
 
-=-=-=-=-==-=-=-=-=-=-=
-Criando banco de dados 
-------------------------
+=-=-=-=-==-=-=-=-=-=-=-==
+  Criando banco de dados 
+-------------------------
 CREATE DATABASE NomeDoBanco;
 
 Semâtica 
@@ -197,8 +210,8 @@ Semâtica
 Criar banco de dados com nome tal.
 
 =-=-=-=-==-=-=-=-=-=-=-=-=
-Criando tabela
--------------------------
+     Criando tabela
+--------------------------
 CREATE TABLE NomeDatabela(
   Coluna1 tipo,
   Coluna2 tipo, 
@@ -220,9 +233,9 @@ semâtica
 -----------
 Ver tabelas
 
-=-=-=-=-==-=-=-=-=
-Descrevendo tabela
---------------------
+=-=-=-=-==-=-=-=-=-=-=
+   Descrevendo tabela
+----------------------
 DESCRIBE NomeDaTabela;
 
 Semântica
@@ -234,9 +247,9 @@ ex:
   Tamanho etc..
   Informações da tabela
 
-=-=-=-=-==-=-=-=-=-=-=-=-=-=
-Selecionando itens da tabela
------------------------------
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+  Selecionando itens da tabela
+--------------------------------
 
 Todos dados
 -------------
@@ -260,7 +273,7 @@ Selecione todos os dados da tabela tal
 onde o campo idade receber o valor dezesete.
 
 =-=-=-=-==-=-=-=-=-=-=-=-=-=
-Inserindo dados na tabela 
+  Inserindo dados na tabela 
 ============================
 INSERT INTO NomeDatabela(CampoX,Campo,YCampoZ) VALUES(
   "Campox",
@@ -272,10 +285,133 @@ Semântica
 -----------
 Inserir na Tabelatal nos campos tais os valores tais.
 
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+  Deletado Registros da tabela 
+================================
+DELETE FROM NomedaTabela  WHERE condição;
+
+condição?
+==========
+ex:
+  nome = "Eduardo"
+  onde nome receber eduardo 
+
+  :
+  WHERE nome = edurado;
+
+Semâtica
+----------
+Delete da tabela tal onde a condição tal for verdade;
+
+=-=-=-=-==-=-=-=-=-=-=-=-=-=
+    Altulizando Registros
+===========================
+
+UPDATE NomeDaTabela  SET  ColunaTal = "DadoTal" WHERE Condição
+
+condição 
+========
+  ex:
+
+  idade = 17
+
+  where idade = 17
+
+Semântica 
+-----------
+
+Altulize a tabela tal setando o dado tal 
+somente onde o dado = condição;
+
+
+=============================================
+    Lidando com sequelize (Node Js)
+=============================================
+
+  Instalação (prompt)
+-----------------------
+npm install --save sequelize
+
+npm install --save mysql2
+
+
+  Tipos de textos 
+===================
+TEXT - Texto limitado 
+
+STRING - Texto ilmitado
+
+INTEGER - Inteiro 
+
 =============================
-  Comandos node js
+ Se conectando com sequelize 
 =============================
 
-__dirname - diretório atual
+Blibioteca
+--------------
+const sequelize require(""sequelize");
 
-res.sendFile("caminho do arquivo") - setar arquivo
+
+conectando
+--------------
+const conexao = new sequelize("NomeDoBanco","Usuário","Senha",{
+
+  host:QualServidorEstáRoadando ex: 'localhost',
+
+  dialct:TipoDeBanco ex: 'mysql'
+
+})
+
+
+condexao.authenticate().then(()=>{
+
+  conosle.log("Banco conectado")
+
+}).catch((err)=>{
+
+  console.log("Erro: "+err)
+})
+
+
+============================
+  Criando tabelas sequelize
+============================
+const tabela = sequelize.define("Nometabela",{
+  campo1:{
+
+    tipo: Sequelize.STRING
+  },
+  campo2:{
+
+    tipo: Sequelize.TEXT
+  }
+})
+
+tabela.sincy(force:true)
+
+============================
+    Inserindo dados 
+============================
+
+tabela.create({
+
+  campo1: "Dado...",
+  campo2: "Dado..."
+
+})
+
+
+===========================
+Recomendações para backend
+============================
+
+
+Npm
+-------
+
+https://www.npmjs.com/
+
+Cat 
+-------
+
+https://http.cat/
