@@ -146,8 +146,131 @@ module.exports = rotas
     Ligação com banco de dados
 ===================================
 
-Baixar mysql comunit server
+Tipos primitivos
+------------------
 
+CHAR - Um único caractere
+
+VARCHAR(QTD_MÁX) - Cadeia de caracteres
+
+INT - Tipo inteiro
+
+
+
+Baixar mysql comunit server
+=-=-=-=-==-=-=-=-=-=-=-=-=-=
+Entrando no mysql (prompt)
+----------------------------
+Para entrar no banco de dados 
+pleo prompt usamos o cmd :
+
+-u -h - p
+
+-u : usuário 
+
+-h : host 
+
+-p : senha 
+
+
+Prática
+----------
+-u root -h localhost -p 263534553#@
+
+=-=-=-=-==-=-=-=-=-=-
+Vendo banco de dados 
+---------------------
+SHOW DATABASES;
+
+=-=-=-=-==-=-=-=-=-=-=
+Usando banco de dados
+----------------------
+USE NomDoBanco;
+
+=-=-=-=-==-=-=-=-=-=-=
+Criando banco de dados 
+------------------------
+CREATE DATABASE NomeDoBanco;
+
+Semâtica 
+----------
+Criar banco de dados com nome tal.
+
+=-=-=-=-==-=-=-=-=-=-=-=-=
+Criando tabela
+-------------------------
+CREATE TABLE NomeDatabela(
+  Coluna1 tipo,
+  Coluna2 tipo, 
+  COluna3 tipo 
+);
+
+Semâtica 
+----------
+Criar tabela tal com as colanas e tipos 
+tais  abaixo(
+
+);
+=-=-=-=-==-=-=-
+Vendo tabelas 
+---------------
+SHOW TABLES;
+
+semâtica 
+-----------
+Ver tabelas
+
+=-=-=-=-==-=-=-=-=
+Descrevendo tabela
+--------------------
+DESCRIBE NomeDaTabela;
+
+Semântica
+-----------
+Descreva a tabela tal
+
+ex:
+  Tipo 
+  Tamanho etc..
+  Informações da tabela
+
+=-=-=-=-==-=-=-=-=-=-=-=-=-=
+Selecionando itens da tabela
+-----------------------------
+
+Todos dados
+-------------
+SELECT* FROM NomeDatabela;
+
+Semântica
+----------
+
+Selecione todos os dados da 
+tabela tal.
+
+Dados especifico
+-----------------
+SELECT* from NomeTabela where idade = 17;
+
+
+Semântica 
+----------
+
+Selecione todos os dados da tabela tal 
+onde o campo idade receber o valor dezesete.
+
+=-=-=-=-==-=-=-=-=-=-=-=-=-=
+Inserindo dados na tabela 
+============================
+INSERT INTO NomeDatabela(CampoX,Campo,YCampoZ) VALUES(
+  "Campox",
+  "CampoY",
+  "CampoXZ"
+);
+
+Semântica 
+-----------
+Inserir na Tabelatal nos campos tais os valores tais.
 
 =============================
   Comandos node js
