@@ -363,7 +363,7 @@ const conexao = new sequelize("NomeDoBanco","Usuário","Senha",{
 })
 
 
-condexao.authenticate().then(()=>{
+conexao.authenticate().then(()=>{
 
   conosle.log("Banco conectado")
 
@@ -415,3 +415,8 @@ Cat
 -------
 
 https://http.cat/
+
+Handelbas 
+----------
+
+https://handlebarsjs.com/
