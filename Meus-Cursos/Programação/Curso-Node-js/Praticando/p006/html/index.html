@@ -15,11 +15,11 @@
     <form action="/dadoscoletados" method="post">
         <p>
             <label for="">Email</label>
-            <input type="email" name="iemail" id="" placeholder="Email" required>
+            <input type="email" name="iemail" id="" placeholder="Email" required maxlength="255" minlength="5">
         </p>
         <p>
             <label for="">Senha</label>
-            <input type="password" name="isenha" id="" placeholder="Senha" required>
+            <input type="password" name="isenha" id="" placeholder="Senha" required minlength ="6" maxlength="10">
         </p>
         <p>
             <input type="submit" value="Registrar">

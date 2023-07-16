@@ -343,6 +343,31 @@ STRING - Texto ilmitado
 
 INTEGER - Inteiro 
 
+
+Esportando arquivos
+--------------------
+module.exports= exemplo.txt
+
+Redirecionando
+---------------
+res.redirect('rota')
+
+renderizar 
+-----------------
+res.sendFile('rota')
+
+Exibindo dados do BD 
+----------------------
+tabela.all().then((posts)=>{
+  res.send({})
+  res.render({posts:posts})
+
+})
+
+Deletando postagens
+---------------------
+tabela.destroy({where:{'campo':condição}})
+
 =============================
  Se conectando com sequelize 
 =============================

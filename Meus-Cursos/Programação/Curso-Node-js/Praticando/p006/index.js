@@ -2,53 +2,45 @@
 const express = require('express');
 const app = express();
 
-
 //              BODYPARSER                //
 const body_parser = require('body-parser');
 app.use(body_parser.json({}));
 app.use(body_parser.urlencoded({extended:false}));
 
-//             BANCO DE DADOS            //
-const sequelize = require('sequelize');
-const conexaobd03 = new sequelize('bancoteste03','root','123456789',{
-
-    host:'localhost',
-    dialect:'mysql',
-
-})
-conexaobd03.authenticate().then(()=>{
-
-    console.log('Conexao com banco de dados efetuada com sucesso!')
-
-}).catch((err)=>{
-
-    conosle.log('Houve um erro ao tentar conectar-se ao BD erro: '+err)
-})
-const tabela01 = conexaobd03.define('usuarios',{
-    Email:{
-        type:sequelize.STRING
-
-    },
-    Senha:{
-        type:sequelize.INTEGER
-    }
-})
+//              Banco de dados
+const tabela01 = require('./post/post')
 
 //                  ROTAS                   //
-
 app.get('/registrar', (req, res) => {
-    res.sendFile(__dirname+"/index.html")
+
+    res.sendFile(__dirname+"/html/index.html")
 
 });
-
 app.post('/dadoscoletados',(req,res)=>{
-    tabela01.create({
+    tabela01.tabela01.create({
         Email:req.body.iemail,
         Senha:req.body.isenha
+
+    }).then(()=>{
+
+        console.log('Usuário registrado com sucesso!')
+
+    }).catch((err)=>{
+
+        console.log('Ops! houve um erro: '+err)
     })
-    res.sendFile(__dirname+"/registrado.html")
+
+    res.sendFile(__dirname+"/html/deletar.html")
     
     
+});
+app.post('/del',(req,res)=>{
+    res.sendFile(__dirname+'/html/deletar.html')
+
+    tabela01.tabela01.destroy({where:{'Email':req.body.iuser}}).then(()=>{
+        console.log('Usuário deletado!')
+    })
+
 })
 app.listen(8080,()=>{
 
