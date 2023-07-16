@@ -42,12 +42,10 @@ app.get('/registrar', (req, res) => {
 });
 
 app.post('/dadoscoletados',(req,res)=>{
-
     tabela01.create({
         Email:req.body.iemail,
         Senha:req.body.isenha
     })
-
     res.sendFile(__dirname+"/registrado.html")
     
     
