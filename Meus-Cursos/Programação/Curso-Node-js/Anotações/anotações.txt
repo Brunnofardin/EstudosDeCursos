@@ -400,6 +400,28 @@ tabela.create({
 
 })
 
+===========================
+       handlebars 
+============================
+
+Instalação 
+-------------
+npm install --save express-handlebars
+
+const hand = require("express-handlebars")
+
+================================
+   Body parser
+=================================
+Recebimento de dados de formulário 
+
+instalação 
+-------------
+npm install --save body-parser
+
+app.use(body_parser.urlencoded({extended:false}))
+
+app.use(body_parser.json())
 
 ===========================
 Recomendações para backend
