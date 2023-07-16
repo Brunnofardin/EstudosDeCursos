@@ -23,11 +23,19 @@ section{
     margin-top: 3px;
 }
 #credit{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1.9px solid black;
     padding: 5px;
     border-radius: 4px;
     background-color: #3333d3;;
     font-size: 1.21em;
     font-weight: bolder;
+}
+#credit:hover{
+    background-color: red;
+}
+#credit:active{
+    background-color: #a70303;
 }
 #credit a{
     text-decoration:none;
