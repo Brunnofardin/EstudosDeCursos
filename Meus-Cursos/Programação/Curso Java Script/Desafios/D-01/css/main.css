@@ -1,0 +1,99 @@
+body{
+    color: white;
+    background-color: #4646ff;
+}
+#container{
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    color: black;
+    height: auto;
+    max-width: 700px;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+}
+section{
+    border-radius: 4px;
+    border: 1px solid #494949;
+}
+#label{
+    margin-top: 3px;
+}
+#divnum{
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #4646ff;
+}
+#divnum > input{
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 1px;
+    height: 90%;
+    width: 97%;
+    border: 0px;
+}
+#s-1{
+    margin: 20px;
+    padding: 2px;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#s-2{
+    background: url('../img/user_mobile.svg')  no-repeat ;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+}
+#s-3{
+    width: 90%;
+    margin: 10px;
+    text-indent: 10px;
+    line-height: 27px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#s-3 p{
+    margin: 10px;
+}
+.op{
+    color: white;
+    padding: 2px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    height: 90px;
+    width:  150px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    background-color:#3333d3;
+    border: 1px solid black;
+}
+.op:hover{
+    background-color: red;
+}
+.op:active{
+    background-color: #a70303;
+}
+.op > p{
+    width: 100%;
+  
+    display: block;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+Fazer uma calculadora com entrada de dados
+que possa realizar as operações de soma,
+divisão,multiplicação e subtração. Lembrando 
+que essas funções devem estar dentro de arrays.
+
+Algoritimo ->
+
+
+Descrição narrativa 
+----------------------
+
+1° Criar uma entrada de dados do tipo real em html
+
+2° Botões das operações matemáticas e botões de enviar
+
+3° após o envio deveremos coletar os dados digitados e a 
+  operção desejada
+
+4° realizar a operação e devolver uma saida de dados 
+
