@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Vindo</title>
+    <style>
+        body{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #5757f8;
+        }
+        #container_form{
+            display: flex;
+            color: black;
+            width: 90%;
+            height: 400px;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+        #container_form form {
+           
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div id="container_form">
+        <form action="/registrar" method="post">
+            <div>
+                <p>
+                    <label for="">Nome</label>
+                    <input type="text" name="nome" id="" required>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="" required>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <label for="">Senha</label>
+                    <input type="password" name="senha" id="" required>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+                <p>
+                    <input type="reset" value="Limpar">
+                </p>
+            </div>
+        </form>
+    </div>
+    <script src="../index.js"></script>
+</body>
+</html>
