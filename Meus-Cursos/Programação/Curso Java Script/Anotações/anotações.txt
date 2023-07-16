@@ -706,6 +706,37 @@ Funções
 ----------
 .next()
 
+======================
+      ARRAYS
+======================
+* Strings
+* Números
+* Objetos 
+* Funções
+
+Definição de array:
+---------------------
+Coleção de dados
+criando entre conchetes
+
+Como usar
+------------------
+let array1 = [".","..","..",23,22.3]
+
+Podemos misturar diversos 
+tipos dentro d euma array ex: 
+tipo inteiro,flutuante ou strings etc..
+
+   Adicionando/removendo
+---------------------------
+
+array.push("o que?") - adiconar o que? 
+
+array.pop() - remove o ultimo elemento da array
+
+array.unshift() - adicona um elemento na 1° posição da array
+
+array.shift() - remove o elemento do inicio da array
 
 Elementos para praticidade
 ---------------------------
