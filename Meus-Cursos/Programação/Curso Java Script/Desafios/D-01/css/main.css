@@ -22,6 +22,18 @@ section{
 #label{
     margin-top: 3px;
 }
+#credit{
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #3333d3;;
+    font-size: 1.21em;
+    font-weight: bolder;
+}
+#credit a{
+    text-decoration:none;
+    color: white;
+  
+}
 #divnum{
     width: 90%;
     height: 40px;
