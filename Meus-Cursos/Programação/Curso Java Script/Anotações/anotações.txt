@@ -858,3 +858,31 @@ resultado:
 
   </html>
    
+===============================
+        Coleção MAP 
+==============================
+
+Mapeamento de valores 
+através de chave e valor 
+ou keys and value 
+
+Estrutura 
+-----------
+const NomeVariavel = new Map()
+
+
+Comandos
+-----------
+
+NomeVariavel.set("para1","para2") - adicionar um elemento
+
+para1 - Chave,para2 - Valor 
+
+
+NomeVariavel.size - tamanho da coleção
+
+NomeVariavel.get("chave") - obter a valor da chave(x)
+
+NomeVariavel.has("Chave") - Tem a chave?
+
+NomeVariavel.delete("Chave") - deletar iten cuja a chave é(tal)
