@@ -501,7 +501,7 @@ const Usuario = mongose.model("NomeColeção")
 new Usuario({
   CampoX:"",
   CampoY:,
-})
+}).save()
 
 ===========================
 Recomendações para backend

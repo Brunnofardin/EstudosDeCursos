@@ -1,35 +1,33 @@
-// Carregando modulos
-
+// Express
 const express = require('express');
-const handlebars = require('express-handlebars');
-const body_parser = require('body-parser');
-const mongoose = require('mongoose');
 const app = express();
-
-// Configurações
+// Configurações modulos 
 
    // bodyparser
-
+      const body_parser = require('body-parser');
       app.use(body_parser.urlencoded({extended:true}));
       app.use(body_parser.json());
 
    // Handlebars
+       const handlebars = require('express-handlebars');
 
-      app.engine('handlebars', handlebars.engine({defaultLayout:'main'}));
-      app.set('view engine', 'handlebars');
-      app.set('views', './views');
+       app.engine('handlebars',handlebars.engine({defaultLayout:'main'}));
+       app.set("view engine",'handlebars');
+       app.set('views','./views')
       
+         
    // Mongose
-
-      // em breve
-
+      const mongoose = require('mongoose');
 
 // Rotas
-   // em breve
+
+app.get('/home',(req,res)=>{
+   res.render('home')
+})
 
 
 // Outros
-const porta = 9090
-app.listen(porta,()=>{
+
+app.listen(9090,()=>{
     console.log("Servidor iniciado com sucesso!")
 })
