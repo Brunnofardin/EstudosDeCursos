@@ -453,6 +453,29 @@ app.use(body_parser.json({}))
 
 app.use(body_parser.urlencoded({extended:false}))
 
+
+=============================
+        Mondgo BD 
+=============================
+Orientado a documentos coleção
+
+Json - chave e valor 
+Json - key and value
+
+exemple: 
+   {
+    Nome:'Brunno Fardin',
+    Idade:17,
+    emial 'Brunnofardin@yahoo.com'
+   }
+
+Se conectando
+===============
+
+const mongo = require('mongoose');
+
+mongo.connect("mongodb://localhost/NomeDoBanco")
+
 ===========================
 Recomendações para backend
 ============================
@@ -463,12 +486,39 @@ Npm
 
 https://www.npmjs.com/
 
+Site com diversos pacotes 
+meneiros para ultilizar no node 
+
 Cat 
 -------
 
 https://http.cat/
 
-Handelbas 
-----------
+Códigos de erro etc..
 
-https://handlebarsjs.com/
+Body Parser 
+-------------
+
+https://www.npmjs.com/package/body-parser
+
+Permite a coletada de dados 
+no html 
+
+Express handlebars 
+-------------------
+https://www.npmjs.com/package/express-handlebars
+
+Permite dar novas funcionalidades ao 
+html por ex: variaveis e condições
+
+Mongo DB 
+----------
+https://www.mongodb.com/try/download/community
+
+Banco de dados
+orientado a documento
+
+Mondoose
+------------
+
+https://www.npmjs.com/package/mongoose
