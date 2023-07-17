@@ -474,7 +474,34 @@ Se conectando
 
 const mongo = require('mongoose');
 
-mongo.connect("mongodb://localhost/NomeDoBanco")
+mongo.connect("mongodb://127.0.1/NomeDoBanco")
+
+Criando models
+==================
+
+const pessoasSchema = mongo.Schema({
+    Nome:{type:String,require:true},
+    Idade:{type:Number,require:true},
+    email:{type:String,require:true}
+})
+
+
+Definindo  coleção para o model
+==============================
+mongo.model('Usários',pessoaSchema)
+
+para1 - Nome da coleção 
+
+para2 - Qual conjunto?
+
+Inserindo dados 
+===============
+const Usuario = mongose.model("NomeColeção")
+
+new Usuario({
+  CampoX:"",
+  CampoY:,
+})
 
 ===========================
 Recomendações para backend
@@ -522,3 +549,33 @@ Mondoose
 ------------
 
 https://www.npmjs.com/package/mongoose
+
+
+
+// conexão 
+
+const mongoose = require('mongoose');
+
+mongoose.connect("mongodb/127.0.0.1/Registros").then(()=>{
+
+  consoel.log('Conctado com sucesso!')
+
+}).catch((err)=>{
+
+  consoel.log('Houve um erro ao tentra concetar-se '+err)
+})
+
+// Criar novo model(conjunto de dados)
+
+const NomeModelShema = mongoose.Sechema{
+  CampoX{
+    tipo: digite aqui o tipo,
+    requer: sim? não?
+  }
+  CampoY{
+    type:String,
+    require:true;
+  }
+}
+
+mongoose.model('NomeDaColeção',QuemVaiParticipar?)
