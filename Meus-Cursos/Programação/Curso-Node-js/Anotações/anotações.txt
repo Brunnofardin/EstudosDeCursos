@@ -74,20 +74,161 @@ ex:
      const resultado_multiplicação = multiplicar.multiplicar(n1,n2) 
 
 -----------------------------------
-        Rotas
+            Rotas
 -----------------------------------
 
+Framework - facilitador 
+
+======================== 
+        express 
+========================
+
+ Instalação
+-----------------
+Ache a pasta do seu projeto
+
+ex: cd: C:User:Useradm/projeto01
+
+Depois execute o dowloader:
+
+    (prompt comando)
+  --------------------
+ npm install --save express 
+
+
+ Importando modulo
+-------------------
+
+const express = require('express');
+const app = express() - funcionalidades 
+                           express
+
+  Funcionalidades
+-------------------
+
+  Rotas
+---------
+
+app.get("/",função(par1,par2){
+
+})
+
+ / - rota raiz
+
+função - function(){}
+
+par1 - requisição
+
+par2 - resposta 
+
+ Exibir HTMl
+----------------
+ Primeiro devemos ter o 
+arquivo html
+
+html >
+  index.html >
+     <html>
+       <head>
+           <title></title>
+       </head>
+       <body>
+           <h1>Arquivo HTMl</h1>
+       </body>
+     </html>
+
+
+ Rota pradrão
+---------------
+
+const express = require('express');
+const app = express();
+
+
+app.get('/home'(req,res)=>{
+  res.sendFile(__dirname+"/html/index.html")
+
+})
+
+__ dirname - Diretório atual
+
+/arquivo/arquivo - entrar na pasta
+
+ Adiconando  extras 
+-------------------
+app.use(express.static(__dirname+"/css"))
+
+<link href='main.css'>
+
+use - ultilize
+
+static - local estático/diretório
+
+-----------------------------------
+         Body Parser
+-----------------------------------
+
+ Instalação
+------------
+npm install --save body-parser
+
+ Ultilidades
+---------------
+Serve para coletar dados
+de formulários ou de 
+requisições
+
+
+
+ Dados de requisições
+------------------------
+const bodyParser = require('body-parser')
+
+app.use(bodyParser.json())
+   use body parser no formatdo json
+
+app.use(bodyParser.urlencoded({extend:false}))
+    use body parser para url extensão falsa
+
+
+
+   Dados de formulários 
+--------------------------
+
+Para acessar dados do formulario
+usamos a requisição.body.nomeDoCampo 
+
+Nome do campo cujo quer pegar o dado 
+
+
 
 
 -----------------------------------
-
+         Handdlebars
 -----------------------------------
 
+  Instalação
+---------------
 
+npm install --save express-handlebars 
 
------------------------------------
+const handlebars = require('handlebars');
 
------------------------------------
+app.engine('handlebars',handlebars.engine({defaltLayout:"main"});)
+  Use o handlebars definindo como layout padrão o MAIN 
+
+app.set('view engine','handlebars')
+  use a view configuração de handle bars
+
+app.set('views','./views')
+  use a pasta views ./views
+
+O handlebars serve para trabalhar com 
+fontend mais ele implementa funcionalidades 
+novas para o nosso front end 
+por exemplo estruturas de repetição 
+exibição de varivaies etc....
+
 
 
 -----------------------------------
