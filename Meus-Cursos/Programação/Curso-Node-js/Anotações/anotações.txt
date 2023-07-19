@@ -242,5 +242,13 @@ exibição de varivaies etc....
 
 
 -----------------------------------
-
+           Mongo db
 -----------------------------------
+
+Listando dados 
+---------------------
+
+coleção.find().sort({date:'desc'}).lean().then((arquivo)=>{
+  res.render(arquivo')
+
+})
