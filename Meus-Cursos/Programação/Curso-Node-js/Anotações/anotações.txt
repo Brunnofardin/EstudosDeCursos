@@ -2,580 +2,104 @@
         Curso node js
 ====================================
 
-         Http
-----------------------------
+-----------------------------------
+      Exibindo mensagem
+-----------------------------------
+ Para exibir uma mensagem em Node 
+Js ultilizamos o comando :
+ 
+  Conosle.log("")  
 
-Protocolo que permite 
-trabalhar com requisição 
-e respota.
+Dentro dos apóstrofos colocamos 
+a mensagem a ser exibida. Exemplo:
 
-  Requerindo http
-------------------
-const http = require("http")
+  Conosle.log("Hellow Word")
 
-  Criar servidor
-------------------
-.createServer((requisição,resposta)=>{
+-----------------------------------
+       Modulariação
+-----------------------------------
 
-})
+ Para fazer uma modularização nós 
+separamos arquivos com funções 
+diferentes por exemplo:
+  
+  operadores >
+     > calcular.js
+        var soma = function(n1,n2){
+            return n1+n2  
+        }
+     > subtrair.js 
+        var subtrair = funtion(n1,n2){
+            return n1-n2
+        }
+     > multiplicar.js 
+         var multiplicar = funtion(n1,n2){
+           return n1*n2
+        }
+  app.js
 
-texto
-----------------
-
-text/plain - texto normal
-
-text/html - texto html
-
-head
-----------------
-writeHead(200,{
-
-  'containt-Type','text/plain'
-
-});
-
-Ultilitários
-------------------
-
-.write("texto") - escrever resposta
-
-.end("") - finalizar resposta
-
-.url - conteudo da url
-
-      Rotas
---------------------------
-.url
-
-ex:
-  if(requisição.url == ''){
-     resposta.write("olá")
-  }
-
-
-===========================
-      MODULOS
-===========================
-
----------------------------
-         FS
----------------------------
-
-File system serve para 
-ler,editar e copiar arquivos
-
-Ultilitários
+ Para eu usar os operadores de 
+calculo,subtraçção e multiplicação dentro 
+dos 3 arquivos, eu devo exportar as variveis
+que possuem suas funções.
+-------------       
+  comando
 -------------
+module.exports = {O que ?}
 
-fs.readFile('./trajeto../',(err,arquivo)=>{ - Ler arquivo
-
-
-}) 
-
-fs.appendFile('nomedoarquivo.txt','conteudo',(err)=>{
-
-
-})
--------------------------
-      EXPRESS
--------------------------
-
-O express serve para criar 
-rotas com mais facilidades
-
-
-Instalação
--------------
-
-Prompt
----------
-Estando já na pasta de seu projeto
-use o comando pelo prompt comando:
-
-npm install express --save
-
-Vsc
-----------
-const express = require("express");
-const app = express();
-
-
-Ultilitários
------------------
-app.get("rota",função(requisição,resposta){
-
-})
-
-res.send("") - mandar conteudo
-
-
-====================================
-   Modulorização de elementos
-====================================
-
-Nada mais é do que você juntar o seu 
-código, por em uma caixa de ferramentas,
-e usá-lo quando for preciso.
-
-Passagem de parâmetros
-------------------------
-elemento.get('/rota:parâmetro'(req,res)=>{
-       req.parms.parâmetro
-
-})
-
-Sintaxe
-----------
-const express = require('express') - modulo express
-const rotas = express.Router(); - express rotas
-
-
-rotas.get('/',(req,res)=>{ - requisição,resposta
-    res.json({ola:'Seja bem vindo'})
-
-})
-
-rotas.get('/:cursoid',(req,res)=>{
-    const curso = req.params.cursoid - parâmetros
-
-})
-
-module.exports = rotas
-
-=============================
-  Comandos node js
-=============================
-
-__dirname - diretório atual
-
-res.sendFile("caminho do arquivo") - setar arquivo
-
-==========================================
-    Ligação com banco de dados (prompt)
-==========================================
-
-Tipos primitivos
-------------------
-
-CHAR - Um único caractere
-
-VARCHAR(QTD_MÁX) - Cadeia de caracteres
-
-INT - Tipo inteiro
-
-
-
-Baixar mysql comunit server
-=-=-=-=-==-=-=-=-=-=-=-=-=-=
-Entrando no mysql (prompt)
-----------------------------
-Para entrar no banco de dados 
-pleo prompt usamos o cmd :
-
--u -h - p
-
--u : usuário 
-
--h : host 
-
--p : senha 
-
-
-Prática
-----------
--u root -h localhost -p 263534553#@
-
-
-=============================
- Lidando com banco de dados
-=============================
-
-=-=-=-=-==-=-=-=-=-=-=-=-=
-  Vendo banco de dados 
-------------------------- 
-SHOW DATABASES;
-
-=-=-=-=-==-=-=-=-=-=-=-==
-  Usando banco de dados
---------------------------
-USE NomDoBanco;
-
-=-=-=-=-==-=-=-=-=-=-=-==
-  Criando banco de dados 
--------------------------
-CREATE DATABASE NomeDoBanco;
-
-Semâtica 
-----------
-Criar banco de dados com nome tal.
-
-=-=-=-=-==-=-=-=-=-=-=-=-=
-     Criando tabela
---------------------------
-CREATE TABLE NomeDatabela(
-  Coluna1 tipo,
-  Coluna2 tipo, 
-  COluna3 tipo 
-);
-
-Semâtica 
-----------
-Criar tabela tal com as colanas e tipos 
-tais  abaixo(
-
-);
-=-=-=-=-==-=-=-
-Vendo tabelas 
----------------
-SHOW TABLES;
-
-semâtica 
------------
-Ver tabelas
-
-=-=-=-=-==-=-=-=-=-=-=
-   Descrevendo tabela
-----------------------
-DESCRIBE NomeDaTabela;
-
-Semântica
------------
-Descreva a tabela tal
-
-ex:
-  Tipo 
-  Tamanho etc..
-  Informações da tabela
-
-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
-  Selecionando itens da tabela
---------------------------------
-
-Todos dados
--------------
-SELECT* FROM NomeDatabela;
-
-Semântica
-----------
-
-Selecione todos os dados da 
-tabela tal.
-
-Dados especifico
------------------
-SELECT* from NomeTabela where idade = 17;
-
-
-Semântica 
-----------
-
-Selecione todos os dados da tabela tal 
-onde o campo idade receber o valor dezesete.
-
-=-=-=-=-==-=-=-=-=-=-=-=-=-=
-  Inserindo dados na tabela 
-============================
-INSERT INTO NomeDatabela(CampoX,Campo,YCampoZ) VALUES(
-  "Campox",
-  "CampoY",
-  "CampoXZ"
-);
-
-Semântica 
------------
-Inserir na Tabelatal nos campos tais os valores tais.
-
-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
-  Deletado Registros da tabela 
-================================
-DELETE FROM NomedaTabela  WHERE condição;
-
-condição?
-==========
-ex:
-  nome = "Eduardo"
-  onde nome receber eduardo 
-
-  :
-  WHERE nome = edurado;
-
-Semâtica
-----------
-Delete da tabela tal onde a condição tal for verdade;
-
-=-=-=-=-==-=-=-=-=-=-=-=-=-=
-    Altulizando Registros
-===========================
-
-UPDATE NomeDaTabela  SET  ColunaTal = "DadoTal" WHERE Condição
-
-condição 
-========
-  ex:
-
-  idade = 17
-
-  where idade = 17
-
-Semântica 
------------
-
-Altulize a tabela tal setando o dado tal 
-somente onde o dado = condição;
-
-
-=============================================
-    Lidando com sequelize (Node Js)
-=============================================
-
-  Instalação (prompt)
------------------------
-npm install --save sequelize
-
-npm install --save mysql2
-
-
-  Tipos de textos 
-===================
-TEXT - Texto limitado 
-
-STRING - Texto ilmitado
-
-INTEGER - Inteiro 
-
-
-Esportando arquivos
---------------------
-module.exports= exemplo.txt
-
-Redirecionando
----------------
-res.redirect('rota')
-
-renderizar 
------------------
-res.sendFile('rota')
-
-Exibindo dados do BD 
-----------------------
-tabela.all().then((posts)=>{
-  res.send({})
-  res.render({posts:posts})
-
-})
-
-Deletando postagens
----------------------
-tabela.destroy({where:{'campo':condição}})
-
-=============================
- Se conectando com sequelize 
-=============================
-
-Blibioteca
 --------------
-const sequelize require(""sequelize");
-
-
-conectando
+   Exemplo
 --------------
-const conexao = new sequelize("NomeDoBanco","Usuário","Senha",{
 
-  host:QualServidorEstáRoadando ex: 'localhost',
+operadores >
+    calcular.js 
+       module.exports = soma
+    subtrair.js
+       module.exports = subtrair
+    multiplicar.js 
+       module.exports = multiplicar
 
-  dialct:TipoDeBanco ex: 'mysql'
+Depois basta eu requerir estes 
+arquivos na minha aplicação principal
 
-})
+ex:
+  
+  app.js >
+     const calcular = require('./operadores/calcular');
+     const subtrair = require('./operadores/subtrair);
+     const multiplicar = require('./operadores/multiplicar)
+     
+     const resultado_soma = calcular.soma(n1,n2)
+     const resultado_subtração = subtrair.subtrair(n1,n2)
+     const resultado_multiplicação = multiplicar.multiplicar(n1,n2) 
 
+-----------------------------------
+        Rotas
+-----------------------------------
 
-conexao.authenticate().then(()=>{
 
-  conosle.log("Banco conectado")
 
-}).catch((err)=>{
+-----------------------------------
 
-  console.log("Erro: "+err)
-})
+-----------------------------------
 
 
-============================
-  Criando tabelas sequelize
-============================
-const tabela = sequelize.define("Nometabela",{
-  campo1:{
 
-    tipo: Sequelize.STRING
-  },
-  campo2:{
+-----------------------------------
 
-    tipo: Sequelize.TEXT
-  }
-})
+-----------------------------------
 
-tabela.sincy(force:true)
 
-============================
-    Inserindo dados 
-============================
+-----------------------------------
 
-tabela.create({
+-----------------------------------
 
-  campo1: "Dado...",
-  campo2: "Dado..."
 
-})
+-----------------------------------
 
-===========================
-       handlebars 
-============================
+-----------------------------------
 
-Instalação 
--------------
-npm install --save express-handlebars
 
-const hand = require("express-handlebars")
+-----------------------------------
 
-================================
-   Body parser
-=================================
-Recebimento de dados de formulário 
-
-instalação 
--------------
-npm install --save body-parser
-
-app.use(body_parser.urlencoded({extended:false}))
-
-app.use(body_parser.json())
-
-
-app.use(body_parser.json({}))
-
-app.use(body_parser.urlencoded({extended:false}))
-
-
-=============================
-        Mondgo BD 
-=============================
-Orientado a documentos coleção
-
-Json - chave e valor 
-Json - key and value
-
-exemple: 
-   {
-    Nome:'Brunno Fardin',
-    Idade:17,
-    emial 'Brunnofardin@yahoo.com'
-   }
-
-Se conectando
-===============
-
-const mongo = require('mongoose');
-
-mongo.connect("mongodb://127.0.1/NomeDoBanco")
-
-Criando models
-==================
-
-const pessoasSchema = mongo.Schema({
-    Nome:{type:String,require:true},
-    Idade:{type:Number,require:true},
-    email:{type:String,require:true}
-})
-
-
-Definindo  coleção para o model
-==============================
-mongo.model('Usários',pessoaSchema)
-
-para1 - Nome da coleção 
-
-para2 - Qual conjunto?
-
-Inserindo dados 
-===============
-const Usuario = mongose.model("NomeColeção")
-
-new Usuario({
-  CampoX:"",
-  CampoY:,
-}).save()
-
-===========================
-Recomendações para backend
-============================
-
-
-Npm
--------
-
-https://www.npmjs.com/
-
-Site com diversos pacotes 
-meneiros para ultilizar no node 
-
-Cat 
--------
-
-https://http.cat/
-
-Códigos de erro etc..
-
-Body Parser 
--------------
-
-https://www.npmjs.com/package/body-parser
-
-Permite a coletada de dados 
-no html 
-
-Express handlebars 
--------------------
-https://www.npmjs.com/package/express-handlebars
-
-Permite dar novas funcionalidades ao 
-html por ex: variaveis e condições
-
-Mongo DB 
-----------
-https://www.mongodb.com/try/download/community
-
-Banco de dados
-orientado a documento
-
-Mondoose
-------------
-
-https://www.npmjs.com/package/mongoose
-
-
-
-// conexão 
-
-const mongoose = require('mongoose');
-
-mongoose.connect("mongodb/127.0.0.1/Registros").then(()=>{
-
-  consoel.log('Conctado com sucesso!')
-
-}).catch((err)=>{
-
-  consoel.log('Houve um erro ao tentra concetar-se '+err)
-})
-
-// Criar novo model(conjunto de dados)
-
-const NomeModelShema = mongoose.Sechema{
-  CampoX{
-    tipo: digite aqui o tipo,
-    requer: sim? não?
-  }
-  CampoY{
-    type:String,
-    require:true;
-  }
-}
-
-mongoose.model('NomeDaColeção',QuemVaiParticipar?)
+-----------------------------------
