@@ -1,0 +1,40 @@
+body{
+    background-color: beige;
+}
+#cards{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+#card{
+    margin-top: 20px;
+    display: inline-block;
+    transition: transform 1s;
+
+}
+#divcard{
+
+} 
+@media screen and (orientation:portrait){
+    #card{
+        margin-left: 10px;
+    }
+}
+@media screen and (orientation:landscape){
+    #card{
+        margin-left: 25px;
+    }
+}
+@media screen and (min-width:490px){
+    #card:hover{
+        transform: scale(1.1);
+    }
+     
+}
+/* #carouselExampleCaptions{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+} */
