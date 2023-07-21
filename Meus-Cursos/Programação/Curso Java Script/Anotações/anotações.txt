@@ -936,3 +936,24 @@ console.log(`Meu nome é ${nome}`)
 ===============================
   Objetos em Java-Script
 ===============================
+
+* Classe base 
+
+* Métodos e propiedades
+
+ Sintaxe 
+---------
+
+class Pessoa{
+  constructor(nome,idade){
+    this.nome=nome,
+    this.idade = idade
+
+  }
+    
+}
+
+const p1 = new Pessoa("Brunno Fardin de Souza',16)
+
+Constructor - Método autmoaticamente chamado quando
+            eu chamo a classe Pessoa
