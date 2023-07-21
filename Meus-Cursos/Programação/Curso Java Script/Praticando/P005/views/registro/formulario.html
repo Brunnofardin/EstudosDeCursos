@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Vindo</title>
+    <style>
+        body{
+            background-color: #4848ff;
+        }
+        div.conatainer_formulario{
+            height: auto;
+            display: flex;
+            max-width: 700px;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid white;
+            background-color: #4848ff;
+            margin: 40px  auto;
+        }
+        .conatainer_formulario > form{
+            padding: 10px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        h1{
+            padding: 5px;
+            display: flex;
+            color: white;
+            height: 60px;
+            text-align: center;
+            border-radius: 4px;
+            align-items: center;
+            border: 1px solid white;
+            background-color: blue;
+            text-shadow: 1px 1px 1px black;
+        }
+        p{
+            margin-top: 40px;
+        }
+        p > input.dados{
+            border: 0px;
+            height: 34px;
+            width: 200px;
+            margin: 3px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        p > input.acao{
+            border: 0;
+            width: 200px;
+            height: 40px;
+            margin: 10px;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="conatainer_formulario">
+            <form action="/registrar">
+                <h1>Registro de produtos</h1>
+                <p>
+                    <input type="text" name="nome" id="" class="dados" placeholder=" ex: Smartphone">
+                </p>
+                <p>
+                    <input type="text" name="descricao" id="" class="dados" placeholder=" example: amarelo, usado,etx..">
+                </p>
+                <p>
+                    <input type="submit" value="Registrar" class="acao">
+                    <input type="reset" value="Limpar" class="acao">
+                </p>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>
