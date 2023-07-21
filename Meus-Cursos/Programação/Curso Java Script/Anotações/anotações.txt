@@ -886,3 +886,53 @@ NomeVariavel.get("chave") - obter a valor da chave(x)
 NomeVariavel.has("Chave") - Tem a chave?
 
 NomeVariavel.delete("Chave") - deletar iten cuja a chave é(tal)
+
+==========================
+       Coleção SET 
+==========================
+
+Semâtica
+-----------
+A coeleção set não permite
+entradas  duplicadas.
+
+
+ sintaxe
+-----------
+const setando = new Set()
+
+
+ comandos 
+------------
+
+setando.add("O que?") - adcionar o que?
+
+========================
+  Templates strings 
+========================
+
+ Semâtica 
+------------
+ Feito para não precisar de usar concatenação 
+ultilizando o operador (+)
+
+exemplo: 
+    "Meu nome é" +nome
+ Agora com o template strings ficou mais 
+fácil basta usarmos apóstrofos e o símbolo
+${variavel}
+
+exemplo:
+  `Meu nome é ${nome}`
+
+ sintaxe
+------------
+
+const nome = "Um nome qualquer"
+
+console.log(`Meu nome é ${nome}`)
+
+
+===============================
+  Objetos em Java-Script
+===============================
