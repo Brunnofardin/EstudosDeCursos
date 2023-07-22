@@ -1,9 +1,24 @@
+/* Formatações */
 *{
     margin: 0px;
     padding: 0px;
-   
+    
 }
+p{
+    text-indent: 10px;
+    line-height: 27px;
+    margin-top: 60px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*Estilos */
 body{
+    min-height: 100vh;
     font-size: 1.3em;
     color: white;
     text-align: center;
@@ -15,42 +30,54 @@ header{
     height: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: black;
+    justify-content: space-between;
 }
-header h1{
+header > section{
+    margin: 4px;
+}
+header > section.s2{
+    display: none;
+}
+header > section > h1{
     text-shadow: 1px 1px 1px black;
 }
-p{
-    margin-top: 60px;
-}
 main{
-    padding: 10px;
-    height: 700px;
+    
 }
-.container_formulario{
-    margin: 40px auto;
-    height:auto;
-    max-width: 700px;
-    text-align: center;
-    border-radius: 4px;
-    background-color: #4040ff;
-    box-shadow: 1px 1px 5px #0000007a;
-
-}
-.child_formulario{
-    padding: 10px;
-    height: 100%;
+section.container_formulario{
+    margin: auto;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #3939ff;
+    flex-direction: column-reverse;
 }
-.child_formulario > form{
+div.formulario{
+    display: block;
+    height: 50%;
+    border-top: 1px solid white;
+    border-left: 0px solid white;
+}
+div.formulario > form{
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    animation-timing-function: ease;
+   
+}
+div.imagem{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    transition: height 1s, width .7s;
+    background: beige url('../img/img_container_form.svg') center no-repeat;
 }
 .dados{
     padding: 4px;
@@ -78,7 +105,7 @@ main{
     border-radius: 3px;
     font-weight: bolder;
     border: 1px solid white;
-    background-color: #0101d4;
+    background-color: #2323ff;
 }
 .acao:active{
     background-color: #0505b6;
@@ -90,15 +117,10 @@ main{
     flex-direction: column;
     width: 100%;
 }
-footer{
-    bottom: 0px;
+.recomendações{
     width: 100%;
-    height: 90px;
-    position: fixed;
-    background-color: black;
-}
-@media screen and ( min-width:490px){
-    #coleta_sexo{
-        flex-direction: row;
-    }
+    height: 100%;
+    color: white;
+    background-color: #eeeed675;
+    text-shadow: 1px 1px 1px black;
 }

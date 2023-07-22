@@ -1,0 +1,38 @@
+@media screen and ( min-width:490px){
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    header > section.s2{
+        display: flex;
+    }
+    main{
+        padding: 10px;
+    }
+    form #coleta_sexo{
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:638px){
+    section.container_formulario{
+        margin: 40px auto;
+        max-width: 800px;
+        flex-direction: row-reverse;
+        
+    }
+    div.formulario{
+        width: 50%;
+        float: right;
+        border-top: 0px;
+        border-left: 1px solid white;
+    }
+    div.imagem{
+        width: 50%;
+        float: left;
+        min-height: 100%;
+        min-height: 100%;
+        background:  ('../img/img_container_form.svg');
+        background-size: cover;
+    }
+    
+}

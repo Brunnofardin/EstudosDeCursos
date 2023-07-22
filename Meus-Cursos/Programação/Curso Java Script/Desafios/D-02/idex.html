@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/queries.css">
     <title>Bem-Vindo</title>
 </head>
 <body>
     <header>
-        <section>
+        <section class="s1">
+            Logo
+        </section>
+        <section class="s2">
             <h1>Colocando em prática</h1>
         </section>
+        <section class="s3">
+            Menu
+        </section>
     </header>
-    <main class="container">
+    <main>
         <section class="container_formulario">
-            <div class="child_formulario">
+            <div class="formulario">
                 <form action="">
                     <p>
                         <label for="nome">Nome</label>
@@ -28,7 +35,7 @@
                         <label for="masculino">Masculino</label>
                         <input type="radio" name="dados_sexo" id="masculino" class="dados_radios">
                         <label for="feminino">Feminino</label>
-                        <input type="radio" name="dados_sexo" id="feminino" class="dados_radios">
+                        <input type="radio" name="dados_sexo" id="feminino" class="dados_radios" checked>
                     </p>
                     <p>
                         <input type="button" value="Enviar" class="acao">
@@ -38,8 +45,13 @@
 
                 </form>
             </div>
+            <div class="imagem">
+                <section class="recomendações">
+                </section>       
+            </div>
         </section>
     </main>
-    <footer></footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
