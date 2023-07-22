@@ -245,10 +245,49 @@ exibição de varivaies etc....
            Mongo db
 -----------------------------------
 
-Listando dados 
+      Conexão
+----------------------
+
+const mongoose = require('mongoose')
+
+mongoose.connect('mongodb://127.0.0.1/NomeDaColeção').then(()=>{
+
+}).catch(()=>{
+
+})
+
+  Listando dados 
 ---------------------
 
 coleção.find().sort({date:'desc'}).lean().then((arquivo)=>{
   res.render(arquivo')
 
 })
+
+ Buscando dados 
+-------------------
+
+coleção.findOne({campoX:CampoY}).then((arquivo)=>{
+
+})
+
+Semâtica 
+------------
+
+Procure um elemento 
+da coleção onde o campoX 
+tenha o valor do campo Y 
+e passe este resultado para 
+minha função then
+ 
+
+
+  Removendo dados 
+-------------------
+coleção.remove({campoX:CampoY}).then(arquivo)=>{
+
+}
+
+Semâtica 
+----------
+Remova da coleção o campoX que tenha o valor igual ao campoY
