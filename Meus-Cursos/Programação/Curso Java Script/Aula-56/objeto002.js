@@ -21,6 +21,19 @@ class Carros{
 
 
     }
+    getNome(){
+        return this.nome
+    }
+    getTipo(){
+        return this.tipo
+    }
+    getVelociade(){
+        return this.velocidade
+
+    }
+    getInfo(){
+        return [this.nome,this.tipo,tipo,this.velocidade]
+    }
     info(){
         console.log('Nome: '+this.nome)
         console.log('Velocidade: '+this.velocidade)
@@ -29,4 +42,3 @@ class Carros{
 }
 
 const carro01 = new Carros('Bravura',3);
-carro01.info()

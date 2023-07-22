@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+body{
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    background-color: #4141ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    padding: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+header h1{
+    text-shadow: 1px 1px 1px black;
+}
+p{
+    margin-top: 60px;
+}
+main{
+    padding: 10px;
+    height: 700px;
+}
+.container_formulario{
+    margin: 40px auto;
+    height:auto;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #4040ff;
+    box-shadow: 1px 1px 5px #0000007a;
+
+}
+.child_formulario{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.child_formulario > form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dados{
+    padding: 4px;
+    font-size: .8em;
+    border: 0px;
+    width: 200px;
+    height: 27px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 2px;
+}
+.dados_radios{
+    scale: 1.4;
+    margin: 10px;
+    cursor:pointer;
+    margin:20px 20px;
+}
+.acao{
+    cursor: pointer;
+    border: 0px;
+    margin: 20px;
+    width: 180px;
+    height: 40px;
+    color: white;
+    border-radius: 3px;
+    font-weight: bolder;
+    border: 1px solid white;
+    background-color: #0101d4;
+}
+.acao:active{
+    background-color: #0505b6;
+}
+#coleta_sexo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+footer{
+    bottom: 0px;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background-color: black;
+}
+@media screen and ( min-width:490px){
+    #coleta_sexo{
+        flex-direction: row;
+    }
+}

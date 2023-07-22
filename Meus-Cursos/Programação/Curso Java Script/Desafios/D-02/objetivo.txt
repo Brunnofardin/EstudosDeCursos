@@ -1,0 +1,31 @@
+
+    Para praticar o tempo parado
+---------------------------------------
+
+* Ultilizar o operador this 
+
+* Ultilizar condições compostas 
+          se..
+          se nãos se...
+          se não...
+
+* Ultilizar arrays
+       deletar valores no inicio 
+       deletar valores no fim
+       inserir no inicio 
+       inserir no fim
+
+* interagir com html
+        criar elementos
+        setar ids
+        setar classes
+        buscar valores 
+        modificar valores 
+* ultilizar métodos 
+        Map 
+        Some 
+        find 
+        filter
+* Ultilizar coleções
+         Set 
+         Map 

@@ -238,35 +238,26 @@ FUNTION ALUNO(NOME,NOTA){
 ALUNO('Brunno',100)
 
 
+Este nome faz referência
+a um elemento da minha função
 
 
 
+=============================
+        FUNÇÕES
+=============================
+
+----------------------------
+  FUNÇÕES PARAMETRIZADAS
+----------------------------
 
 
 
-
-
-   
-                 FUNÇÕES
----------------------------------------------
-
-
-
-
-
-    FUNÇÕES PARAMETRIZADAS
---------------------------------
-
-
-
- SÃO FUNÇÕES CUJO VOCÊ PASSA PARAMETROS 
-PARA ELA.
-
-
+ SÃO FUNÇÕES CUJO VOCÊ PASSA
+PARAMETROS PARA ELA.
 
 
 EX:
-
 
 
 FUNCTION NOME( ){ 
@@ -281,11 +272,9 @@ FUNCTION NOME(NOME1, NOME2){
 
 }
 
-
-
-
-      FUNÇÕES ANONIMAS
-------------------------------------
+-----------------------
+    FUNÇÕES ANONIMAS
+-----------------------
 
 
 
@@ -307,11 +296,12 @@ VAR NOME = FUCNTION(){
 
 }
 
-
+-------------------------
     FUNÇÕE COM RETORNO
----------------------------
+-------------------------
 
-SÃO FUNÇÕES QUE TEM UM RETORNO A SER CUMPRIDO 
+ SÃO FUNÇÕES QUE TEM UM RETORNO A SER
+CUMPRIDO 
 
 
 EX:
@@ -319,8 +309,8 @@ EX:
 
 FUNTION NOME(N1,N2){ 
   
-      FUNÇÃO PARAMETRIZADA RECEBANDO 2 NOMES
-    SEM NENHUMA FUNCIONALIDADE
+      FUNÇÃO PARAMETRIZADA RECEBANDO
+    2 NOMES SEM NENHUMA FUNCIONALIDADE
 
 
 }
@@ -330,64 +320,13 @@ FUNCTION NOME(N1,N2){
   RETURN CONSOLE.LOG(N1,N2)
 
      FUNÇÃO COM RETORNO OU SEJA QUANDO
-    FOR CHAMADA SERÁ APRESENTADO NA TELA DOIS NOMES
+    FOR CHAMADA SERÁ APRESENTADO NA TELA
+    DOIS NOMES
 
 }
-
-
-
-
-CONSOLE.LOG(NOME("Brunno","Maria"))
-
-
------CONSOLE--------
-
-Brunno, Maria
-
------------------
-
-
-
-
-             REST
---------------------------------------------
-
-
-
-  REST SERVE PARA QUE EU NÃO PRECISE 
-EXPRECIFICAR A QUANTIDADE DE PARÂMETROS
-QUE VEM DENTRO DA FUNÇÃO EX:
-
-
-
-
-
-FUNCTION(N1,N2){
-
- -  AQUI PASSAMOS 2 PARAMETROS OU SEJA SÓ
-  PODERÁ SER MANUSEADO 2 VALORES
-
-}
-
-
-     USANDO O REST
----------------------
-
-
-
-FUNCTION(...VALORES){
-
-  -   NOS NÃO ESPECIFICAMOS QUANTOS VALORES IRÃO VIR PARA 
-    DENTRO DA VARIAVEL VALORES
-    OU SEJA PODE SER 10,1000,UM QUARENTAMILVALORES
-
-
-}
-
-
-
-        FUNÇÕES GERADORAS
----------------------------------------
+---------------------------
+    FUNÇÕES GERADORAS
+----------------------------
 
 
 RECONHECIDAS POR * ASTERISCO
@@ -406,20 +345,54 @@ CONSOE.LOG(VARIAVEL.NEXT().VALUE) ESCREVA
   NO CONSOLE O PROXIMO VALOR DA VARIAVEL
 
 
+==============================
+       Operadores
+==============================
+
+---------------------------
+          REST
+---------------------------
+
+
+  REST SERVE PARA QUE EU NÃO PRECISE 
+EXPRECIFICAR A QUANTIDADE DE PARÂMETROS
+QUE VEM DENTRO DA FUNÇÃO EX:
 
 
 
+FUNCTION(N1,N2){
 
+ -  AQUI PASSAMOS 2 PARAMETROS OU SEJA SÓ
+  PODERÁ SER MANUSEADO 2 VALORES
 
-        METODOS                   
------------------------------------
-
-
-
-
-
- SETIMEOUT(TEMPO)
+}
+ 
 ---------------------
+   USANDO O REST
+---------------------
+
+
+
+FUNCTION(...VALORES){
+
+  -   NOS NÃO ESPECIFICAMOS QUANTOS VALORES
+    IRÃO VIR PARA DENTRO DA VARIAVEL VALORES
+    OU SEJA PODE SER 10,1000,UM QUARENTAMILVALORES
+
+
+}
+
+
+===========================
+        METODOS                   
+===========================
+
+
+
+
+-----------------------
+  SETIMEOUT(TEMPO)
+-----------------------
 
 
  SERVE PARA CRIAR UM ATRAZO 
@@ -428,7 +401,7 @@ TEMPO PASSADO POR PARAMETRO
 
 
 
-
+----------------------
   CREATE ELEMENT
 ----------------------
 
@@ -439,7 +412,7 @@ CREATEELEMENT(NOMEDOQUEQUERCRIAR)
  COMPUTADOR
 
 
-
+----------------------
   SET ATRIBUTE
 ----------------------
 
@@ -449,8 +422,8 @@ CREATEELEMENT(NOMEDOQUEQUERCRIAR)
 
  PAR2 - CONTEUDO DO ATRIBUTO
 
-
-  APPENDCHILD()
+----------------------
+   APPENDCHILD()
 ----------------------
 
 nomeDoPai.APPENDCHILD()
@@ -466,8 +439,9 @@ ex:
   var div = document.crateelement('div);
   body.appendchild(div);
 
+----------------------
         MAP
--------------------
+----------------------
 
 Explicação
 ------------
@@ -491,7 +465,7 @@ PAR2 - INDICE
 
 PAR3 - ARRAY
 
-
+----------------------
        REMOVE
 ----------------------
 
@@ -545,9 +519,9 @@ I - indIce
 A - array
 
 
-
-   FIND
--------------
+---------------------
+       FIND
+---------------------
 
 PERMITE PESQUISAR OS
 ELEMNTOS DE UMA ARRAY 
@@ -606,9 +580,9 @@ I - indice
 
 A - array 
 
-
- SOME
------------
+-------------------
+      SOME
+-------------------
 
 Explicação
 ------------
@@ -667,9 +641,9 @@ I -  Indice
 A -
 
 
-
- STOP PROPAGATION
----------------------
+-----------------------
+    STOP PROPAGATION
+-----------------------
 
 Explicação
 -------------
