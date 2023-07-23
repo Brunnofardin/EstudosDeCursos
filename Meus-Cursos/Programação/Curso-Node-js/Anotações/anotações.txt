@@ -323,32 +323,20 @@ npm install --save bcryptjs
 
  como usar 
 --------------
-1° chame o bcryptjs
-    const bcrypt = require('bcryptsjs')
 
-2° Salve seu novo usuário dentro de uma variavel
 
-   const NovoUsuario = new mongoose.Schema({
-       Nome:'Brunno'
-       Senha:17
-   })
+===========================
+        passport
+===========================
 
-3° Salgando usuário
-      bcrypt.genSalt(10,(err,salt)=>{
-              bcrypt.hash(novoUsuario.Senha,salt,(err,hash)=>{
-                  if(err){
-                      console.log('Erro ao salvar usuário')
-                      res.redirect('/')
-                  }else{
-                      novoUsuario.Senha = hash
-                      novoUsuario.save().then(()=>{
-                      console.log('Usuário salvo com sucesso!')
-                      }).catch((err)=>{
-                          console.log('erro: '+err)
-                      })
-                  }
-              })
-          })
+ Intalação 
+---------------
+npm i --save passport
+
+npm i --save passport-local
+
+   Uso Local
+---------------
 
 
   Classes Bootstrap 
