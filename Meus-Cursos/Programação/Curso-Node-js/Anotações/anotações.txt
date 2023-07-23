@@ -287,6 +287,11 @@ minha função then
 coleção.remove({campoX:CampoY}).then(arquivo)=>{
 
 }
+ou
+
+coleção.deleteOne({campoX:CampoY}).then(arquivo)=>{
+
+}
 
 Semâtica 
 ----------
