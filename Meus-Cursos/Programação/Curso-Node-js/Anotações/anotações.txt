@@ -298,6 +298,21 @@ Semâtica
 Remova da coleção o campoX que tenha o valor igual ao campoY
 
 
+
+  Listando posts recentes
+============================
+
+Postagens.find().populate("Categoria").sort({date:'desc'}).lean().then((arquivo)=>{
+        res.render("index",{arquivo:arquivo})
+
+    }).catch((err)=>{
+        console.log('Erro ao tentar listar postagens. Erro: '+err)
+        res.redirect('/404')
+    })
+
+})
+
+
   Classes Bootstrap 
 =========================
 
