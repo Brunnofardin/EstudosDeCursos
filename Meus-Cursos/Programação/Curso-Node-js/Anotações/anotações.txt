@@ -164,9 +164,9 @@ use - ultilize
 
 static - local estático/diretório
 
------------------------------------
+===================================
          Body Parser
------------------------------------
+===================================
 
  Instalação
 ------------
@@ -203,9 +203,9 @@ Nome do campo cujo quer pegar o dado
 
 
 
------------------------------------
+===================================
          Handdlebars
------------------------------------
+===================================
 
   Instalação
 ---------------
@@ -231,22 +231,58 @@ exibição de varivaies etc....
 
 
 
------------------------------------
+===================================
+        Middlewares
+===================================
 
------------------------------------
+  Semâtica 
+--------------
+Middleware é responsavel por intermediar 
+todas as requisições que o usuário fizer
+
+  Sintaxe
+--------------
+app.use((req,res,next)=>{
+  requisição - req,
+  resposta -res ,
+  próximo - next.
+
+})
 
 
------------------------------------
+=================================== 
+           Sessões 
+===================================
 
------------------------------------
+ Instalação
+--------------
 
 
------------------------------------
+  Semâtica 
+------------- 
+
+
+   Sintaxe 
+---------------
+
+
+
+
+
+
+
+
+===================================
+
+===================================
+
+
+===================================
            Mongo db
------------------------------------
+===================================
 
-      Conexão
-----------------------
+         Conexão
+=-=-=-=-=-=-==-=-=-=-=-=-=-=-=
 
 const mongoose = require('mongoose')
 
@@ -256,16 +292,16 @@ mongoose.connect('mongodb://127.0.0.1/NomeDaColeção').then(()=>{
 
 })
 
-  Listando dados 
----------------------
+      Listando dados 
+=-=-=-=-=-=-==-=-=-=-=-=-=-=-=
 
 coleção.find().sort({date:'desc'}).lean().then((arquivo)=>{
   res.render(arquivo')
 
 })
 
- Buscando dados 
--------------------
+        Buscando dados 
+=-=-=-=-=-=-==-=-=-=-=-=-=-=-=
 
 coleção.findOne({campoX:CampoY}).then((arquivo)=>{
 
@@ -282,32 +318,79 @@ minha função then
  
 
 
-  Removendo dados 
--------------------
-coleção.remove({campoX:CampoY}).then(arquivo)=>{
-
-}
-ou
-
+     Removendo dados 
+=-=-=-=-=-=-==-=-=-=-=-=-=-=-=
 coleção.deleteOne({campoX:CampoY}).then(arquivo)=>{
 
 }
 
 Semâtica 
 ----------
-Remova da coleção o campoX que tenha o valor igual ao campoY
+Remova da coleção o campoX que
+tenha o valor igual ao campoY
 
 
 
-  Listando posts recentes
-============================
+  Listando posts referênciados
+=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-
+
+Posts rferêciados são aqueles cujo 
+dentro de um modelo qua não faz
+parte dele chama ele 
+
+por exemplo:
+   
+   Temos o models postagens e o model categorias 
+   
+   const Catgorias = new mongoose.Schema({
+      Nome:{
+        type:string
+      },
+      Slug:{
+        type:string
+
+      }
+   })
+   mongoose.model('categorias',catgorias)
+
+   const Postagens = new mongoose.Schema({
+     Titulo:{
+       type:string
+     },
+     Descrição:{
+       type:string
+     }
+     Categoria{
+        type:Schema.types.ObjectId,
+        ref:'catgorias'
+     }
+   })
+   mongoose.model('postagens',Postagens)
+
+Pareceba que, referêciamos a categoria no nosso 
+model postagens, usando o comando (ref:'categorias')
+agora conseguimos lidar com as categorias, mesmo 
+não estando usando o model categorias,podemos pegar elementos 
+e trabalhá-los.
 
 Postagens.find().populate("Categoria").sort({date:'desc'}).lean().then((arquivo)=>{
-        res.render("index",{arquivo:arquivo})
 
-    }).catch((err)=>{
-        console.log('Erro ao tentar listar postagens. Erro: '+err)
-        res.redirect('/404')
+       // variavel contendo os dois models
+       
+       const arquivo = arquivo
+        
+       // categorias
+
+       console.log(arquivo.Slug)
+       console.log(arquivo.Nome)
+
+       // Postagens 
+
+       console.log(arquivo.Titulo)
+       console.log(arquivo.Descrição)
+
+}).catch((err)=>{
+    
 })
 
 ===========================
