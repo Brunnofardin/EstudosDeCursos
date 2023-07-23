@@ -301,11 +301,18 @@ Remova da coleção o campoX que tenha o valor igual ao campoY
   Classes Bootstrap 
 =========================
 
-class='form-control' - deixa inouts mais bonitas 
+
+  Botões
+============
 
 class='btn btn-success' - cria um botao verde 
 
 class ='btn btn-danger'- cria um botão vermelho
+
+  Formulários
+===================
+
+class='form-control' - deixa inouts mais bonitas 
 
 class='card'  - cria um card 
 
@@ -315,4 +322,8 @@ class='costum-select' - deixa o select mais bonito
 
 class='mt-4' - Dá um espaço da cabeça do iten até o header
 
+  Alertas
+================
 class ='alert alert-danger' - exibir mensgaem de erro
+
+class ='alert alert-success' - exibir alerta de sucesso
