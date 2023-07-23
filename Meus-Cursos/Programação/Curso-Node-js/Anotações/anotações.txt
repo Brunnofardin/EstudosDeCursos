@@ -296,3 +296,17 @@ coleção.deleteOne({campoX:CampoY}).then(arquivo)=>{
 Semâtica 
 ----------
 Remova da coleção o campoX que tenha o valor igual ao campoY
+
+
+  Classes Bootstrap 
+=========================
+
+class='form-control' - deixa inouts mais bonitas 
+
+class='btn btn-success' - cria um botao verde 
+
+class ='btn btn-danger'- cria um botão vermelho
+
+class='card'  - cria um card 
+
+class='card-body' - cria um corpo de card
