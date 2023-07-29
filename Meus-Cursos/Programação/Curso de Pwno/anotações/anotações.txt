@@ -1,0 +1,79 @@
+==========================
+  Curso de Pwano
+==========================
+
+Instalação pwno
+====================
+
+1° Baixar extensão Pawn tools
+
+2° arquivo.pwn 
+
+3° Baixar o compilador 
+   1° vá emterminal
+   2° COnfigurar tarefas 
+   3°  criar arquivo task
+   4° Others
+
+
+
+ Blibiotecas mais usadas
+==========================
+
+<a_samp>  - Para uso de funções padrões
+
+
+ 
+  Call backs e funções
+=========================
+
+call backs são funções que são 
+executadas durante o game
+
+
+Criando eventos 
+-------------------
+Para criar um evento devemos
+dar um gatilho para ele.
+
+
+Gatilho 
+---------
+forward NomeDoEvento(ParametroSeTiver);
+
+Evento
+----------
+public NomedoEveneto(ParametrosSeTiver)
+{
+  /*Bloco de comandos */
+  return 1
+}
+============================
+      Playlists
+============================
+
+        Youtube
+==========================
+
+  ChainkSain
+-----------------
+https://www.youtube.com/watch?v=jITcf95XG
+gA&list=PLyTQQVzBfDMdbTqjc8ZhZcDFpy1NTgIje
+
+
+ Guilherme porto
+------------------
+
+https://www.youtube.com/watch?v=ONODJDnVh18
+
+https://www.youtube.com/watch?v=2n_asiGz9GM
+
+https://www.youtube.com/watch?v=R0JJ6LIuoVI&t=2s
+
+
+
+
+         Portal Samp
+============================
+https://portalsamp.com/showthread.php?
+tid=2872
