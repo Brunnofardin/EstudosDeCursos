@@ -2,28 +2,14 @@
   Curso de Pwano
 ==========================
 
-Instalação pwno
-====================
-
-1° Baixar extensão Pawn tools
-
-2° arquivo.pwn 
-
-3° Baixar o compilador 
-   1° vá emterminal
-   2° COnfigurar tarefas 
-   3°  criar arquivo task
-   4° Others
-
-
-
+==========================
  Blibiotecas mais usadas
 ==========================
 
 <a_samp>  - Para uso de funções padrões
 
 
- 
+=========================
   Call backs e funções
 =========================
 
@@ -48,6 +34,61 @@ public NomedoEveneto(ParametrosSeTiver)
   /*Bloco de comandos */
   return 1
 }
+
+============================
+       Gamemode
+============================
+
+
+ 
+  Arquivos 
+---------------
+
+Filterscripts 
+
+  * São códigos que estã fora da sua 
+    gamemode e que podem ser ativados depois
+
+Gamemode
+
+  * Coração do servidor
+  * Códigos que serã ultilizados pelos seu servidor
+
+Npcmodes 
+
+ * Modes para npc
+
+Pawno 
+
+  * Fica os arquivos de includes (funções) e 
+    modificação de códigos ex: Pawno (ide)
+
+scriptfiles 
+
+  * Arquivos de salvamentos
+
+Server 
+ 
+ * Configurações do servidor
+
+ * Hostname,porta,rcon etc...
+
+Plugins
+ 
+ * Configurações da gememod em plugis 
+
+   Comandos 
+------------------
+===========================
+  Variavei e seus tipos
+===========================
+
+new NomeDaVariavel;   - Variavel de tipo inteiro
+
+new float:NomeDavarivel; - Variavel de tipo real
+
+new bool:NomeDaVariavel; - Variavel de tipo lógico
+
 ============================
       Playlists
 ============================
