@@ -402,11 +402,45 @@ Blibioteca para criptografar senhas
 intalação 
 -----------
 
-npm install --save bcryptjs 
+npm i bcrypt
 
  como usar 
 --------------
 
+   Racheando senha
+=======================
+const bcrypt = require('bcrypt');
+
+const varivelDaSenha = 1234qwer;
+const salto = 10;
+
+// salto - Saltar de 10 em 10
+
+bcrypt.hash(variavelDaSenha,salto,(erros,hash)=>{
+  if(erros){// se houver erros
+      // execute talcoisa
+  }else{
+    // Se o else for executado significa que a senha foi hasheada
+    variavelDaSenha = hash 
+    // exemplo 1ehgtfey2dgyey4jqlkwkihvevfcxrfdr
+  }
+    
+
+})
+
+  Comparando senha recheada
+=============================
+bcrypt.compare(campotal,comcampotal,(erro,bateu)=>{
+    if(erro){
+      console.log('Erro)
+    }else{
+      console.log('As senhas batem!")
+    }
+})
+
+
+compare campo tal com campo tal, e se houver erro,
+traga o erro.Se não tiver erro, diga que as senhas batem
 
 ===========================
         passport
