@@ -931,3 +931,89 @@ const p1 = new Pessoa("Brunno Fardin de Souza',16)
 
 Constructor - Método autmoaticamente chamado quando
             eu chamo a classe Pessoa
+
+================================
+ Json e objetos em java-script 
+================================
+
+ Estrutura 
+--------------
+variavel mãe:{
+  variavel:"Conteudo em carctere",
+  variavel: conteudo em número,
+
+}
+
+    ex:
+-------------- 
+const pessoa = {
+  nome:"Brunno fardin de Souza",
+  idade:16
+  curso:"Java-Script",
+  aulas{
+    aula01:"Introdução",
+    aula02:"CFB cursos"
+  }
+  
+  }
+=====================
+ Dúvidas comuns
+=====================
+
+* Se eu quiser acessar um objeto 
+dentro de uma variavel,executamos 
+o seguinte comando: 
+
+NomeDaVariavel.NomeDoObjeto 
+----------------------------
+ex: 
+ pessoa.nome
+
+ Irá retornar o valor de nome 
+
+
+--------------------------
+* E se eu quiser acessar um json dentro
+de outro json? Como que faz?
+  Bom,é muito simples,para isto basta você chamar 
+a váriavel que contém o json e chamar o json. 
+
+ Observe 
+
+     Pessoa{
+      Nome:"Brunno Fardin ",
+      cursos:{
+        javascript:"Avançado",
+        python:"Intermediário"
+      }
+     }
+
+console.log(pessoa.cursos.javascript)
+
+Resultado console :
+
+    "Avançado"
+
+================================
+ Tranformando objetos em strings 
+================================
+
+JSON.stringfy(NomeDaVariavel)
+
+Resultado:
+  NomeDavariavel = {nome:"nruurkd",idade:23,vida:3}
+
+=================================
+ Tranformando Strings em objetos
+=================================
+
+JSON.parse(NomeDaVariavel)
+
+Resultado:
+  var NomeDaVariavel:{
+    nome:"nruurkd",
+    idade:23,
+    vida:3
+  }
+
+

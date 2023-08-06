@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-Vindo</title>
+    <style>
+        body{
+            font-size: 1.2em;
+            text-align: center;
+            background-color: #3434ff;
+        }
+        h1{
+            color: white;
+            text-shadow: 1px 1px solid black;
+        }
+        .container_formulario{
+            margin: auto;
+            height: 400px;
+            max-width: 700px;
+            border-radius: 10px;
+            align-items: center;
+            background-color:beige ;    
+        }
+        .container_formulario > form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            line-height: 27px;
+            flex-direction: column;
+        }
+        input{
+            width: 90%;
+            height: 29px;
+            border-radius: 3px;
+            border: 1px solid #4040e079;
+        }
+        input[type=button]{
+            height: 40px;
+            width: 100px;
+            border: 0px;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 4px;
+            background-color: blue;
+        }
+        input[type=button]:active{
+            background-color: #0202c0;
+        }
+        .resultado{
+            width: 90%;
+            height: auto;
+            border-radius: 10px;
+            background-color: white;
+            border: 1px solid #4040e079;  
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Curso de java-script</h1>
+
+    <main>
+        <section class="container_formulario">
+            <form action="" autocomplete="on">
+                <p>
+                    <label for="">Nome: </label>
+                    <input type="text" name="" id="nome" autocomplete="username">
+                </p>
+                <p>
+                    <label for="">Idade: </label>
+                    <input type="number" name="" id="idade">
+                </p>
+                <p>
+                    <input type="button" value="Adiconar" id="add">
+                </p>
+            
+                <div class="resultado">
+                    <p id="resultado">
+                        Resultado:
+                    </p>
+                </div>
+            
+            </form>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
