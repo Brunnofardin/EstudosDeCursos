@@ -2,33 +2,34 @@ const add = document.getElementById('add');
 
 let pessoas = []
 
-class Pessoa{
-    constructor(nome,idade){ // O método construtor é sempre chamado ao criarmos um novo objeto para a classe
-        this.nome = nome
-        this.idade = idade
-    }
-    getNome(){
+function Pessoa(nome,idade){
+    this.nome = nome
+    this.idade = idade
+    this.getNome = function(){
         return this.nome
     }
-    getIdade(){
+    this.getIdade = function(){
         return this.idade 
     }
-    setNome(nome){
+    this.setNome = function(nome){
         this.nome = nome 
     }
-    setIdade(idade){
+    this.setIdade = function(idade){
         this.idade = idade
     }
-    info(){
+    this.info = function(){
         console.log(this.nome);
         console.log(this.idade);
     }
 }
-const listar = ()=>{
+const listar = (res)=>{
+    res.innerHTML=''
     pessoas.map((el,i,a)=>{
-         const div = document.createElement('div')
+         let div = document.createElement('div')
          div.setAttribute('class','pessoa')
-         div.innerHTML = el
+         div.innerHTML = `Nome ${el.getNome()} Idade ${el.getIdade()}`
+         res.appendChild(div)
+         return
     })
 }
 add.addEventListener("click",(evt)=>{
@@ -36,12 +37,11 @@ add.addEventListener("click",(evt)=>{
     const idade = document.getElementById('idade');
     const p = new Pessoa(nome.value,idade.value)
     pessoas.push(p)
-    nome.value = ""
-    idade.value = ""
-    nome.focus()
-    console.log(pessoas)
-    const result = document.getElementById('resultado')
-    result.innerHTML=listar
+    nome.value = "";
+    idade.value = "";
+    nome.focus();
+    const result = document.getElementById('resultado');
+    listar(result);
  
 
 })

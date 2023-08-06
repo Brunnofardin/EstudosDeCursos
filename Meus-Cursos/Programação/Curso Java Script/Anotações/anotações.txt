@@ -994,6 +994,21 @@ Resultado console :
 
     "Avançado"
 
+-------------------------------
+      Objetos literais
+-------------------------------
+
+* São referênciados por variaveis,
+
+* Métodos e propiedades 
+
+ex: const Pessoa={
+  nome:"",
+  idade:,
+  sexo:,
+}
+
+
 ================================
  Tranformando objetos em strings 
 ================================
