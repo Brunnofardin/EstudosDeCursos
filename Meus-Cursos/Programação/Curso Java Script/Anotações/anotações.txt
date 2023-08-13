@@ -1031,4 +1031,69 @@ Resultado:
     vida:3
   }
 
+================================
+      Promisse
+================================
 
+
+ Semâtica 
+-----------
+Eu prometo que vou
+devolver algo.
+
+
+ sintaxe
+----------
+
+
+let p = new promisse((para1,para2)=>{
+  let n = 1
+
+  if(typeof(n) == "Number"){
+    para1({mensagem:"É um número! "})
+  }else{
+    para2({Mensagem:"Não é um número})
+  }
+
+})
+
+para1 - Resolvido
+
+para2 - Rejeitado
+
+
+se for resolvido, os valores do 
+para1 serão passados para função 
+then(()=>{}) se não, os do pára2
+serão passados na função catch(()=>{})
+
+exemplo:
+   p.then((acerto)=>{
+       console.log('Mensagem de acerto:'+acerto.mensagem)
+   }).catch((err)=>{
+       console.log('mensagem de erro:'+erro.mensagem)
+   });
+ 
+
+==============================
+     Funções async
+==============================
+
+ 
+ Semâtica 
+-----------
+  Servem para aguardar o processamento 
+de um dado, e depois continuar seu 
+fluoxo.
+
+
+ Sintaxe 
+-----------
+  
+  async function nomeDafunção(){
+      
+    await - aguarde algo 
+
+  }
+   
+    
