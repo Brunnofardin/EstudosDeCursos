@@ -773,39 +773,40 @@ OUTROS DOIS TERMOS SENDO ELES:
       SHORTHANDS (MÃOZINHA)
 ====================================
 
-( BACKGROUND )
---------------
+==================
+  ( BACKGROUND )
+==================
 
 COLOR- COR
     RGB
-     HEXADECIMAL
+    HEXADECIMAL
       
 
-IMAGE - IMAGEM 
-     PNG
-      JPEG
-       GIF
-        FAVICON
+IMAGE 
+    PNG
+    JPEG
+    GIF
+    FAVICON
 
-POSITION- POSIÇÃO
-      CENTER
-       LEFT 
-         TOP
-           BOTTOM
-          LEFT CENTER
-        RIGHT CENTER
-      CENTER BOTTOM
+POSITION 
+    CENTER
+    LEFT 
+    TOP
+    BOTTOM
+    LEFT CENTER
+    RIGHT CENTER
+    CENTER BOTTOM
 
-REPEAT - REPETIR
-        NO-REPEAT
-         REPEAT
+REPEAT
+    NO-REPEAT
+    REPEAT
 
 SIZE - TAMANHO
-       COVER
-        CONTAIN
+    COVER
+    CONTAIN
 
 ATTACHEMENT - ?
-        FIXED
+    FIXED
 
 
 PRECEDÊNCIA
@@ -817,9 +818,9 @@ PRECEDÊNCIA
 5° BACKGROUND-SIZE:;
 6° BACKGROUND-ATTACHEMENT:;
 
-
-( MARGIN )
--------------------
+==================
+    ( MARGIN )
+==================
 
 PRECENDÊNCIA
 
@@ -828,16 +829,17 @@ PRECENDÊNCIA
 3° MAGRIN-BOTTOM
 4° MAGRIN-RIGHT
 
-( PADDING )
------------------
+==================
+   ( PADDING )
+==================
 
 1° PADDING-TOP
 2° PADDING-RIGHT
 3° PADDING-BOTTOM
 4° PADDING-RIGHT
-
-( FONT )
------------
+=================
+   ( FONT )
+=================
 
 FONT-FAMILY - FAMYLIA DA FONTE
 FONT-WEIGHT - GRAU DE NEGRITUDE
@@ -852,27 +854,40 @@ PRECEDÊNCIA:
 4° FAMILY
 
 
-=======================================
+==========================
          DISPLAY
-=======================================
+==========================
 
-DISPLAY:NONE; - NÃO VAI SER EXIBIDO
+DISPLAY:NONE; 
 
-DISPLAY:BLOCK; - SERÁ EXIBIDO EM FORMA DE 
-                 CAIXA OCUPANDO 100% DA TELA 
+     VAI SER EXIBIDO
 
-DISPLAY: INLINE BLOCK; SERÁ EXIBIDO COMO LINHA
-                      OCUPANDO SOMENTE O ESPAÇO DO CONTEUDO
+DISPLAY:BLOCK; 
 
-DISPLAY:FLEX; - DEIXA UM ELEMENTO AO LADO DO OUTRO 
-                OCUPANDO SOMENTE O CONTEUDO
-                (focado para elemntos caixas uns dentro dos outros)
+    SERÁ EXIBIDO EM FORMA DE 
+    CAIXA OCUPANDO 100% DA TELA 
+
+DISPLAY: INLINE BLOCK;
+
+     SERÁ EXIBIDO COMO LINHA
+     OCUPANDO SOMENTE O ESPAÇO DO CONTEUDO
+
+
+DISPLAY:FLEX; 
+ 
+   DEIXA UM ELEMENTO AO LADO DO OUTRO 
+   OCUPANDO SOMENTE O CONTEUDO (focado
+   para elemntos caixas uns dentro dos outros)
 
 
 
 ----------------
- FLEX
+      FLEX
 ----------------
+
+
+  Justify
+------------
 justify-content:flex-end; - deixa os elementos no final da página
 
 justify-content:start; - deixa os elementos  no inicio da página
@@ -883,21 +898,29 @@ justify-content:space-between; - deixa um com esço constante do outro
 
 justify-content:space-around; - deixa um espaço de circulo enre um e outro
 
+
+
+   Ailign
+----------------
 aling-items:end; todos abaixo do eixo
 
 aling-items:center; toods no centro do eixo
 
 aling-items:start; - deixa todos em cima do eixo
 
+
+  Flex-Direction
+-------------------
+
 flex-direction:colum; direcionamento de coluna
 
-gap - espaço entre elementos
+flex-direction:row; Direcionamento em linha
 
-GLOSSÁRIO:
 
-  LINHA FAZ REFERÊNCIA Á INLINE LEVEL
+   Gap 
+----------
 
-  CAIXA FAZ REFERÊNCIA Á BOX-LEVEL
+gap - espaço entre elementos.
 
 =======================================
        PROPIEDADES CONTEUDO
