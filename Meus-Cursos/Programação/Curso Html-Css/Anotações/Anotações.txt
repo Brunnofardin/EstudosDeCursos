@@ -1258,3 +1258,147 @@ https://www.pexels.com/pt-br/
 =====================
 
 https://favicon.io/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=============================
+        HTML 
+=============================
+
+Hypertext Markup Language
+
+
+Hypertext:
+    * Texto com links ou imagens
+
+Markup:
+    * Marcação
+    * Elemento ou tag
+         ex: <div>
+             <p> 
+             <img>
+
+
+
+==============================
+         CSS
+==============================
+
+
+==============================
+         DICAS
+==============================
+
+* Aprender
+  
+  * O processo - Como o cerébro aprende?
+
+          Novo conhecimento
+          
+          Reconhecimento
+
+          Solidificação
+
+  * Método pare 
+
+    Perguntar
+       - Questionar
+
+       - Pesquisar
+
+    Anotar
+       - Escreva 
+
+       - Desenhe 
+
+       - Crie mapas mentais 
+
+    Revisar 
+       - Sozinho 
+
+       - Reforçar 
+
+    Explicar 
+
+      - Debater 
+
+      - Defender um ponto 
+
+      - Argumentar
+
+* Aplique o PARE
+
+   - Descanse 
+
+   - Durma 
+
+   - Beba água 
+
+
+
+* Estudar 
+
+   Foco 
+     -Concentração
+
+    - O que é importante?
+
+    - Multitarefa 
+
+        Não seja multitarefa 
+        mantenha o foco em seus 
+        estudos
+
+   Motivação 
+
+     - Dopamina 
+
+     - Vontade 
+
+     - Disciplina 
+
+   Horário
+      - Alerta 
+          Quando você estiver alerta
+
+      - Cansaço
+          - Se estiver cançado
+          
+          - pule para próxima
+   Descanso 
+        - Durma
+
+        - Saia
+
+        - Deê uma caminhada
+
+   Saúde
+      - Sol,
+      - Água 
+      - Ar puro,
+
+* Técnicas 
+
+* Planejar
+
+* Organizar
+
+==============================
+         SITES USADOS
+==============================
