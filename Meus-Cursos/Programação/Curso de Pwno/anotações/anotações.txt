@@ -97,6 +97,19 @@ new bool:NomeDaVariavel; - Variavel de tipo lógico
 
 New NomeDaVarievl[Tamanho] - Variável de tipo string
 
+
+============================
+     Comandos Básicos 
+============================
+
+SendClientMessage(par1,par2,par3)
+
+format(par1,par2,par3,par4)
+
+
+
+
+
 ============================
         Uso DOF2
 ============================
