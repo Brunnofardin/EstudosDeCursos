@@ -97,6 +97,45 @@ new bool:NomeDaVariavel; - Variavel de tipo lógico
 
 New NomeDaVarievl[Tamanho] - Variável de tipo string
 
+============================
+        Uso DOF2
+============================
+
+DOF2_CreateFile(fileName[])
+
+
+ Setando Dados
+----------------
+
+DOF2_SetInt(fileName[],CampoX,ValorX)
+
+DOF2_SetFloat(fileName[],CampoX,ValorX)
+
+DOF2_SetString(fileName[],CampoX,ValorX)
+
+ Buscando Dados 
+-----------------
+ 
+DOF2_GetInt(fileName[],CampoX,ValorX)
+
+DOF2_GetFloat(fileName[],CampoX,ValorX)
+
+DOF2_GetString(fileName[],CampoX,ValorX)
+
+
+
+============================
+      Uso Sscanf
+============================
+
+sscanf(stringName,"Especificadores",Variáveis)
+
+stringName - Qual string será escaneada
+
+Especificadores - %d %f..... Retira porcentagem
+
+Variáveis - Onde será guardado cada valor lido
+
 
 ============================
       Buscando Dados
@@ -143,11 +182,12 @@ GivePlayerMoney(par1,par2)
      Criando Dados
 ============================
 
-CreateVeichle(par1,par2,par3,par4,par5,par6,par7,par8,par4)
+CreateVeichle(par1,par2,par3,par4,par5,par6,par7,par8,par9)
 
 CreateObejct(par1,par2,par3,par4)
 
 CreatePickUp(par1,par2,par3,par4,par5)
+
 
 ============================
       Playlists
