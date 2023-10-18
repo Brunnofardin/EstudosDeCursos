@@ -8,6 +8,12 @@
 
 <a_samp>  - Para uso de funções padrões
 
+<DOF2> Banco De Dados
+
+<sscanf2> Leitura de Dados Via Comando
+
+
+
 
 =========================
   Call backs e funções
@@ -88,6 +94,60 @@ new NomeDaVariavel;   - Variavel de tipo inteiro
 new float:NomeDavarivel; - Variavel de tipo real
 
 new bool:NomeDaVariavel; - Variavel de tipo lógico
+
+New NomeDaVarievl[Tamanho] - Variável de tipo string
+
+
+============================
+      Buscando Dados
+============================
+
+GetPlayerName(par1,par2,par3)
+
+GetPlayrScore(par1,par2,par3)
+
+GetPlayerArmour(par1,par2,par3)
+
+GetPlayerHealt(par1,par2,par3)
+
+GetPlayerMoney(par1,par2,par3)
+
+GetPlayerPos(par1,par2,par3)
+
+GetPlayerFaccingAngle(par1,par2,par3)
+
+GetVeichlePos(par1,par2,par3)
+
+GetVeichleFaccingAngle(par1,par2,par3)
+
+
+============================
+      Setando Dados
+============================
+
+SetPlayerPos(par1,par2,par3,par4)
+
+SetPlayerFaccingAngle(par1,par2,par3,par4)
+
+SetPlayerCheckPoint(par1,par2,par3,par4)
+
+SetPlayerSkin(par1,par2)
+
+SetPlayerArmour(par1,par2)
+
+GivePlayerMoney(par1,par2)
+
+
+
+============================
+     Criando Dados
+============================
+
+CreateVeichle(par1,par2,par3,par4,par5,par6,par7,par8,par4)
+
+CreateObejct(par1,par2,par3,par4)
+
+CreatePickUp(par1,par2,par3,par4,par5)
 
 ============================
       Playlists
